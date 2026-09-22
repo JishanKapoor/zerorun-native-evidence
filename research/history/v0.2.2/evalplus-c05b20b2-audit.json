@@ -1,5 +1,5 @@
 {
-  "schema": "zerorun-audit/2",
+  "schema": "zerorun-audit/1",
   "capture_sha256": "a2046f5e146b1ea5da583a1a6405295533c64a03e31be52119808c856211ff61",
   "profile_sha256": "7142f8c1ee2f3e0b571177479ed4e0cfe0f7cd3459b1694fad18ef3e62618573",
   "records": [
@@ -9,10 +9,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1d63565a468a844a8df7d326df5869bf7d09626826dd591b60be8a39469aeaa7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -23,10 +19,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ae49e48ed23d95dec09004eff4e15701beb5f0dc8da3e948d650301d70a093ec",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -37,10 +29,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a7836a6d8877c85e8f583f435bf28d8e34f73b76d908ba6247c67110f897226a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -51,10 +39,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a74c0836a79bc1952968ca910959e2ee3eb733c2671e90d803b90154c9b68e64",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -65,10 +49,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "afd220dfa43dada6a57681685a0bb6cc160177875b9851536909009dff0ec92b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -79,10 +59,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3dd994bcf20359f886ea6adcaf691bd8fdd431d136274bd4a4b9b0e063c496c9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -93,10 +69,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d774a2f07caf39661d39ae2ebf3c9ea260a02c7f177de4ca4e52a022b3c9661d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -107,10 +79,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7a38917eba10f4e68d16a5b7fd488d5ac0c6dcd6bc67d07ea99837eeda55eeff",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -121,10 +89,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "084ca6e34d3360f33df91abb0d36ccb32f393f7e55f34535e46f756dfcaad514",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -135,10 +99,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "46d34746a6b4a06a17d7db7b055d20deca5e07138a652a2a1b7380d17b173b3e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -149,10 +109,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "66717a0c95d8f165b297c694a14999dd0be608f83824c5ce202e08861a81c54c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -163,10 +119,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "20fca2ff457e95a2bee1dbf659d0eb54359d8056d19527ef45be160514e7519e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -177,10 +129,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "03999136c1e5b40f76d06fc24e5ec369e04a73e5704fe3c781adbfedda4bd086",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -191,10 +139,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e1c7525a700a630dc6b60c1967dbab9ac2a87ffaaa9f9909515f3b4ed3d84686",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -205,10 +149,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6b6e0fdf40512299460f19dbff71f0ed773ca1a5081f9fc407376d03e32edca1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -219,10 +159,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "aa461d61f102920a6b384adc53a575accc60314997cf02d9ca419f75a20008e0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -233,10 +169,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2f46d32d3f56e9a5bf0d46442c341e74771e5a417d9a472ca6135aa52723bb47",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -247,10 +179,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d17d70a12bb99749eb58f1ad2f45b8d5fdb1ef5e55bf4b4c22aab789ea60a7bc",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -261,10 +189,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e7488b1e8f69960ef701261f64595c36a162fdf1e4d828487196a6ba1bec0289",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -275,10 +199,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "93fc3700bbacec41c42b0cfce741bef8c87e84a52ab9051241c84c088033115f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -289,10 +209,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "49dc956146ca139586e24c223b4626a559f1c74478add20da3e93700bac8790f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -303,10 +219,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "bca52d9618126dac53363c696378f3d13e93fa05c7dd31e83e33acb25eaaa767",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -317,10 +229,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "837c93299afac2e39e932e0183672c5ab6fa2e3d4bb9d2fc644b8271c3de6d1d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -331,10 +239,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "26abcd10de6ba306622fde9718fb2f101e2e687670ee4b842ccbd1f8caa2b80d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -345,10 +249,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5d5d30c2b580a50863bff5b077e24315f8bacddae3c720e50b04b4e460aa10dc",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -359,10 +259,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1824299eb035cfb8e909c1eec34c510fe6aed5200f7c47bf36377e1870a45ee7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -373,10 +269,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "af77de12198dec73aa04275e3ab7e24141be5da8fea523e1f5928967ef93fbec",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -387,10 +279,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0cb5aaedd148aedcfc563385ae9d0163ff5ed8264bba205e3299b0ef324c9569",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -401,10 +289,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "79be71a1310ea9dc50a45477c58e5038a91eaa0c9fcd410938a32f79f5e6f26d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -415,10 +299,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3469cbb34e656f8e66a2dc12b1e26fb09ddbd3fa9c1de3fb7f1c543cf46ff8b3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -429,10 +309,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "87a7637a3ded2f65fcf048c3d94a5e29fef791407d718b1a5882cf0af03f2dea",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -443,10 +319,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree",
         "incomplete_observation_or_native_premises"
@@ -460,10 +332,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "abe9e7450cfc16c7f4cfbdbb06ac1388f01f3e2e98adbf0dd488d5ff2a035dff",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -474,10 +342,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "89de3594f2658b9401c2d464e4d266f5f015405871d2cb5595c690b26fe5fd5e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -488,10 +352,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4e98b63f4d12baa634245af359c782edb185257b3193d93edd93086ffeb67745",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -502,10 +362,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4a57532655e20403c2d9bc439f1763dd20c7506496e277f6e270bba3cd389cd1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -516,10 +372,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3406d1db37627788f431d9ee4dfdd9b92f6078483679225655d254ea52a8fe27",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -530,10 +382,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b5fc72cc1f4ca728fc70d10829d703c8ebb5835b0bca4c6eb41d6f867f33f1fd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -544,10 +392,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9da2cf3c33f4e746aaa47f07f0dbc00968ea25822d07005bc00dd1937ebd4555",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -558,10 +402,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ff433f128914887e62912d0193f0ca52d27a1a29fbf4d214968def3e588e1d70",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -572,10 +412,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5df61e51ef2e652fc7f5bd09284652f4557ec4139f5832f5780fd74a6fe308ae",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -586,10 +422,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f180ffbde48c6299013a8ff8ff68dbad8b16d3bc4229b84902e831d13e012359",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -600,10 +432,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "50e70d12ef684b80eca6b43823eb2a6620dc383817e4c573b398a06e1c49f946",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -614,10 +442,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "db25d8d210bfc20add552a901c933d9e1ed0c12e91d77a20db5331e08712f6e8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -628,10 +452,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3097f22e742e46403e4a16c151cd16f7f89e8495c35057bd5deaba356b2e4eba",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -642,10 +462,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2b3e8c06d56603387debcb04e747fede030390acf4047b8ee3d4b528d1c2f152",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -656,10 +472,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7964662e31e1e41813a9c878985be8e0dfc688df9f440333489bab4a112ced15",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -670,10 +482,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "684a992c94abbc5d2bcf6ea2e671e11bf14b6de190c0cadcf26da96ef3eb8f73",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -684,10 +492,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "492d018ba4d40e31ee3a1d0b6f405ec378f9895719111a1af4aac6309eb0042b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -698,10 +502,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "CONFORMS",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree"
       ],
@@ -714,10 +514,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "20198cb535f08257a145002bc7fd3ebc68ffc791f734f0ddf7cf42bf010b1a89",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -728,10 +524,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ee1818e065f65b9a0d9ef80fef31b1eef32fe93f44c60718cea47da3453801ce",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -742,10 +534,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "714e04c251b3a5074f1079e409c7be988a74a86708344aa0208f53966b73e088",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -756,10 +544,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "67deca33e092ff598a1d099e880cc1d22ad0f40b95788400847a118ed0d48260",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -770,10 +554,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "298711fcfe82814224d093130145d1b1b2518410668b658f596e6e0f0eeb561e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -784,10 +564,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "84d3d29eff3535863b128a3c667bce919126349aca2ab12bfb1f0fff39c5674a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -798,10 +574,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "639d641e58d5334a8b588c7c93ac98f4e8ce7eb51cb3e510c094016c2d38cd05",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -812,10 +584,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "03ddfae467160a6635bcf8049ff39be8e22bb3a91adc39549fe754cd34afc42a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -826,10 +594,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a73210784f84c5772600b4801ab27587b3869ddd47acc1349156c4286fb0f133",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -840,10 +604,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "02f8082144b1cdfe5c859aa7449524031fd80851bd3e70fa2b95e700b020292c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -854,10 +614,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "543560a90c28621c9848ea16290ccef1e1ece0ad6135768d4b1c97b6a427fcd8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -868,10 +624,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1ed01af988bc7b51fc80d782442d7284cb8c2e57db98adc80417eb54b6d4e1bd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -882,10 +634,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "de3801fff41d20b732e6873b4202c82ee312f10d8c2969243e2548c97384c46e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -896,10 +644,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9dfeb8368d3a2b4fe5c2ead482b77e85bb55ba2864a8b7b4895c8ff8930a293c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -910,10 +654,6 @@
       "status": "VIOLATION",
       "relationship_status": "VIOLATION",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e455d5341acdb08309f5a2a7651db9e8e292a4feb7244f105a1be709888640c5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -924,10 +664,6 @@
       "status": "VIOLATION",
       "relationship_status": "VIOLATION",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "91338e2f6254d6dde92d819f42d902141c00e0dc1806a3c0c5ea2c27b3ae8151",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -938,10 +674,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "55ce70b5634d4adf2dbf250525dcb34db38d8b1129f591b739a32daf9a7eaf41",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -952,10 +684,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3a69ef1790b2f72844d70aae73334e6f34fa82acb96845c70b1fa399c77b00e6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -966,10 +694,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "fa9f3f47584817d318494bb5fa8b0ab3c364a62f2c279cf5155cebc6ccef24c4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -980,10 +704,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9e4ae9d2e6e0e65c167c0d4fae75fd02462db7ec527fa01a9bd7d08da65fd087",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -994,10 +714,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e9f8b4d22958c28879066de7b06548e4ab6cf8c7c0325816bfd0a70d4d1fdc9f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1008,10 +724,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "370b45a32be72b5e0a21d4576247d457d5f253a14cd579fee8fb2bb14f60a1ca",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1022,10 +734,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "146eba0494ed0bc32607ccb11e1d58fb65a3630043903369af89c07038a7bc3e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1036,10 +744,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a67dccc185d1fbfd4302c63ce2cd180dd6eb6efbdb7c6d7b1d9a6e978af2f79e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1050,10 +754,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "45802ec139173afc5e8f3e35b902028fc43836de05f4157419b628a97040a353",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1064,10 +764,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a72f909d168e687c6aa286bbe108ad3420b5d9535ea2af1ee8593c6f79ccb960",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1078,10 +774,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e5310b9423f195531f3ec30f4db830f5b0ffad64683718b2fb312b6996f332e1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1092,10 +784,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "353159eab2077b2a54b16217c81842be5bb0c7b539d64213483fff5ed6ab313d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1106,10 +794,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "70e415aea4d27d9c4180a0ae627449b117d897f9e5daf48252c7f65a31bad3fc",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1120,10 +804,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c14d0fc160d20101a61d0778008d69516c641fa4a25492860703c062378ff4a7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1134,10 +814,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "463ed744dc669ed62c920f72c890a32779784adc8651fcda37eab077ddf25ae1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1148,10 +824,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8a5602bccad848d341ced0bebd9a0c9acd5724fdb9e2996437f123413552ac14",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1162,10 +834,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e4e2416c1dd44b99e2a2d6220ef8df4c06d56be9964b21795488596edc4ba605",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1176,10 +844,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5d3be019c022621a03d7529c9579894ab8c8f8534286939a0b40a53436183f8e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1190,10 +854,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1a57773cce282948d158968d47f8e0c3542ed5641eeec4ce1a0cd569d0bd731e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1204,10 +864,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c35ef653f513cd061095735e55492f132fc31137c2a130fa3649a47634722da4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1218,10 +874,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3da3825f029f7d33a02cc9c9ae973b8cb78d5bbd7883b9a4f8e4f02da42a3df0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1232,10 +884,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7d8280e1531f8771f8a702125682d6269ecfee62a4a5c09e179db0c8fefe4a74",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1246,10 +894,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "01bed8a312aaeef4d78ae902862b47757240b85fd85cd0309b595c2179c1588a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1260,10 +904,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1a636683495c349c11faf7ee6cacd34f98b367902b225438ea35619f71870ccd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1274,10 +914,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ba1e6f0b5ee682ec739cd1253a2a4d5558af526c8a3e3412a7dc11ecd954d432",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1288,10 +924,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e3cb2e814ad3a11da187287c5e27fbcce4b2906b9a4f8498201b0b89d8305af4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1302,10 +934,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1fda8f41945b63ade7d815419749d438babe28f2672b29eece554892349b13b9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1316,10 +944,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "09f332cb631c2a9a22b240464a365608404a87101eeecd082f50dc264bc5cb92",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1330,10 +954,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7c7c52108fea852e6b76933b5e64bdffb3f0a955b64a33c1fe2d6f02e5a26301",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1344,10 +964,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0eec52a8be219abbc070618a3e5ab65e808cc38342f333bbfb563282df09c819",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1358,10 +974,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3bf4cf414efab56424f578a0aee4f093e0a40c1d406fd0962fd1622b4173775a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1372,10 +984,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1d12c9f55c9668dd0243991d96962412b69f603cdc924a77f8ab1c65c93fd846",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1386,10 +994,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "290f5a97c965705644899363b341e4aad2371dc107489f1811cd1e92ce119bf8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1400,10 +1004,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "67a053b36c84d20f43d0389f6e1ca3d623c469a6224f1e197a14eec4eeb2c44d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1414,10 +1014,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d739a82e7cc3c937fce56bfe850940622b49bc3be9c596f3e4f87c2e50151c35",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1428,10 +1024,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5a3e0295cdb5fdd9bd9d952d409be0ac96e48ce0f72036e7952f2a185d5a53a0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1442,10 +1034,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "34dfcfc6980b6a6de22e1eefb524a019e0bb1177a1a61f7844582c0ae68d17a6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1456,10 +1044,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "eaa9a767349c672d6dd2395e17a4eebd898a081b49262bab3129a57e5db6a924",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1470,10 +1054,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d8d06c2fa43dc2c87a4853b734665fb347fcdbbf9ee492e1c1d37c83981dc829",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1484,10 +1064,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d54252539e5782c04901f0cb771aa5e5695ed0bcc25bfc658b7a9c7eb0656067",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1498,10 +1074,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "94a5de4d919c66d281d681a972ca538ff1081f7a922011d2cc749f2902d3c8e6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1512,10 +1084,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "509422bff7a0a9c3cf5ef0149637e718c0b525a804df6595e4bb905157fd2c69",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1526,10 +1094,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0b7ab6d407e00bd7b2e31171a1f81bf7e592417f22fa900b3c57dab2bb8c9a49",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1540,10 +1104,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9933fffd1570b665ceed21dc36e05d3a3b319ace547173ac6769dd37bd959bea",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1554,10 +1114,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8466defc1d9db9160e6ac3615d36df16648d04f509f364ae8d6eada3135958b3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1568,10 +1124,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6ed6e89eab7841975b13ed1047a5007ba55f4d8525f28e979857d156930875a5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1582,10 +1134,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5a783a0f4a6384cf460963b41119f40eb8e5af96812b8ddbe10155438a9fa365",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1596,10 +1144,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1580086d7614502031c7dd2621b6d35d5b1abe9a65a6072c8e654aea576b26a5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1610,10 +1154,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ee764e08c94456d7e1ef6cded556284ad7e0b88f9245f9877d8970b02589684f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1624,10 +1164,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3ec64db7d447950ce758eec02115bc1e9ed96337c5fe6891d12fc859a3ec9bb5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1638,10 +1174,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0213baabb03ea2cef4e3f6148030bde89b4af98556dd5cb7bf5bafcb25225084",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1652,10 +1184,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "73da970a4c6341861e394832451e0f62f65e3a0c7a8a1ad39667d5796d1fdb74",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1666,10 +1194,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3f3bf01c5f50e554e4bdd630633b34582a9e2a441b2d2e7b3f119a17c762a304",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1680,10 +1204,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "bdc808f49e08aea26b51d8e367d3e72970fb3dfe8ec00a51d66d4564a3beeccf",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1694,10 +1214,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1b70859d0b888727e11aab15059725b2ddedc768b9003bebcd49ff39c335e538",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1708,10 +1224,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "71dd946dee980f7eecdaee44dd7894b5bfecc4c2e094a1ad6ba42562fff0e24d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1722,10 +1234,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0f2b196dee6d3c85c12488ee8f156a23e6f7e1a341fcce8eacd7a5dfb57d558b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1736,10 +1244,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c88faf5fbaddfc49a9a4da31ef9346ed9acf1215706020ba506ed54a71dc9286",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1750,10 +1254,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "50df1c6b7e1d0ccf5471ff5e2aef246c2e7a762f8d2e8ec0ba7c357b1b8f03d9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1764,10 +1264,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d8bc78b0d465b2ccc83b4c80abc428c9a4b0a259f2b5f7c5d70afa41037b03e8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1778,10 +1274,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a89a02a2d5edf3fdbc8b5fc9ee7fc74a037dc284b076b3508e03c53a49b98bb1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1792,10 +1284,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "092333c9588a3d0851aacddba9f41129de35b8941f65c8701af94edd10b3efd8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1806,10 +1294,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9e3eae7c7ae162a58008724b6ba88aba286a362d617ddb71cc71183ab31bb4ad",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1820,10 +1304,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "67f33e3043046db3f46c9b81a9e2982b75515881ae1af34ba733c2ff464d2373",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1834,10 +1314,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "694759dc0f7c24c8aa460b01bf73e1d90cbacce55057e8059b01d05713cb1a5a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1848,10 +1324,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b5fe73d7eb4c0457d43c4706cf55279e0c36260d388a5ab9b24332e96c6c3f97",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1862,10 +1334,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1134551c4e25a45677d32d3e999effbfccf0906b12063c7d7866ed700c01d87e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1876,10 +1344,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7a47e285c3488e78f30fcf657e94df47d375d7c2cfc40fb5ae13ea49e78cc66f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1890,10 +1354,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c398b46def92123b58c0f5b5eab13aaf939020289ce17185340a5f8611005b36",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1904,10 +1364,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9eaffd827f849255e8c58342cf9f9e79f70fe4fb66aa6068e39952f837ace64e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1918,10 +1374,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2c65ed283b31de368e757554e8517e6ab07c20111629038108d44a5fb750fb94",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1932,10 +1384,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "825f7cdf8fbbaf9294f03c1bf8664091cab02f6062b5be2a952b0ce2f5feb275",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1946,10 +1394,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8cbd103a3187253e77e41c34c9918ccfdf980c404029ef74382e4e6b87fd741b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1960,10 +1404,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "922b2683c55817111cbab747581f037df9753681a14df4caf51d120341a6eaa2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1974,10 +1414,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c306930c64cfdfbe17cfc211be8124d19b0169bd60f3e917f74cc355a2e320da",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -1988,10 +1424,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e27405a4f8781daab6fe28fa06195dd4770fca22ec8957ee0f09faec4d983a4e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2002,10 +1434,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "cb7d06495c50fb51db5b19039272200b6df4e4e1ace1349bf12cef72268a1855",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2016,10 +1444,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "303ec564a4289c2c1d2344b9c6436517f983f0a3acc18b2cc931a2191f3e6e57",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2030,10 +1454,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9507ef4f921097429cb1c41ab20208cd4a0a725e5ba1a8c4ae0c4daa78d3fd4f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2044,10 +1464,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "235f2d121a0f0ed1a4d552393c9e2ffff50865b4d4fa084bf8a60ee92544b3c5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2058,10 +1474,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2c966a13b5736183fd21cc57ee151ceda9f7ae1f84d08d3395b57a1c45b4f328",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2072,10 +1484,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8b131d726982d2fd658f0a384ea8ea078973bbd99906586228b96aac2a1839f7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2086,10 +1494,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "06eb78c61771c243c4e6038ed85b83c01b80c5d84b4dddf35c88784da98db0a4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2100,10 +1504,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2ef7cc6eeb6e72654d50b91eee1dc2072ab35c34b1ddf54d22e014efd47df6b2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2114,10 +1514,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f8e44650f7072a0091125d593bf33106cd2cc253131320e333c3b3b775b0de3c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2128,10 +1524,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f77160eeb8b519c8713f21d292621f47f4f4e3e9d52845701be86cbcee35e0b6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2142,10 +1534,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5a1c54024e4a49f7cce961dd6fc024ba9a6037bae03ed2539b38987f993dde40",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2156,10 +1544,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "eabca74b3b83bc75eb42072f69293ea036dc3b34e31db018d0383abc604a2e2e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2170,10 +1554,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "824d84595cf81772013eeeb66a4fbaaae195fcf5640fccfc81c715cf3853b92e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2184,10 +1564,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0636d41c2f6e24c71e8dd16d1646621e6083fc1fae849e1127bb839b9b499f8f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2198,10 +1574,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "71a5b9d09846d8509b9738f489caacbb922cd4bef2da76152bb9bf419d31088c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2212,10 +1584,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6c198a22754075a81ebcdabf29e959dedfc421b89a4b94e7c617cbaa5d826c7a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2226,10 +1594,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "dc4ed5e7bd9c14ea9260b85ea69b113e613e2f1825b18c941023856a5a983b21",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2240,10 +1604,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a605353bedae32a6f79f85ad17b8b5f9559d17197d57249bcdf6640c1aa08ca5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2254,10 +1614,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0976e9cc19ceaab647d7cd8f06e9c0cd88566a65eaea84c03b23ed57875033e5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2268,10 +1624,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "49168abb4e4d062c6e24c8853e657ec9d7ed1b509376db6da9025697de850812",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2282,10 +1634,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a18b3cd19d0400c3ab569f8d5445b833f25d24d9d03c596349cc9794e06eaea3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2296,10 +1644,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5b4616b57bdf38909c9008a8c2aaa2d83286bfd015013dd7ba810f8753d1d88c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2310,10 +1654,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a014a19d3efbca1458e11c1ec82b1a1d739442b5b5fa09b4bfaad59977077271",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2324,10 +1664,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "abb42055c0563ac0bc8828c7ad7e3928572cf8bdca148f25d395f96ccbaaf171",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2338,10 +1674,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "13d29a0528e5c264fc5ae1be447bb0c40a50d799dbc6461d8b8efa86d9858a35",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2352,10 +1684,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "cf2cf6c8070f12571a69243ae1f5e84102ba1c8e3950ac8cc4115519c03eeef4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2366,10 +1694,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "bc5f4799123486f3db7c46ccf1bc653b81ecb1fa36d6dba11a19cfa8be7ffaad",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2380,10 +1704,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4ce0aad4e23277c12d82977ec189f6fc177f4f73ad37da24674448cc03d8e480",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2394,10 +1714,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7d16d659bc55e0e64b9aaf9a051af045526639f8cedd1d46f587262e92f9d8ac",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2408,10 +1724,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3ec64f1f73ad86b079e66ed178354db11ff22f1d7226de5c5dc5e193b896051c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2422,10 +1734,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d414369d0109931397a79f99d298e2d0e946d59b6179cfe8f0c4ccdc2af73af3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2436,10 +1744,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "04a4c82eb73b57d1078a310d004ebea56c9a67dfa3e7cf68204ef3b0c5f9cb2a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2450,10 +1754,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2fe37c2d21eddb5e6c980f5417646eac61be9631334e644341519e9e533fad8b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2464,10 +1764,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "23d0800a6fde484038b944023738a79da7da12430ba2703ef18e24b286a7ede2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2478,10 +1774,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4373c422a19e8fc330446c02c0c9b8cbfa68d42e5b24135209cdfb6ee766b54f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2492,10 +1784,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e8526e942e04febc4f6a72f9731705de7880abe11d5fac9a1fd82bcc5c049333",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2506,10 +1794,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "fe20c640766451c28dc41371f9343a5495c8d2351deb4570ea6659f98d30ea35",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2520,10 +1804,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "21477c54d31ab50a72b8bbb94252afa17ab5114c18387729cbe7d30690340510",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2534,10 +1814,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "bb097877be654fe418217ecaa7f5c6b4c6eb8783679f0a243226131e416f61b4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2548,10 +1824,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d79dc1d19b49b1e987e6f898f2f94dac5aea59b302cb0ba014235ee49198fb3e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2562,10 +1834,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "47b2667311dd82e0625e260baf564a48e0cdfb56eb60adbe67e45ff5b2e911b9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2576,10 +1844,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "fb87db0868f92c320cdecffc83de09a870e18f8fb6cebb7846bedda8aeffbe91",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2590,10 +1854,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2fe3a699b2e8436b83effbbcaafb1eaf9bef078e8ff02c01b82cafe21c170caa",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2604,10 +1864,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7ffe422ad1a50fc75fe1493c81fce88496879616a559c9a579194ab4c81aa9eb",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2618,10 +1874,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "521ed5c1ef484413d83679db7dca2212f5460cb25a1acf1aa1e70c6fe97ec460",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2632,10 +1884,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6a5d832e706170b18c559b53e137e93e89de1f21f8d73aafaf2b1c003b2eda76",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2646,10 +1894,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "758bf89690f32a141007a25c1a5a6049e724b6c5f0df8d5f33c7336fb2cfbf54",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2660,10 +1904,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1aea11de6edb828ec0343262723ca97d05f4b5e56be6d814e4ea7b1c16c991f3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2674,10 +1914,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b84a8526ea5e66a97071f8a7ad9b57881b82eb55a0930f9f819cfa78ec8078a3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2688,10 +1924,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d26e12dd010a0b4edd08faffaa5dce106fe1d3a3c7bf2dcae825837e7727c3a2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2702,10 +1934,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6b3cb0cfe79c17f38e2980976ebd890029fcea5eb07f2ce10bb383eb7b7f0133",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2716,10 +1944,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ade8c770ef2cf11b8925511a139b4330725dd546d687a4b2dcecae35a4328635",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2730,10 +1954,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4941122f539d4b38d3912b956c4d7efc8c71cbc18ce529c0cc39670ea0a9eacc",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2744,10 +1964,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "dc7cd0944edd1e27ed80aa860435e36225ded0fe1c316311e384ebf9b0fc851b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2758,10 +1974,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8551eea2494771a89d4d83bcef7daf15a0fe09f8a454add69f46ee787318369d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2772,10 +1984,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c4d240534ef3a0551b798a271944ae7c30054ad453f8fea6020355cc68b1cff8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2786,10 +1994,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "2a92b4a3266e66915b7c3176e3079c3b6c28fdbe63eeffafabe151cde99c53e3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2800,10 +2004,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "cf496d4ebdad01b5208565ab8058b4e921b13051ab807f784165fcbe40b581ef",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2814,10 +2014,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3097b18c69a6cb2b4b61ac9c7141f136869e2fe0ffd5b81d98d42eaae2eec2b9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2828,10 +2024,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "CONFORMS",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree"
       ],
@@ -2844,10 +2036,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a161f0104018871f3eb446bc535d561e1fdd8cc63d20a87ee56699b41c9862e2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2858,10 +2046,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "eb7f727f93b367a574c45934472ba1c09bb878b4549d016849540420121d301f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2872,10 +2056,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a18397263d92abc924d9b448fbe35a1e6f4845506493c88d3e9555f968b3a460",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2886,10 +2066,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b20d82837d1a14e9a1b7f00b30914703f5b45e480941df2aade5686bdac8df8a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2900,10 +2076,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7f05781cc0b4d1c9d140b72e4521b85d65e05ab4ccf70efcb120520936d14924",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2914,10 +2086,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "abfaa0ed36f950fae50a228aeb037311c15b43757bf7997357931dd3c1dfbd96",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2928,10 +2096,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b12a0475895ee9fe6e11bb62b6d00b63f44769bb5c4ac9e679d8f79634e7acea",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2942,10 +2106,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "324bf1af7abbab9d687a749132e66bf93ffcb664d4c7c664919b8caff442fb4c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2956,10 +2116,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "06c57f74924ac948c72993c34d620222d0d825870ed78a8b7f8d8d0b8e745da5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2970,10 +2126,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "00fc417913b00fc6d015a972d2625465cd2b29eb608a2c061e0b781f1c2aff9c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2984,10 +2136,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5cffe181cace8436e7c8bd78cf0a5790e0beff7aa4052ffc254e488cc20e2361",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -2998,10 +2146,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ebbd4309f488532f39fb84d56f63166eeccdcc232355dd870e2ff873a9698c66",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3012,10 +2156,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f8174b4b08f7268421df58035a0f2c3911e1f6f412af35b292998f80eb944b96",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3026,10 +2166,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "135164b142141d4ce3b1ca51173850a2888b2cc041fbf395e1cb5552042aaec9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3040,10 +2176,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b8b83455766b3745f7a56b146dcff70d0c9bb6bd49a147c59bccde0c4fccb260",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3054,10 +2186,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8cb12ce0a32d04de5c5253c20905bb56ee8737a95f0f07e4fe11219d10dc0f80",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3068,10 +2196,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -3084,10 +2208,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -3100,10 +2220,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "12543bed0fe30e5e0cbf9a9f2229c4e18116afa2291dcad23f84da7dd46ab5f0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3114,10 +2230,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "812de45fb128061914d1876e0b13f80b4253e4ec17d9127365cb5bcbd57e15a2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3128,10 +2240,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b1b6d4ef2ec6df14c21dead9523cb40c322c50249533ba5a0e80ce9bbc7c6acf",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3142,10 +2250,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "869510f6bd0fd657372e79f190c9906705df0e60c855c57650cfee9728e5b4cc",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3156,10 +2260,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "77a37fc07b2b124ed1c5e9db461ecced06ff76236ada40812f2c933f665ad0f0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3170,10 +2270,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "63b2947b25347a041f104a0540d203d3daa1e4a95e87441b4ce29e0eca5f2c87",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3184,10 +2280,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5d05211bc4091b458bcab1e6547e48067bf5da8857e77e64c3adf94f32a0a656",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3198,10 +2290,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "efc5da5c3acf5f3aed669fda10f97a9e27982addfe0f6ca6c8dc570723245652",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3212,10 +2300,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "24d8007b75e705ebd3044c245c0bfe5279c1f81e8b679e08792389253f4bbcf5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3226,10 +2310,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b48276a9e2bf8a1b5b88a56e33850f86c203d173fb9759d7f2a774a93d89ce86",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3240,10 +2320,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f2968d6e44e7fb8437bbd3a1361b1a10a5a18d10c9821e4d81ea37cb7f29bdde",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3254,10 +2330,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e11db28d61602a1511221af183d747d55136cc0e71ccf879e345301219570bf3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3268,10 +2340,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6dcdf72c28a69491e6bf6e038770808af1c37e622b311e04d821826c2d307497",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3282,10 +2350,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5509c9eba7f378fbc75f3b79831ecc2ea82a6bbcb0f27b192f93e08408eeb298",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3296,10 +2360,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "97495f22945e87010bf3d8c677ce62a1df46fcb957704918639899c266a59a91",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3310,10 +2370,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "128d8e4fd74de82d92303c257f36f29664b6856237b2d2b93878fc6091885172",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3324,10 +2380,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b30c64189d2a0203bdf3c64018f60a62442957d2e5047ec25d352fb100813d60",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3338,10 +2390,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "39ef265c41498d5d09ba0f1b4937e7644cff5cff21ded68ae0492d70b6c5ced7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3352,10 +2400,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "24df4bcf40e84b1a947fc4abe7fc7e09d4518af3554297b725f6c4b2344b3558",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3366,10 +2410,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "cd6627a8d6e0db2abc7bb79affff17dd606c7e19dbae8cfe68d4c1379e93cd82",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3380,10 +2420,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3426ff0084133c781f3f684ef1cf42bc094420de0f102368d01a511c74d813a9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3394,10 +2430,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "73ccdf8660811bed562b674f851c25d487960a54680a829791a1394f16ee0114",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3408,10 +2440,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e392e9f109217492b58fa4daea2f9d525850560590e01d7e9b28749e2c1b6e4b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3422,10 +2450,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d479b6cab1a56be80fe072d91b3a78d9885a519ebaff25dd14efb629d713ea7d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3436,10 +2460,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8909bdf49e05ce1c64e37185cca562895fbf973500dd7139746aaff466eb600f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3450,10 +2470,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "b97deea9555b5c5b3edf0a77a0b757174a08383df43a1bdbe5a65d927936dbf0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3464,10 +2480,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f6bf893297b00d2c7564fbc107997bc447c565fc2cfc6eb866c256d5818e9ac6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3478,10 +2490,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ab5d31a786c055ab3c29871c32ef1f42b6b5f4b91793abda5419e43b4408aa18",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3492,10 +2500,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "16af71bca266b42684726abbf7073c2e3ac3541c9b1cf55baaeb49b67c640984",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3506,10 +2510,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "77963f0760dbbaec216a22f0fbb75303a858e12b2080096c307be8c602fe8880",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3520,10 +2520,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7b41f6fa1cd65997963c37a70cebf710c3f8190366fa7cbe6a8d13ef0e2969ad",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3534,10 +2530,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1b1e5a17a80ae6d78d191aec287cda57a3e853a87c4059c9672edb48b9f1b20e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3548,10 +2540,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6e2f0e2ecf576245426476b92a5cae4f91afebb7bafee91b5d620cadec0c7740",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3562,10 +2550,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0ef9ad9619c53c5b1793d458c5f3bfac2fd0cad2890578d8f253ad31f184013c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3576,10 +2560,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "15557a5f185c659f17785e5ff11536a0121db13fb9f4a10c8ddb99ae859cb96a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3590,10 +2570,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "989a8dcb0b41253d31f3bb97498968301c3eda7bf07e333134cac29ef12b8cc7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3604,10 +2580,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "759d6be5196f2dd7d3064aa5d67e6a3f5d2bece910e1f50f28277e604c964578",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3618,10 +2590,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "a59ab0d9155c182973d86b679c5329a6c70f886b2ee302c6d3b0e2a75f832e74",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3632,10 +2600,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -3648,10 +2612,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree",
         "incomplete_observation_or_native_premises"
@@ -3665,10 +2625,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -3681,10 +2637,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -3697,10 +2649,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0cbe3d7796ace65065c4f1a45bedbc148cc750e06f4a311b656f382dd6e60b56",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3711,10 +2659,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0f15120cdb6ff5fde6ec988f47dc481495dc73e343433f96543c8d9a798f5d44",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3725,10 +2669,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "84be32e76cf449c28ec182ff2f218facaf9bb4ea69ed4186efc5f1077b2f6ef3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3739,10 +2679,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "020060557e00f8feabbb557cbd69fd2cb0c8d6fbecb2bb1cf8accfcdeda6b814",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3753,10 +2689,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "66716fff570ffa5372fca1497c3b965838e18b9ec218af40647f0d6b3fa733ef",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3767,10 +2699,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "6b2d5a1caf1e7518cedaa79c51db35725c585731cb3156d14b120e82e2a56c21",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3781,10 +2709,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "602844cef0886809135ce6b50d99006d186f90b011ffbc1b7bb472360b0f3e7a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3795,10 +2719,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8a95104de3c8b42d4de36f22dd49f2f7e785ff8377055b2887c3a7e066052fd4",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3809,10 +2729,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "326cac38f726cb96830a397a49dd9f6a6bdb78c58b7fc779ccca5496ba050b4c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3823,10 +2739,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f650d97ef416c17bf3ee89c95f817f874e310d5b5fc793a33353a65e19af0f3c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3837,10 +2749,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "cd083ff82cd781b0952606b085a62c52fd0b5a7ddf0d71f3b1f3414e4a463e02",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3851,10 +2759,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "108ffd8f3e3510ef6b13bae04a62d039defc80a462710577d29ed9bd9d1d27c9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3865,10 +2769,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "359229c965571c6aef7301934de4338ae25ad64ce078cde9b0e874d8c0259beb",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3879,10 +2779,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3fc02fedd644200de031cbe1c245687c7a2d5376f3782c2eab0717bd9f1ac6af",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3893,10 +2789,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f3d0b48b37ceb30a95bdf463dde51c6c832226ebf3f49f2f64ff73d719a66ed0",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3907,10 +2799,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9fece78a8d8667d5da6b19c48994523ff4ad970a78b4f22640eab867077e042e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3921,10 +2809,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d782817085f6d6d6840d91c8c91a99c59a6f081fdcf235517c2c2a66929c8e2b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3935,10 +2819,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "8ff3ed685dc9678d6f742a45191a35d867802f3f31403b42232c9760c7260a8d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3949,10 +2829,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "7129ace320e96fdb5c3a69f60c55ac213935c3dec9ab4b5736e5a07637e02c19",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3963,10 +2839,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d44824de5110e3931238bb685410ef8b959eb1df6965b80c9760bc0485c32847",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3977,10 +2849,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "9b9487a0ff0a9b9d461899c9bfd2132b21bff9e3cefeaacb8a2ad393f76c5f8e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -3991,10 +2859,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4e4e565ce8754e3d95f065bc8fd1c7c47740c718f11380d9c3ec3a051d7d1e6d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4005,10 +2869,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e19b505fce6ed0c7fa7115e4dfbb5a8ab7136f8f6457f3258ad6fb57091221b1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4019,10 +2879,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0c46a2d99701a93d4ac8e1e3365e344f2c5860e727171cf97b946f408f46cce6",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4033,10 +2889,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "02fc25082c38184c4208269f49fbe64b86992bcf0cafb8a50098102fa2ab09f8",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4047,10 +2899,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ad2da4865a6b355b40910d7d62cbfc91685a7b6026adce3570f9c7968b9bdf7d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4061,10 +2909,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3e47f13d711ceebf0dc3746f3a097fb30ca243af8e4c747df44152c9a35e94d2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4075,10 +2919,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "5c5d1e352dc8442ec4b5d6bab5e17297e08ac7f3d7cb5321a0c0b84d5ed136f9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4089,10 +2929,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "95416e81c45dd6adbd16d005ce8c350ff27f657a073a464ed344ae36a9030cc7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4103,10 +2939,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c8c5733a4e605ee41674667160d08c71deb4871064642b431a85706e0a100cdd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4117,10 +2949,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "371db6dacf035f0bbc74ef8d138c12418fed7a780d5bb184e4a0365e1851a867",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4131,10 +2959,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "1486b1fb31f57a6a520c1f8701285e87cd251f82324f3e53518b75caae285434",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4145,10 +2969,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "CONFORMS",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree"
       ],
@@ -4161,10 +2981,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "CONFORMS",
       "native_agreement": false,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [
         "independent_native_values_disagree"
       ],
@@ -4177,10 +2993,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "bce2392890c9ff42974c4142b8b2bbdbc327ac85070667fe0859c23990189685",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4191,10 +3003,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4c9dccddd17d2f387a0e74b7f169fbf4a1f6969a53a358453722262b320f7a67",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4205,10 +3013,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "490e791cd5ad19e5b01760ed3969edc2eddce7c1aa7c6081de04a1b6c191f4a7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4219,10 +3023,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c91f8d3e8226abe99b383b8109428ce329a1ff0db9d8c74a7937fa1c0d6c018a",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4233,10 +3033,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "94770b3173dbaa75e20d0a53c711dec76c6e31353a7658bc991bc1419eab2e38",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4247,10 +3043,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "debb23410603299faf45be51e7d54cc395ae01e6508261b018bc246627122a11",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4261,10 +3053,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "40133c653239ab821dfa5367c7f45791e97289fe9ffef97c0aa46cd7963d4b85",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4275,10 +3063,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3b6111f9fc6ff8da74bea45d75388abdc4da11e85720617b0f2d357835b41ea7",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4289,10 +3073,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ea5fdb389d64d0d3ce5f1ae799d9c73acca3d7772b35c176c7a8eed45903a95e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4303,10 +3083,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d13237aed8288609078ef1caa72981e896c236f888e594aa0cc5a664bc095294",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4317,10 +3093,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c460ff971845a76fb800972e93a8a29410b7bb7e707b306ad2ef8dede6ad2cd1",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4331,10 +3103,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "52d722ee6d8e38bb04b3a999e356a54ebd762f415297b8f1af529b416b96e1b3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4345,10 +3113,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "49be63232932ab052435114804facda2007e453cfe430a1982eadc0f72672956",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4359,10 +3123,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4286e8f8397e1a2072dc1443e1a51f447511f57c03ef66eb022f46b288cc06f9",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4373,10 +3133,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ed0aa16dfdd142ebd953a005307f7b553aa0cc2775b44a09b31ac60b1c6b32b3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4387,10 +3143,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f14ede9618e6c02584eb78628ab0394119fa1c683ddb7190b985a14970aaa98e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4401,10 +3153,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "d33bfd335f112224d9b8a17e66f8dad01f11f9066406a3f64ee8f7c9a4db344f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4415,10 +3163,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e0f4b2d1603d2bb0f05c045a79df7d7c9b780a9e6048b05bd2ac3ff6aea70ecd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4429,10 +3173,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "27b1616f40d259db30e72bca48a3d2bb8ed09072a6e50022aff379e3ef9b936b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4443,10 +3183,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c2cd12edcc80a2e62749e0d470641f43dbe5a1bbd32e77d674c0dab7353d535d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4457,10 +3193,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "587f1427bdf73e1820fc7b2bdd59dd8c0267df9c11fda68782f9d7edeffe8f9f",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4471,10 +3203,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "f39bb1912038b72277de69c759252b46329c879f97369de81a5aecb891cc15bd",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4485,10 +3213,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "4b6cd56ec831eed574d74d2c94371d67eac2f5f17bb4fb01a8ac49dbd7608b93",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4499,10 +3223,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "e1d24f5fff4207494238316c2906974e4f3a26337e7e2bd3120d29e3bf1c88ce",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4513,10 +3233,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "594c131eb40038a863473daea22f0a209a3118c10b67831dcb92973c688397c2",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4527,10 +3243,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c874906e58b6fe3e775dc18827595e9a453cf3f09810648cf871700e7292da8b",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4541,10 +3253,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "3ecdf8873309c313012f1976fd35ac2199fc538e805a6c603c0b0eb2094c0e9e",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4555,10 +3263,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "0a746b4925f6d0bdfa18a0c4bbc42f503d82e4bab0c0f37337dabf76731fe8c3",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4569,10 +3273,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c006b38f3baf016cc92b6c097c34658d17bcecfc5b9dd75f99ffc803078ac85c",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4583,10 +3283,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "ca33c2e51e880581bc4bf97e773a959a9f31e1de47f8912cd1b963b13d574df5",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4597,10 +3293,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "481fae182ae48be2825c8c3237faa76750a5627f15ddcbd33b6d912d11cad279",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4611,10 +3303,6 @@
       "status": "CONFORMS",
       "relationship_status": "CONFORMS",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "grade",
-        "details"
-      ],
       "reasons": [],
       "evidence_sha256": "c3adff0d1746023d3ab345b29597b7b5b8728ab62d1b2129df10332d709aa56d",
       "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34"
@@ -4625,5 +3313,5 @@
     "INCONCLUSIVE": 11,
     "VIOLATION": 2
   },
-  "sha256": "5a4b163e1579e913d59c8ebc3800c50f168a490c6aa3a332063f89f2771ddd1b"
+  "sha256": "cfda53fa98bf96c5f1cc7112cbb446db0c242082cb1717608a013a2ba88bf793"
 }

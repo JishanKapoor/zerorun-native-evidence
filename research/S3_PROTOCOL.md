@@ -1,0 +1,9 @@
+# S3: closing release and manuscript defects
+
+Prospective amendment, 22 September 2026. Preserve S2 and its sealed release 0.2.2. The user requests submission preparation and further fixes; previous authorization for a disclosed solo alternative remains, and document output remains Markdown. No journal upload, human approval, independent participant, prior adopted research correction or DOI is asserted by this amendment.
+
+S3 corrects software evidence-boundary omissions and assembles the manuscript and submission documentation from actual retained results. It makes no new native candidate execution, changes no cohort or original observation, and does not extend the exhausted S2 execution allocation. New controls are software tests, never R11 unfamiliar native challenges or a substitute for its historical/field design.
+
+Before changing implementation, reproduce two deficiencies: supplied SWE native fields outside the selected map are ignored by agreement; and same-ID comparisons do not separately identify changed family, input or candidate identity. Add exact regression controls, compare with a separately implemented ordinary route and preserve all failed attempts. Version output changes explicitly. Verify all 676 old observation records and all 174 consumer entries, reporting any change rather than silently replacing the earlier results.
+
+Build from a public immutable commit, verify wheel and source distribution, execute clean installed tests on Windows and isolated Linux, and run four public CI interpreter jobs. Check manuscript numbers mechanically against the evidence and follow the five-section SoftwareX OSP structure. Complete metadata, reproducibility instructions, cover-letter text, highlights, source attribution and a transparent submission checklist. Existing R11 scientific gates remain separate; technical completion does not imply that they succeeded.

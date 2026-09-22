@@ -1,0 +1,13 @@
+{
+  "title": "ZeroRun Harness 0.3.0: software and qualified native-evidence replay",
+  "upload_type": "software",
+  "description": "A bounded saved-evidence utility with five Python/CLI operations, fixed source profiles, independent ordinary checks, and complete derived records from the disclosed solo S2 application. The archive contains 676 saved observations and 174 scientific consumer entries. Native acquisition, post-application corrections and claim boundaries are explicitly documented. It does not establish the stronger R11 independent-field or historical-transfer claims.",
+  "creators": [{"name": "Kapoor, Jishan", "affiliation": "Independent researcher, Toronto, Canada"}],
+  "publication_date": "2026-09-22",
+  "version": "0.3.0",
+  "access_right": "open",
+  "license": "mit",
+  "keywords": ["runtime verification", "software testing", "benchmarking", "reproducibility", "program evaluation", "scientific software"],
+  "notes": "New code and authored records use MIT; the unmodified vendored PyContract core retains Apache-2.0 terms. Upstream datasets and candidate programs remain with their original publishers. This metadata file is a deposit preparation artifact and does not assert that a deposit or DOI exists.",
+  "related_identifiers": [{"identifier": "https://github.com/JishanKapoor/zerorun-native-evidence/releases/tag/v0.3.0", "relation": "isIdenticalTo", "scheme": "url"}]
+}

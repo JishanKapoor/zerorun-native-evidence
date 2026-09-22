@@ -1,8 +1,10 @@
-# ZeroRun Harness 0.2.2
+# ZeroRun Harness 0.3.0
 
 See [API and operating reference](API_REFERENCE.md) for exact record fields, supported modes, return values and troubleshooting. `Licence.txt` and `LICENSE.txt` contain the same new-code license; upstream vendor terms remain separately retained.
 
 ZeroRun imports native evaluator observations into content-identified records and replays two bounded relationship checks. It preserves native values, independent reference outcomes, uncertainty and the entire supplied record population. It executes no candidate code.
+
+Version 0.3.0 checks all supplied SWE admission, report and resolution fields, records the scope of native agreement, and makes changed candidate/input identities explicit in comparisons. Audit, comparison and native export use version-2 output schemas; version-1 input captures remain readable. Earlier native observations and audit versions remain preserved in the research archive.
 
 This release is a narrower solo reproducibility utility, distinct from the earlier ZeroRun test-result-reuse software and from the stronger R11 independent-user study. It makes no adoption, human productivity, benchmark-wide performance or automatic source-transfer claim.
 
@@ -11,7 +13,7 @@ This release is a narrower solo reproducibility utility, distinct from the earli
 Python 3.11 or later. Install the provided wheel, offline:
 
 ```sh
-python -m pip install --no-deps zerorun_harness-0.2.2-py3-none-any.whl
+python -m pip install --no-deps zerorun_harness-0.3.0-py3-none-any.whl
 zerorun --version
 ```
 

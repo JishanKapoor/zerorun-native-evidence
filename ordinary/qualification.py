@@ -1,32 +1,124 @@
+# SPDX-License-Identifier: MIT
 """Separate conventional qualification route; no production/monitor imports."""
+
 import checks
+
+
 def agreement(record):
-    ref=record['native_reference'];obs=record['observation']
-    if ref is None:return None
-    if record['family']=='swe':
-        a=ref.get('selected');b=obs.get('selected')
-        for mapping in [a,b]:
-            if type(mapping) is not dict:return None
-            for key,value in mapping.items():
-                if type(key) is not str or type(value) is not str:return None
-                if value not in ['PASSED','FAILED','ERROR','SKIPPED','XFAIL']:return None
-        return a==b
-    values=obs.get('state')
-    if type(values) is not dict:return None
-    details=values.get('details');progress=values.get('progress');status=values.get('worker_status')
-    rd=ref.get('details');grade=ref.get('grade')
-    if type(rd) is not list or any(type(x) is not bool for x in rd) or grade not in ['pass','fail','timeout']:return None
-    if type(details) is not list or type(progress) is not int or not 0<=progress<=len(details) or type(status) is not int or status not in [0,1]:return None
+    ref = record["native_reference"]
+    obs = record["observation"]
+    if ref is None:
+        return None
+    if record["family"] == "swe":
+        a = ref.get("selected")
+        b = obs.get("selected")
+        for mapping in [a, b]:
+            if type(mapping) is not dict:
+                return None
+            for key, value in mapping.items():
+                if type(key) is not str or type(value) is not str:
+                    return None
+                if value not in ["PASSED", "FAILED", "ERROR", "SKIPPED", "XFAIL"]:
+                    return None
+        results = [a == b]
+        for field in ["found", "report", "resolution"]:
+            if field not in ref:
+                continue
+            observed_name = {
+                "found": "found",
+                "report": "native_report",
+                "resolution": "native_resolution",
+            }[field]
+            left, right = ref[field], obs.get(observed_name)
+            if field == "found":
+                if type(left) is not bool or type(right) is not bool:
+                    return None
+            elif field == "resolution":
+                for v in [left, right]:
+                    if type(v) is not str or v not in [
+                        "RESOLVED_NO",
+                        "RESOLVED_PARTIAL",
+                        "RESOLVED_FULL",
+                    ]:
+                        return None
+            else:
+                for report in [left, right]:
+                    if type(report) is not dict or sorted(report) != [
+                        "FAIL_TO_FAIL",
+                        "FAIL_TO_PASS",
+                        "PASS_TO_FAIL",
+                        "PASS_TO_PASS",
+                    ]:
+                        return None
+                    for outcome in report.values():
+                        if type(outcome) is not dict or sorted(outcome) != [
+                            "failure",
+                            "success",
+                        ]:
+                            return None
+                        for items in outcome.values():
+                            if type(items) is not list:
+                                return None
+                            if not all(type(v) is str for v in items):
+                                return None
+            results.append(left == right)
+        return all(results)
+    values = obs.get("state")
+    if type(values) is not dict:
+        return None
+    details = values.get("details")
+    progress = values.get("progress")
+    status = values.get("worker_status")
+    rd = ref.get("details")
+    grade = ref.get("grade")
+    if (
+        type(rd) is not list
+        or any(type(x) is not bool for x in rd)
+        or grade not in ["pass", "fail", "timeout"]
+    ):
+        return None
+    if (
+        type(details) is not list
+        or type(progress) is not int
+        or not 0 <= progress <= len(details)
+        or type(status) is not int
+        or status not in [0, 1]
+    ):
+        return None
     for value in details:
-        if type(value) is not bool:return None
-    health=obs.get('health')
-    if type(health) is not dict or health.get('native_complete') is not True:return None
-    expected='fail'
-    if status==0 and progress==len(details) and False not in details:expected='pass'
-    return rd==details[:progress] and grade==expected
-def qualify(record,source_hashes):
-    family=record['family'];obs=record['observation'];source=record['provenance']['source_sha256']
-    if source not in source_hashes[family] or source!=obs.get('source_sha256'):return {'status':'UNSUPPORTED','relationship_status':'UNSUPPORTED','native_agreement':None}
-    relationship=getattr(checks,family)(obs);same=agreement(record)
-    answer='INCONCLUSIVE' if same is False and relationship in ['CONFORMS','VIOLATION'] else relationship
-    return {'status':answer,'relationship_status':relationship,'native_agreement':same}
+        if type(value) is not bool:
+            return None
+    health = obs.get("health")
+    if type(health) is not dict or health.get("native_complete") is not True:
+        return None
+    expected = "fail"
+    if status == 0 and progress == len(details) and False not in details:
+        expected = "pass"
+    return rd == details[:progress] and grade == expected
+
+
+def qualify(record, source_hashes):
+    family = record["family"]
+    obs = record["observation"]
+    source = record["provenance"]["source_sha256"]
+    if source not in source_hashes[family] or source != obs.get("source_sha256"):
+        return {
+            "status": "UNSUPPORTED",
+            "relationship_status": "UNSUPPORTED",
+            "native_agreement": None,
+        }
+    relationship = getattr(checks, family)(obs)
+    same = agreement(record)
+    reference_failed = same is False or (
+        record["native_reference"] is not None and same is None
+    )
+    answer = (
+        "INCONCLUSIVE"
+        if reference_failed and relationship in ["CONFORMS", "VIOLATION"]
+        else relationship
+    )
+    return {
+        "status": answer,
+        "relationship_status": relationship,
+        "native_agreement": same,
+    }

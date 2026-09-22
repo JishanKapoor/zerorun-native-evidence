@@ -1,5 +1,5 @@
 {
-  "schema": "zerorun-audit/2",
+  "schema": "zerorun-audit/1",
   "capture_sha256": "2e2526f2fa277a6621336705ffc2eb26d19886247669266424e327d9ebe735ad",
   "profile_sha256": "7142f8c1ee2f3e0b571177479ed4e0cfe0f7cd3459b1694fad18ef3e62618573",
   "records": [
@@ -9,12 +9,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -27,12 +21,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -45,12 +33,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -63,12 +45,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -81,12 +57,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -99,12 +69,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -117,12 +81,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -135,12 +93,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -153,12 +105,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -171,12 +117,6 @@
       "status": "INCONCLUSIVE",
       "relationship_status": "INCONCLUSIVE",
       "native_agreement": true,
-      "native_agreement_fields": [
-        "selected",
-        "found",
-        "report",
-        "resolution"
-      ],
       "reasons": [
         "incomplete_observation_or_native_premises"
       ],
@@ -187,5 +127,5 @@
   "counts": {
     "INCONCLUSIVE": 10
   },
-  "sha256": "a624f4f1d074068fbf4188c199107ac205cbdd572f98256d8016900de73bcf99"
+  "sha256": "2bf8bc70c4a681ad9967f0adc46beafd33bea66fca7bd6a9cac77c88956cf779"
 }

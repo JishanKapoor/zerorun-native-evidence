@@ -1,4 +1,4 @@
-# ZeroRun Harness 0.2.2 API and operating boundaries
+# ZeroRun Harness 0.3.0 API and operating boundaries
 
 ## Installation and execution
 
@@ -6,7 +6,7 @@ Install the wheel with `python -m pip install --no-index --no-deps <wheel>`. The
 
 | Path | Supported contract | Executed verification |
 |---|---|---|
-| Saved-evidence Python API and CLI | Python 3.11 or later; exact finite JSON primitives; no candidate execution | Windows 3.12.14 and Linux 3.11.16 installed wheels; public CI matrix 3.11–3.14 |
+| Saved-evidence Python API and CLI | Python 3.11 or later; exact finite JSON primitives; no candidate execution | Windows 3.12.14 and Linux 3.11.16 installed wheels; public CI matrix 3.11â€“3.14 |
 | EvalPlus relationship | Three packaged exposed source-file hashes; sequential nonempty dispositions; typed boolean commitment prefix; optimize=0 | Authored controls and complete retained S2 captures |
 | SWE relationship | Two packaged exposed source-file hashes; native admission plus observed parser maps; final selection preservation | Authored controls and all ten saved logs at both pinned versions |
 | Original acquisition scripts | Linux fork and pinned native source/data in the declared isolated container | Historical S2 execution records; separate from the release CLI |
@@ -15,7 +15,7 @@ Python-version compatibility does not extend the qualified native source grammar
 
 ## Manifest and bundle
 
-`capture(manifest: dict) -> dict` accepts exactly one root field, `records`, containing 1–4,096 records. Each record has exactly:
+`capture(manifest: dict) -> dict` accepts exactly one root field, `records`, containing 1â€“4,096 records. Each record has exactly:
 
 - `id`: unique nonempty string, at most 1,024 characters.
 - `family`: `evalplus` or `swe`.
@@ -37,6 +37,14 @@ SWE observations retain `source_sha256`, boolean `found`, boolean `observer_cove
 
 ## Functions and outputs
 
+Version 0.3.0 emits `zerorun-audit/2`, `zerorun-compare/2` and `zerorun-native-export/2`. Input captures still use `zerorun-capture/1`. Retained version-1 audit files belong to the earlier engine and remain available as historical outputs; do not edit their schema tag to claim migration.
+
+Audit and export include `native_agreement_fields`: the fields within the declared comparison scope. A null agreement means those premises are unassessable; an empty field list with a null reference means no independent comparison was supplied. EvalPlus compares native grade/details. SWE always requires valid selected maps and additionally checks `found`, `report` and `resolution` when supplied by the reference. All four native report categories must contain typed success/failure identity lists. Valid resolution strings are `RESOLVED_NO`, `RESOLVED_PARTIAL`, `RESOLVED_FULL`. The checker compares native values; it does not recompute grading policy.
+
+Compare includes `identity_alignment` (`MATCHED`, `MISMATCH`, `MISSING`) and `identity_mismatches`. Matching record IDs alone are insufficient: family, candidate SHA256 and input SHA256 must also match. Different source revisions are allowed. Matching identities do not imply valid native qualification; both per-side statuses remain visible.
+
+Export includes `native_fields`, preserving the supplied SWE selected map, admission, report and resolution or the EvalPlus primitive worker state. The legacy `native_state` projection remains available. Neither field replaces native scores with audit labels.
+
 | Function | Output and guarantee |
 |---|---|
 | `audit(bundle)` | Digest-validated per-record `status`, underlying `relationship_status`, nullable `native_agreement`, reasons and evidence/source hashes; complete inventory and counts |
@@ -44,7 +52,7 @@ SWE observations retain `source_sha256`, boolean `found`, boolean `observer_cove
 | `export(bundle)` | Per-record primitive native state, original reference, provenance and qualification side by side; no conversion of qualification to candidate score |
 | `report(bundle)` | Deterministic plain-text counts and records; escaped record identities; includes scope boundary |
 
-Qualification values are `CONFORMS`, `VIOLATION`, `INCONCLUSIVE`, `UNSUPPORTED`. An independently acquired native-value disagreement restricts an otherwise conforming/violating relationship to `INCONCLUSIVE`; the raw relationship result remains visible. Missing references are explicit null agreement, never an independent-preservation claim.
+Qualification values are `CONFORMS`, `VIOLATION`, `INCONCLUSIVE`, `UNSUPPORTED`. An independently acquired native-value disagreement or an unassessable supplied reference restricts an otherwise conforming/violating relationship to `INCONCLUSIVE`; the raw relationship result remains visible. Absent references are explicit null agreement, never an independent-preservation claim.
 
 Each function validates the complete supplied bundle. Invalid envelopes, SHA256 identity syntax, duplicate record IDs and digest mismatches raise `zerorun_harness.api.InvalidEvidence`. Malformed inner native observations produce the declared unsupported/restricted interpretation where the envelope is valid. None of these functions starts a native evaluator or a candidate subprocess.
 

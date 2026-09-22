@@ -1,5 +1,13 @@
 # Changes
 
+## 0.3.0
+
+- Check supplied SWE admission, native grading report and resolution alongside the selected map. Record the precise fields covered by native agreement; an invalid supplied reference restricts qualification.
+- Compare family, candidate SHA256 and input SHA256 before presenting an ID-aligned comparison. Keep mismatches and missing records explicitly visible. Source revision changes remain permitted when scientific input identity matches.
+- Export the complete supplied native field set without discarding SWE grading/admission/resolution values.
+- Version audit, compare and native-export outputs as schema 2. Capture schema 1 remains supported. Preserve earlier audits separately rather than silently rewriting their output contracts.
+- Add targeted full-reference and identity controls, broaden public API mutation coverage, format owned source for review and identify MIT terms in owned source files. Vendored PyContract bytes remain unchanged.
+
 ## 0.2.2
 
 - Prevent native state metadata from overriding internal monitor terminal events.

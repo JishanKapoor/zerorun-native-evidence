@@ -1,0 +1,34 @@
+{
+  "records": 676,
+  "ordinary_matches": 676,
+  "unchanged_scientific_records": 676,
+  "label_invariance": 676,
+  "native_candidate_calls": 0,
+  "qualification_counts": {
+    "CONFORMS": 633,
+    "INCONCLUSIVE": 41,
+    "VIOLATION": 2
+  },
+  "files": [
+    {
+      "file": "evalplus-6eb1e199-capture.json",
+      "sha256": "e06b7deb5b41443af8338d63f9f95ad59be2a12cd6126b7682d9b41933d9e3a7",
+      "records": 328
+    },
+    {
+      "file": "evalplus-c05b20b2-capture.json",
+      "sha256": "8609da932379c9557c2ce74472c71354a62e1fb7dca280eb25d92c3968a544a9",
+      "records": 328
+    },
+    {
+      "file": "swe-489a34eb-capture.json",
+      "sha256": "9be7f35df646ef50faf17f07628c15228b730110000fe09ef131cd6756cc4131",
+      "records": 10
+    },
+    {
+      "file": "swe-a5ecda66-capture.json",
+      "sha256": "2f6894c8f39069a3b907a2fb3f43d5e00622be21ebf5c39d60c78be64acc40e0",
+      "records": 10
+    }
+  ]
+}

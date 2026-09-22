@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zerorun-harness"
-version = "0.2.2"
+version = "0.3.0"
 description = "Provenance-preserving replay checks for bounded native evaluator observations"
 readme = "README.md"
 requires-python = ">=3.11"
