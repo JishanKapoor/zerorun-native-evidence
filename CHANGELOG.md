@@ -1,5 +1,14 @@
 # Changes
 
+## 0.2.2
+
+- Prevent native state metadata from overriding internal monitor terminal events.
+- Handle malformed health objects throughout the public audit/export/compare/report API.
+- Require primitive boolean cells and valid SWE native status maps before reporting native-reference agreement.
+- Add 19 targeted boundary regressions and a 980-case campaign through all public operations; preserve the 18 failing pre-fix cases.
+- Derive CLI version from package metadata and include reproduction documentation and the boundary campaign in source distributions.
+- Replay the original 676 observations without changing the native results or retained audit classifications. No additional native candidate executions.
+
 ## 0.2.1
 
 First packaged release of the native-evidence replay utility. This is distinct from historical ZeroRun test-result reuse releases.

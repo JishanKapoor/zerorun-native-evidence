@@ -18,6 +18,7 @@ jobs:
       - run: python -m build --no-isolation
       - run: python -m pip install --no-deps dist/*.whl
       - run: python -m pytest tests -q
+      - run: python validation/boundary_campaign.py
       - run: zerorun --version
       - run: python research/verify_observations.py
       - run: python research/native_consumer.py

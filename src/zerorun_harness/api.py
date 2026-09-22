@@ -65,14 +65,16 @@ def native_agreement(row):
     ref=row['native_reference'];obs=row['observation']
     if ref is None:return None
     if row['family']=='swe':
-        if type(ref.get('selected')) is dict and type(obs.get('selected')) is dict:return ref['selected']==obs['selected']
+        selections=[ref.get('selected'),obs.get('selected')]
+        if all(type(v) is dict and all(type(k) is str and type(s) is str and s in ('PASSED','FAILED','ERROR','SKIPPED','XFAIL') for k,s in v.items()) for v in selections):return selections[0]==selections[1]
         return None
     state=obs.get('state');grade=ref.get('grade');details=ref.get('details')
     if type(state) is not dict or grade not in ('pass','fail','timeout') or type(details) is not list or any(type(v) is not bool for v in details):return None
-    if type(state.get('details')) is not list or type(state.get('progress')) is not int:return None
+    if type(state.get('details')) is not list or any(type(v) is not bool for v in state['details']) or type(state.get('progress')) is not int:return None
     p=state['progress'];cells=state['details'];status=state.get('worker_status')
     if status not in (0,1) or type(status) is not int or not 0<=p<=len(cells):return None
-    if obs.get('health',{}).get('native_complete') is not True:return None
+    health=obs.get('health')
+    if type(health) is not dict or health.get('native_complete') is not True:return None
     inferred='pass' if status==0 and p==len(cells) and all(cells) else 'fail'
     return inferred==grade and cells[:p]==details
 def audit(bundle):

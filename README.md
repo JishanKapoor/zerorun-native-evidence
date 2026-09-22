@@ -1,4 +1,4 @@
-# ZeroRun Harness 0.2.1
+# ZeroRun Harness 0.2.2
 
 ZeroRun imports native evaluator observations into content-identified records and replays two bounded relationship checks. It preserves native values, independent reference outcomes, uncertainty and the entire supplied record population. It executes no candidate code.
 
@@ -9,7 +9,7 @@ This release is a narrower solo reproducibility utility, distinct from the earli
 Python 3.11 or later. Install the provided wheel, offline:
 
 ```sh
-python -m pip install --no-deps zerorun_harness-0.2.1-py3-none-any.whl
+python -m pip install --no-deps zerorun_harness-0.2.2-py3-none-any.whl
 zerorun --version
 ```
 

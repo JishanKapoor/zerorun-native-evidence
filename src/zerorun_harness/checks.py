@@ -48,7 +48,8 @@ def evalplus(data):
                 else:m.seen[e['index']]=(e['kind']=='accept')
     m=Commit()
     for event in stream:m.eval(event)
-    m.eval({'kind':'terminal',**native})
+    # Native metadata is data, never a source of monitor control fields.
+    m.eval({'kind':'terminal','progress':p,'details':cells})
     return 'VIOLATION' if m.violation else 'CONFORMS'
 
 def swe(data):

@@ -19,7 +19,8 @@ def read(path):
     except (UnicodeError,ValueError,RecursionError) as exc:raise InvalidEvidence('Invalid JSON: '+str(exc)) from exc
 def main(argv=None):
     parser=argparse.ArgumentParser(prog='zerorun',description='Replay checks for pinned native observations. Executes no candidates.')
-    parser.add_argument('--version',action='version',version='zerorun-harness 0.2.1')
+    from . import __version__
+    parser.add_argument('--version',action='version',version='zerorun-harness '+__version__)
     sub=parser.add_subparsers(dest='command',required=True)
     for command in ['capture','audit','compare','export','report']:
         p=sub.add_parser(command);p.add_argument('input');p.add_argument('--output',required=True)
