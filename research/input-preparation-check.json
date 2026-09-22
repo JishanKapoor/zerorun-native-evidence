@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "candidate_programs": 164,
+  "saved_logs": 10,
+  "candidate_calls": 0,
+  "canonical_calls": 0,
+  "note": "Inputs reconstructed from immutable identities; new native execution is separate.",
+  "original_input_byte_comparisons": 175,
+  "controls": {
+    "existing_output_refused": true,
+    "path_refused:../escaped": true,
+    "path_refused:/absolute": true,
+    "path_refused:C:/absolute": true,
+    "path_refused:nested\\escape": true,
+    "download_branch_verified": true,
+    "changed_cached_asset_refused": true,
+    "changed_download_refused": true
+  },
+  "script_sha256": "60683a822ef4280bd59715861b1ccdc1f26fdc8e02146ef2dbc3431091ae4045",
+  "downloaded_from_network": false
+}

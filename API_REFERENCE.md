@@ -6,7 +6,7 @@ Install the wheel with `python -m pip install --no-index --no-deps <wheel>`. The
 
 | Path | Supported contract | Executed verification |
 |---|---|---|
-| Saved-evidence Python API and CLI | Python 3.11 or later; exact finite JSON primitives; no candidate execution | Windows 3.12.14 and Linux 3.11.16 installed wheels; public CI matrix 3.11â€“3.14 |
+| Saved-evidence Python API and CLI | Python 3.11 or later; exact finite JSON primitives; no candidate execution | Windows 3.12.14 and Linux 3.11.16 installed wheels; public CI matrix 3.11-3.14 |
 | EvalPlus relationship | Three packaged exposed source-file hashes; sequential nonempty dispositions; typed boolean commitment prefix; optimize=0 | Authored controls and complete retained S2 captures |
 | SWE relationship | Two packaged exposed source-file hashes; native admission plus observed parser maps; final selection preservation | Authored controls and all ten saved logs at both pinned versions |
 | Original acquisition scripts | Linux fork and pinned native source/data in the declared isolated container | Historical S2 execution records; separate from the release CLI |
@@ -15,7 +15,7 @@ Python-version compatibility does not extend the qualified native source grammar
 
 ## Manifest and bundle
 
-`capture(manifest: dict) -> dict` accepts exactly one root field, `records`, containing 1â€“4,096 records. Each record has exactly:
+`capture(manifest: dict) -> dict` accepts exactly one root field, `records`, containing 1-4,096 records. Each record has exactly:
 
 - `id`: unique nonempty string, at most 1,024 characters.
 - `family`: `evalplus` or `swe`.

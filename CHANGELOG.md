@@ -2,6 +2,8 @@
 
 ## 0.3.0
 
+- Add hash-verified reconstruction of frozen native inputs and complete acquisition mount instructions; repair API-reference encoding.
+
 - Check supplied SWE admission, native grading report and resolution alongside the selected map. Record the precise fields covered by native agreement; an invalid supplied reference restricts qualification.
 - Compare family, candidate SHA256 and input SHA256 before presenting an ID-aligned comparison. Keep mismatches and missing records explicitly visible. Source revision changes remain permitted when scientific input identity matches.
 - Export the complete supplied native field set without discarding SWE grading/admission/resolution values.

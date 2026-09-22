@@ -7,3 +7,5 @@ recursive-include src/zerorun_harness/_vendor *.txt
 recursive-include tests *.py
 recursive-include ordinary *.py
 recursive-include validation *.py
+
+include NATIVE_ACQUISITION.md
