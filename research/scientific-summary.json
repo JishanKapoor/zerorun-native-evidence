@@ -1,0 +1,29 @@
+{
+  "records": 174,
+  "metrics": {
+    "c05b20b2": {
+      "base_pass": 140,
+      "plus_pass": 133,
+      "joint_pass": 133,
+      "denominator": 164
+    },
+    "6eb1e199": {
+      "base_pass": 141,
+      "plus_pass": 133,
+      "joint_pass": 133,
+      "denominator": 164
+    }
+  },
+  "scientific_actions": {
+    "CAPTURED_RELATIONSHIP_SUPPORTED": 156,
+    "USE_INDEPENDENT_NATIVE_RESULTS_ONLY": 7,
+    "RETAIN_NATIVE_RESULTS_AND_COMMITMENT_CONTRADICTION": 1,
+    "ARCHIVE_INCOMPATIBLE_WITH_REQUIRED_NATIVE_MARKERS": 10
+  },
+  "native_changes": [
+    "HumanEval/32"
+  ],
+  "swe_archive_comparison": "All ten archived logs fail the two pinned native versions marker-admission requirement; no resolution-rate comparison is licensed",
+  "source": "Native outputs plus separately implemented ordinary checks; no production verdicts consumed",
+  "candidate_calls": 0
+}

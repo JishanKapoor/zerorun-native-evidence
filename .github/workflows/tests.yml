@@ -20,3 +20,4 @@ jobs:
       - run: python -m pytest tests -q
       - run: zerorun --version
       - run: python research/verify_observations.py
+      - run: python research/native_consumer.py
