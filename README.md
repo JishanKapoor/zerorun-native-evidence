@@ -1,5 +1,7 @@
 # ZeroRun Harness 0.2.2
 
+See [API and operating reference](API_REFERENCE.md) for exact record fields, supported modes, return values and troubleshooting. `Licence.txt` and `LICENSE.txt` contain the same new-code license; upstream vendor terms remain separately retained.
+
 ZeroRun imports native evaluator observations into content-identified records and replays two bounded relationship checks. It preserves native values, independent reference outcomes, uncertainty and the entire supplied record population. It executes no candidate code.
 
 This release is a narrower solo reproducibility utility, distinct from the earlier ZeroRun test-result-reuse software and from the stronger R11 independent-user study. It makes no adoption, human productivity, benchmark-wide performance or automatic source-transfer claim.
