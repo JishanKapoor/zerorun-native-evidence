@@ -1,0 +1,4 @@
+FROM python:3.11-slim@sha256:da047cb8f9d1d98e5c070f5300ba9f7274e33b8fc0e5be5ed88740aed1b95ba9
+RUN python -m pip install --no-cache-dir numpy==1.26.4 psutil==5.9.8 unidiff==0.7.5 appdirs==1.4.4 tempdir==0.7.1 wget==3.2 --report /dependency-install.json
+RUN useradd --uid 1000 --create-home researcher
+USER 1000:1000

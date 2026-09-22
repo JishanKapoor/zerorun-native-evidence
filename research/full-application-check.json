@@ -1,0 +1,38 @@
+{
+  "records": 676,
+  "bundles": [
+    {
+      "capture": "evalplus-6eb1e199-capture.json",
+      "records": 328,
+      "ordinary_agreement": true,
+      "label_corruption_invariance": true,
+      "sha256": "e06b7deb5b41443af8338d63f9f95ad59be2a12cd6126b7682d9b41933d9e3a7"
+    },
+    {
+      "capture": "evalplus-c05b20b2-capture.json",
+      "records": 328,
+      "ordinary_agreement": true,
+      "label_corruption_invariance": true,
+      "sha256": "8609da932379c9557c2ce74472c71354a62e1fb7dca280eb25d92c3968a544a9"
+    },
+    {
+      "capture": "swe-489a34eb-capture.json",
+      "records": 10,
+      "ordinary_agreement": true,
+      "label_corruption_invariance": true,
+      "sha256": "9be7f35df646ef50faf17f07628c15228b730110000fe09ef131cd6756cc4131"
+    },
+    {
+      "capture": "swe-a5ecda66-capture.json",
+      "records": 10,
+      "ordinary_agreement": true,
+      "label_corruption_invariance": true,
+      "sha256": "2f6894c8f39069a3b907a2fb3f43d5e00622be21ebf5c39d60c78be64acc40e0"
+    }
+  ],
+  "ordinary_matches": 676,
+  "label_invariance_matches": 676,
+  "candidate_calls": 0,
+  "elapsed_seconds": 18.9529999999977,
+  "independent_implementation_not_independent_author": true
+}

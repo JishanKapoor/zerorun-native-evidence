@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zerorun-harness"
+version = "0.2.1"
+description = "Provenance-preserving replay checks for bounded native evaluator observations"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT; vendored PyContract core under Apache-2.0"}
+authors = [{name = "Jishan Kapoor"}]
+dependencies = []
+
+[project.scripts]
+zerorun = "zerorun_harness.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+zerorun_harness = ["resources/*.json", "_vendor/LICENSE.txt", "_vendor/NOTICE.txt", "examples/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

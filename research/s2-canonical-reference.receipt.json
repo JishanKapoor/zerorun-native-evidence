@@ -1,0 +1,8 @@
+{
+  "operation": "s2-canonical-reference",
+  "start_utc": "2026-09-22T22:03:43.875408+00:00",
+  "elapsed_seconds": 39.445197749,
+  "returncode": 0,
+  "stdout_sha256": "bbe00857a479f4211c9ef040c1bc3b4754c46f74abc43fe764876d1e40c1b7e6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

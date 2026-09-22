@@ -1,0 +1,131 @@
+{
+  "schema": "zerorun-audit/1",
+  "capture_sha256": "2e2526f2fa277a6621336705ffc2eb26d19886247669266424e327d9ebe735ad",
+  "profile_sha256": "7142f8c1ee2f3e0b571177479ed4e0cfe0f7cd3459b1694fad18ef3e62618573",
+  "records": [
+    {
+      "id": "20231010_rag_claude2|pallets__flask-4045",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "0267ba11a201a735e3b38ca277ed18952518419cdfbb6f3aea2e72e936a83ef8",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_claude2|sympy__sympy-18835",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "dc6eff0e4c8735ab6d8a09b334eea9b982ba7ee7dbaa347de840e28292b4f58f",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_claude2|sympy__sympy-12454",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "967a2f58f6392e8244f7c303535f98a6ce5bb3a4142b93fbb80f94769afdb3d3",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_claude2|scikit-learn__scikit-learn-12471",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "60ba39c7b0c350fc7453cbc2907fa01d3dc8d26a85172d52f344f84c81759bbe",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_claude2|pytest-dev__pytest-5413",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "f796368e05a1d1afe0aae4bfa6f975b057574941692362b4d0f9394960878b3d",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_gpt35|pallets__flask-4045",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "66e13a178f4d686860f66c81160a1bbd3533891aa61ed39e5f40ef6a7cc251ea",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_gpt35|sympy__sympy-18835",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "31c8ca91390951400e04fda3c28b97620a42a283104c3ffec45b0a75a364ade7",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_gpt35|sympy__sympy-12454",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "0a3a52a6daedcfc1c8c3c4b3ec505c4fe47d596c24a8b8a171e289fd627d6d27",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_gpt35|scikit-learn__scikit-learn-12471",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "1818712f12e65fc1486a54832a2a7ef69ca815d4b13f61e49b528ee711f520a4",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    },
+    {
+      "id": "20231010_rag_gpt35|pytest-dev__pytest-5413",
+      "family": "swe",
+      "status": "INCONCLUSIVE",
+      "relationship_status": "INCONCLUSIVE",
+      "native_agreement": true,
+      "reasons": [
+        "incomplete_observation_or_native_premises"
+      ],
+      "evidence_sha256": "a5ca011bd8f5ac1f90b339dc906e0319a6f63efd4589328ec7d491a9178289fd",
+      "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    }
+  ],
+  "counts": {
+    "INCONCLUSIVE": 10
+  },
+  "sha256": "2bf8bc70c4a681ad9967f0adc46beafd33bea66fca7bd6a9cac77c88956cf779"
+}

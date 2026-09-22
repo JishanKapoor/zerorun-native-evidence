@@ -1,0 +1,6 @@
+include LICENSE.txt THIRD_PARTY_NOTICES.md
+recursive-include src/zerorun_harness/resources *.json
+recursive-include src/zerorun_harness/examples *.json
+recursive-include src/zerorun_harness/_vendor *.txt
+recursive-include tests *.py
+recursive-include ordinary *.py

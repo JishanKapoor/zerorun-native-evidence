@@ -1,0 +1,19 @@
+{
+  "evalplus": {
+    "source_sha256": [
+      "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+      "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf",
+      "85e063714ff34b365fed006f933345acec5ed355c44b20ed07d9ea5a66ef899f"
+    ],
+    "grammar": "Nonempty sequential accept/reject obligations; strict transport seals; primitive committed boolean state; Python optimize=0",
+    "scope": "HumanEval exposed sources only; no oracle arithmetic or return-object security guarantee"
+  },
+  "swe": {
+    "source_sha256": [
+      "c891dee92350f8927abfdf8a7c5c664df7838f1c65f2ffe069f854c5ec57ff95",
+      "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961"
+    ],
+    "grammar": "Native parser return maps and final selected map; typed native status vocabulary",
+    "scope": "Saved parser-selection preservation; no patch execution or automatic phase/identity adjudication"
+  }
+}

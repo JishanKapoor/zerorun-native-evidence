@@ -1,0 +1,18 @@
+{
+  "schema": "zerorun-capture/1",
+  "mode": "saved-evidence",
+  "record_fields": ["id", "family", "provenance", "observation", "native_reference"],
+  "provenance_fields": ["source_sha256", "input_sha256", "candidate_sha256"],
+  "statuses": ["CONFORMS", "VIOLATION", "INCONCLUSIVE", "UNSUPPORTED"],
+  "constraints": {
+    "record_count_min": 1,
+    "record_count_max": 4096,
+    "cli_input_bytes_max": 67108864,
+    "json_depth_max": 64,
+    "unique_record_ids": true,
+    "duplicate_json_keys": "rejected",
+    "nonfinite_numbers": "rejected",
+    "native_candidate_execution": false
+  },
+  "normative_validation": "The versioned Python API and packaged profiles enforce the full finite grammar; this file is a human-readable schema summary, not a JSON Schema validation library."
+}

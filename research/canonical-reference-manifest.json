@@ -1,0 +1,993 @@
+{
+  "classification": "Native canonical code outputs and calibration; not candidate results",
+  "rows": [
+    {
+      "task_id": "HumanEval/0",
+      "file": "reference-0.pkl",
+      "sha256": "d4a9f5670d7a3b091678eaa8bded9fe57923e73a0cc63e4ab0fc527b061b5492",
+      "bytes": 10184
+    },
+    {
+      "task_id": "HumanEval/1",
+      "file": "reference-1.pkl",
+      "sha256": "3496cba0dc42219fc0fcab6636bbd4f5e957bf130766459b7d740e360e28b4ff",
+      "bytes": 29763
+    },
+    {
+      "task_id": "HumanEval/2",
+      "file": "reference-2.pkl",
+      "sha256": "1d113d40bdd57c18f9532398db200168dd3e38dc56508de75751b1f1f812e5c8",
+      "bytes": 17656
+    },
+    {
+      "task_id": "HumanEval/3",
+      "file": "reference-3.pkl",
+      "sha256": "3b43a255c40c77e21f235842db2494e9020a660b219a2a7d8036d0a37a67c3f1",
+      "bytes": 9164
+    },
+    {
+      "task_id": "HumanEval/4",
+      "file": "reference-4.pkl",
+      "sha256": "29dcc2fea3671d083c3c6b0ae711dbd7e2a824cd6b23d4fa59883209e7031e8d",
+      "bytes": 14308
+    },
+    {
+      "task_id": "HumanEval/5",
+      "file": "reference-5.pkl",
+      "sha256": "07f857905f2455ae7934e03ae4ab0d395948614c31ef65081934d49cb517eed7",
+      "bytes": 5020
+    },
+    {
+      "task_id": "HumanEval/6",
+      "file": "reference-6.pkl",
+      "sha256": "eff3b4cf2fec4a37a9183f187475fef188ce793e7a619f91824a2225179839c8",
+      "bytes": 1101
+    },
+    {
+      "task_id": "HumanEval/7",
+      "file": "reference-7.pkl",
+      "sha256": "87ddc15580387b469265e54fecbf37204477213741161055a5581c85db4f8fc2",
+      "bytes": 7758
+    },
+    {
+      "task_id": "HumanEval/8",
+      "file": "reference-8.pkl",
+      "sha256": "fdce798d1d4557670d6dffa334906531fae9e55f00b3587fe4dba41fa872a576",
+      "bytes": 16556
+    },
+    {
+      "task_id": "HumanEval/9",
+      "file": "reference-9.pkl",
+      "sha256": "f034daac4c4ddc9dce2adc36a24979efbcc2aad37cd9b9aea9cef0a7857a2159",
+      "bytes": 48936
+    },
+    {
+      "task_id": "HumanEval/10",
+      "file": "reference-10.pkl",
+      "sha256": "442ba5ccb520f2ffc1cc16e9488119cb893f9701ff111dc608a1a33b45ad7386",
+      "bytes": 93205
+    },
+    {
+      "task_id": "HumanEval/11",
+      "file": "reference-11.pkl",
+      "sha256": "e413ea23a60b79933cbada9fcd35f67288ce330e875ca94f9b7391f510f400ee",
+      "bytes": 12105
+    },
+    {
+      "task_id": "HumanEval/12",
+      "file": "reference-12.pkl",
+      "sha256": "22c678957eacd7968cba052638ca8985bbe4ca361e543ced0aa3f075a6fe6a03",
+      "bytes": 28159
+    },
+    {
+      "task_id": "HumanEval/13",
+      "file": "reference-13.pkl",
+      "sha256": "587b7a6656cd13fef8794a6dc52fa562751e2e30e948dd081fe0e70dfa02c152",
+      "bytes": 11273
+    },
+    {
+      "task_id": "HumanEval/14",
+      "file": "reference-14.pkl",
+      "sha256": "4790a1637b3405903c639d5d39c33efe12871c4acac2898e2b05c5e7ed31a45b",
+      "bytes": 3386285
+    },
+    {
+      "task_id": "HumanEval/15",
+      "file": "reference-15.pkl",
+      "sha256": "58f486c4dc157de099daa9a822ab2c08580af8488753de3ddb3494162c4566d6",
+      "bytes": 147381537
+    },
+    {
+      "task_id": "HumanEval/16",
+      "file": "reference-16.pkl",
+      "sha256": "edea1860d3321a492fba726f679e15c27185aef79ce679e65ea99fe6edb301a2",
+      "bytes": 11180
+    },
+    {
+      "task_id": "HumanEval/17",
+      "file": "reference-17.pkl",
+      "sha256": "a6e13a8e199fe89a52b620d5cf585b2fbec4650444d0e4aa2861ae959fb50fb1",
+      "bytes": 12752
+    },
+    {
+      "task_id": "HumanEval/18",
+      "file": "reference-18.pkl",
+      "sha256": "4b213adfe480cc01a6ada902beef61c25da8aeac7f42950e51909a6773db2e9a",
+      "bytes": 11169
+    },
+    {
+      "task_id": "HumanEval/19",
+      "file": "reference-19.pkl",
+      "sha256": "8233e045332a0fc86e1e4307f51afb6c41392e4cc54cff2a8d9b9792c14a63dd",
+      "bytes": 4935
+    },
+    {
+      "task_id": "HumanEval/20",
+      "file": "reference-20.pkl",
+      "sha256": "f52f67519ead20f55c79e1d6b6a31c92854ab72ca2751426ed304302d99c3738",
+      "bytes": 29248
+    },
+    {
+      "task_id": "HumanEval/21",
+      "file": "reference-21.pkl",
+      "sha256": "f564ca1285717752b5f21e80e3f3d8789265c0a4af6b5cd7fab9baffa0eebab5",
+      "bytes": 98011
+    },
+    {
+      "task_id": "HumanEval/22",
+      "file": "reference-22.pkl",
+      "sha256": "1a19cbecd4eedd4b8c0fb83529e650885cef8974b901b861151cc625ab2f8be0",
+      "bytes": 16421
+    },
+    {
+      "task_id": "HumanEval/23",
+      "file": "reference-23.pkl",
+      "sha256": "d4560916fa47ac65caab9b0984d24cf374954779a3b766183fd65890fb4e1a9a",
+      "bytes": 10762
+    },
+    {
+      "task_id": "HumanEval/24",
+      "file": "reference-24.pkl",
+      "sha256": "55069d2870b45a1a71b67082bccbe65052d9e8980b637d84895e482bac70b154",
+      "bytes": 2129
+    },
+    {
+      "task_id": "HumanEval/25",
+      "file": "reference-25.pkl",
+      "sha256": "ca3f603fb79662e2b5ac1bd9e402a8b3108877025228833aa61bd8c9e5e15c3e",
+      "bytes": 3155
+    },
+    {
+      "task_id": "HumanEval/26",
+      "file": "reference-26.pkl",
+      "sha256": "6bb6b55b2ea740475ec65f319dabaf88f2c9b925c54a7a1f387a8990aa3825b5",
+      "bytes": 19293
+    },
+    {
+      "task_id": "HumanEval/27",
+      "file": "reference-27.pkl",
+      "sha256": "163e27c36c97698023d7bf393fbaf1e411392a26a3927ec4cf7ba2f1862ef4a8",
+      "bytes": 72917
+    },
+    {
+      "task_id": "HumanEval/28",
+      "file": "reference-28.pkl",
+      "sha256": "aaf06fa101ecb95266a839a37aebbd105bb82c67a0497a846ecabd4284763416",
+      "bytes": 56515
+    },
+    {
+      "task_id": "HumanEval/29",
+      "file": "reference-29.pkl",
+      "sha256": "4348957949c5537817b1fd29e7842b65341603e59cc9d864c71289a21ecfb1cb",
+      "bytes": 15539
+    },
+    {
+      "task_id": "HumanEval/30",
+      "file": "reference-30.pkl",
+      "sha256": "aff733155f8f200f6db02e726ff506b37896d4ff35b53b41106d938cb0bb3cf5",
+      "bytes": 23521
+    },
+    {
+      "task_id": "HumanEval/31",
+      "file": "reference-31.pkl",
+      "sha256": "4c9725839c44d02dda2df5cfcb6159c8c1250dbae6db3870d9a58e787298b840",
+      "bytes": 1795
+    },
+    {
+      "task_id": "HumanEval/32",
+      "file": "reference-32.pkl",
+      "sha256": "86f3971471c3f9d0dc10bcde5ccd98eef0ab5ebaff16ef876e8754450d435c10",
+      "bytes": 14996
+    },
+    {
+      "task_id": "HumanEval/33",
+      "file": "reference-33.pkl",
+      "sha256": "d1a04e8adb7d32823e766b03ad03b884af38eab324084cd325769633af60ff14",
+      "bytes": 53009
+    },
+    {
+      "task_id": "HumanEval/34",
+      "file": "reference-34.pkl",
+      "sha256": "c4752b9667830c944110aceb56b9368eae760b43cf30c857d4beed339283709f",
+      "bytes": 44609
+    },
+    {
+      "task_id": "HumanEval/35",
+      "file": "reference-35.pkl",
+      "sha256": "024aa714cd503a46afb4860a885f4ebf75763156da40ac5c5ae2535cb2aeeb53",
+      "bytes": 13194
+    },
+    {
+      "task_id": "HumanEval/36",
+      "file": "reference-36.pkl",
+      "sha256": "a5212cacb06db90cc740e1884f48bad04cb532bd18863bed98ddee5c698a4aad",
+      "bytes": 1888
+    },
+    {
+      "task_id": "HumanEval/37",
+      "file": "reference-37.pkl",
+      "sha256": "435b655e6a2e7e6e4ad89dadd1875c37bd37cdbe8988c0e434f8ae6f57536fbe",
+      "bytes": 37344
+    },
+    {
+      "task_id": "HumanEval/38",
+      "file": "reference-38.pkl",
+      "sha256": "28df9dac2f383f5d7407924d909eb375db9e9f3accdf4cfeb7eacf8d31434f08",
+      "bytes": 138421
+    },
+    {
+      "task_id": "HumanEval/39",
+      "file": "reference-39.pkl",
+      "sha256": "823f477464a5058ec526b096af96db415550e6855b6a1dd6dcf7a9c15be06bcb",
+      "bytes": 278
+    },
+    {
+      "task_id": "HumanEval/40",
+      "file": "reference-40.pkl",
+      "sha256": "2704e5fe15b7df8e7a036fe49cf62e96158fba4c2dbaa3a6da5902e9c2d22dce",
+      "bytes": 10005
+    },
+    {
+      "task_id": "HumanEval/41",
+      "file": "reference-41.pkl",
+      "sha256": "15a085ea17d3fd049b246d2fb6cbb4a64df1d12f79cbb3b965ef2a2f98912f2a",
+      "bytes": 1160
+    },
+    {
+      "task_id": "HumanEval/42",
+      "file": "reference-42.pkl",
+      "sha256": "2fa67accc798160816d734dfba812174e55ac6f2683bdd64cfcabc92fc32accf",
+      "bytes": 43869
+    },
+    {
+      "task_id": "HumanEval/43",
+      "file": "reference-43.pkl",
+      "sha256": "f115c5dc4bbf52b82e88e121dc9bd0d6bf294c48581e2cce75c9e3a0f83b7732",
+      "bytes": 9955
+    },
+    {
+      "task_id": "HumanEval/44",
+      "file": "reference-44.pkl",
+      "sha256": "d85769c293df15825a9d8fe9ed2b611cde082952aa321d64d83b69e745ce5dc9",
+      "bytes": 9159
+    },
+    {
+      "task_id": "HumanEval/45",
+      "file": "reference-45.pkl",
+      "sha256": "20fa945d419cf7e46da5d058fde9f8e75c8eb7f5dd889bc63e9a06d9d81bbdb6",
+      "bytes": 18179
+    },
+    {
+      "task_id": "HumanEval/46",
+      "file": "reference-46.pkl",
+      "sha256": "2d2719f487974e6b6e29222340b3fe1aa973a3c270714002b898c13261566381",
+      "bytes": 4617
+    },
+    {
+      "task_id": "HumanEval/47",
+      "file": "reference-47.pkl",
+      "sha256": "c8297fddae72cc426aa0a528618674de8ad98b011f0339ced6fe656d00661836",
+      "bytes": 14985
+    },
+    {
+      "task_id": "HumanEval/48",
+      "file": "reference-48.pkl",
+      "sha256": "14d2b5eee131ee59d2072b442278a8ab82cb11f6361b1081083913d633dde144",
+      "bytes": 10085
+    },
+    {
+      "task_id": "HumanEval/49",
+      "file": "reference-49.pkl",
+      "sha256": "7f306c3874cee6075920bddbdef4b9f229c218d0f0490f4c7c8998c737c41c77",
+      "bytes": 12015
+    },
+    {
+      "task_id": "HumanEval/50",
+      "file": "reference-50.pkl",
+      "sha256": "446b7ea983a7483f9a146199552891c7a62eef77230c6f4f17d3ddead8d160f0",
+      "bytes": 70508
+    },
+    {
+      "task_id": "HumanEval/51",
+      "file": "reference-51.pkl",
+      "sha256": "6b603844b34650b55cfeed4de07e0c5cec69da72694bed4b747e6a13c2872546",
+      "bytes": 39597
+    },
+    {
+      "task_id": "HumanEval/52",
+      "file": "reference-52.pkl",
+      "sha256": "17c9d6c96961bdfa2b5c9994986ca4d26aa7f3444fa74abe2a9d8e80851b153a",
+      "bytes": 4375
+    },
+    {
+      "task_id": "HumanEval/53",
+      "file": "reference-53.pkl",
+      "sha256": "bc2da511d4b60264f860900c2fa0d3c1c25ea0778350e672f88da637e77308c7",
+      "bytes": 16748
+    },
+    {
+      "task_id": "HumanEval/54",
+      "file": "reference-54.pkl",
+      "sha256": "deaabdefa2d40a6c42c70c55ea6762f5759be3d9a23a60dbfeb13e11b6334538",
+      "bytes": 10185
+    },
+    {
+      "task_id": "HumanEval/55",
+      "file": "reference-55.pkl",
+      "sha256": "09e7a8a98d2c0ff967b2d06775cba1cc8899cfbf1c94d00a3005cc3c0e9438e6",
+      "bytes": 814
+    },
+    {
+      "task_id": "HumanEval/56",
+      "file": "reference-56.pkl",
+      "sha256": "4bb4b89af6a0d0480fbf2134e58cbd264355f891d87078c1642a2b9bf8f9ef7d",
+      "bytes": 10245
+    },
+    {
+      "task_id": "HumanEval/57",
+      "file": "reference-57.pkl",
+      "sha256": "853ed6563295ce9a033061b84c5b30b041a2c3b660c751fd6d3db074c92497d4",
+      "bytes": 9915
+    },
+    {
+      "task_id": "HumanEval/58",
+      "file": "reference-58.pkl",
+      "sha256": "d2d1f3aac8e3ea754902fe3de14e1ebea6da6429d473f4bfeccbe6489cbc2bc5",
+      "bytes": 19832
+    },
+    {
+      "task_id": "HumanEval/59",
+      "file": "reference-59.pkl",
+      "sha256": "b78cd9ac151fbc91a3fb7403f1c3a6dc2d475cf24e173df758c7f3766c41ec18",
+      "bytes": 2148
+    },
+    {
+      "task_id": "HumanEval/60",
+      "file": "reference-60.pkl",
+      "sha256": "e21251872f546bfb75899f43a902c883280ebd6de4de41bdee2b9301d444099c",
+      "bytes": 2248
+    },
+    {
+      "task_id": "HumanEval/61",
+      "file": "reference-61.pkl",
+      "sha256": "a481504f3ec60144685dfefd4692650eff6d63f1dcb36cfce09363709970542c",
+      "bytes": 10235
+    },
+    {
+      "task_id": "HumanEval/62",
+      "file": "reference-62.pkl",
+      "sha256": "e88f137d03c1f4b8b20b2ddd5010a2134048b350bd19ba4821af83d4fc5fcaf6",
+      "bytes": 40071
+    },
+    {
+      "task_id": "HumanEval/63",
+      "file": "reference-63.pkl",
+      "sha256": "8a922f4e18da895388864e4e99770dba85994ada4d8364335b0bd660befd7df5",
+      "bytes": 1159
+    },
+    {
+      "task_id": "HumanEval/64",
+      "file": "reference-64.pkl",
+      "sha256": "1973fea4b355183391170d5345940cdb0ef271515e68e3d2a23e5f2e7b1b2d1b",
+      "bytes": 11114
+    },
+    {
+      "task_id": "HumanEval/65",
+      "file": "reference-65.pkl",
+      "sha256": "c8dc74dc464f569b5bc69ada5e630bb0db8003eacf735377f816af2f44079ec7",
+      "bytes": 19799
+    },
+    {
+      "task_id": "HumanEval/66",
+      "file": "reference-66.pkl",
+      "sha256": "e31660efefef7c0f45d01f51e6a993d4a7b6d4b9612af8b901804f84bf7a4e2a",
+      "bytes": 12077
+    },
+    {
+      "task_id": "HumanEval/67",
+      "file": "reference-67.pkl",
+      "sha256": "ecb914c5596a8a4f58abecf134839cd7c8c50717471a31f559b24f888561d3ee",
+      "bytes": 3953
+    },
+    {
+      "task_id": "HumanEval/68",
+      "file": "reference-68.pkl",
+      "sha256": "1c81c7cacdb38827ed9fb1705fb67ccdf63098f1bcbd4c7384ccb749d350b891",
+      "bytes": 16761
+    },
+    {
+      "task_id": "HumanEval/69",
+      "file": "reference-69.pkl",
+      "sha256": "b2cd339c522e7f0cc2b9ae528a933915c0609d78b009cd0a605909f36a6365b1",
+      "bytes": 11478
+    },
+    {
+      "task_id": "HumanEval/70",
+      "file": "reference-70.pkl",
+      "sha256": "e13c073ef1b3cbac0f2fd95f5f4b474b34f68f2b782552145dbb89ad3d6f6c53",
+      "bytes": 34916
+    },
+    {
+      "task_id": "HumanEval/71",
+      "file": "reference-71.pkl",
+      "sha256": "01d4264f4dd104145fef0a86068b590c0d2fd66cda12d677aecf4838c151ddae",
+      "bytes": 16627
+    },
+    {
+      "task_id": "HumanEval/72",
+      "file": "reference-72.pkl",
+      "sha256": "a7ed509e030878777f0ad166979c47856f06014f3c5287bb27c62debf1690dd8",
+      "bytes": 7095
+    },
+    {
+      "task_id": "HumanEval/73",
+      "file": "reference-73.pkl",
+      "sha256": "1a56df1b761d7dcff6540eeabab0f8cb41335cef8ea13af7bec8e2b684458b9d",
+      "bytes": 10795
+    },
+    {
+      "task_id": "HumanEval/74",
+      "file": "reference-74.pkl",
+      "sha256": "48154185303671ddf77f7d5142ed4056b419bc04376aa2e9ab0e301328a05b74",
+      "bytes": 66925
+    },
+    {
+      "task_id": "HumanEval/75",
+      "file": "reference-75.pkl",
+      "sha256": "74e12c2e21e38d09438112d1ab56315a5ce1fd6ac3295f9ef23b2beefaff292e",
+      "bytes": 1095
+    },
+    {
+      "task_id": "HumanEval/76",
+      "file": "reference-76.pkl",
+      "sha256": "075ca78a8b1c4dbde40f52a28618ef713073fb554b168a0ab5b80fc5c1d05b66",
+      "bytes": 9195
+    },
+    {
+      "task_id": "HumanEval/77",
+      "file": "reference-77.pkl",
+      "sha256": "94bfc75a387b86e0de66835897c40636019bc387e9960c0f39e57104ad25556a",
+      "bytes": 1855
+    },
+    {
+      "task_id": "HumanEval/78",
+      "file": "reference-78.pkl",
+      "sha256": "861079008858eef55a1b0b177c5b3794c9042ce4fc47d0926b91fe1dd2d9a1ae",
+      "bytes": 11269
+    },
+    {
+      "task_id": "HumanEval/79",
+      "file": "reference-79.pkl",
+      "sha256": "dd61bb7025e637fe1f4bec5ec3ffaf00c657d20b0c591f7096966656dd11cd40",
+      "bytes": 8085
+    },
+    {
+      "task_id": "HumanEval/80",
+      "file": "reference-80.pkl",
+      "sha256": "b01fbaac03382ca1418dbf357932a95543287243667f7578300f880efe3fa9aa",
+      "bytes": 9615
+    },
+    {
+      "task_id": "HumanEval/81",
+      "file": "reference-81.pkl",
+      "sha256": "b93334c0f88cf6ea02551f4a815b497a66cde4804dd56cc370e5b63b1eb9b855",
+      "bytes": 43621
+    },
+    {
+      "task_id": "HumanEval/82",
+      "file": "reference-82.pkl",
+      "sha256": "c35497b7741e3d162b17476c63f9d543c3e49b09e389a1a5a60b8e8f6844e048",
+      "bytes": 9905
+    },
+    {
+      "task_id": "HumanEval/83",
+      "file": "reference-83.pkl",
+      "sha256": "67df1647d4defd5c14cadd3cc4c0f5a11044456b9549cf1116249067abb03d9e",
+      "bytes": 3191001
+    },
+    {
+      "task_id": "HumanEval/84",
+      "file": "reference-84.pkl",
+      "sha256": "6eac9024a6b9208c594683dfb406f173781a935087679dea3be4ac867745cb10",
+      "bytes": 3583
+    },
+    {
+      "task_id": "HumanEval/85",
+      "file": "reference-85.pkl",
+      "sha256": "778e33b1f192455a9c41eab68a5d0bdb6e100cf3bba55f8f0ae89dfa60bb8490",
+      "bytes": 11251
+    },
+    {
+      "task_id": "HumanEval/86",
+      "file": "reference-86.pkl",
+      "sha256": "ec358fe32c89519bad8b55c04e668685369b1425dcac3f7c5b505e7a82103e89",
+      "bytes": 53275
+    },
+    {
+      "task_id": "HumanEval/87",
+      "file": "reference-87.pkl",
+      "sha256": "66c63e494914da409501c6fe3053ec1165fac478ed511707ab7a47b31cdb6f68",
+      "bytes": 4106
+    },
+    {
+      "task_id": "HumanEval/88",
+      "file": "reference-88.pkl",
+      "sha256": "c539606ad348680acf67d14175edfba8a8ba9a21b65409718befff7a70f31f03",
+      "bytes": 34172
+    },
+    {
+      "task_id": "HumanEval/89",
+      "file": "reference-89.pkl",
+      "sha256": "3813fc488fc5ceb692092f7f6f9d1350a596e1e14601fd5ece35cb82414dfd54",
+      "bytes": 59615
+    },
+    {
+      "task_id": "HumanEval/90",
+      "file": "reference-90.pkl",
+      "sha256": "a890455587e743ac3634055e9cd21edbd6fd3b10ca6928c3fa7b22f423c3c56a",
+      "bytes": 10803
+    },
+    {
+      "task_id": "HumanEval/91",
+      "file": "reference-91.pkl",
+      "sha256": "de156637e7255f6b40cb2992f0911f4f161c09d29392767fd22b408d4bae5911",
+      "bytes": 11191
+    },
+    {
+      "task_id": "HumanEval/92",
+      "file": "reference-92.pkl",
+      "sha256": "060537ab6e2d959e2fe77f3315461493adb12a9c1730895780bd598b46fe91dd",
+      "bytes": 10225
+    },
+    {
+      "task_id": "HumanEval/93",
+      "file": "reference-93.pkl",
+      "sha256": "0b1e89ee68420c855d7a383b3131af338c07e78ae78ff57c4987e19f5d69b837",
+      "bytes": 94671
+    },
+    {
+      "task_id": "HumanEval/94",
+      "file": "reference-94.pkl",
+      "sha256": "29dc82fa7b82e754cc9c85338a348c0b2915df2f68ecb00e4aa037fcf5237711",
+      "bytes": 11224
+    },
+    {
+      "task_id": "HumanEval/95",
+      "file": "reference-95.pkl",
+      "sha256": "d996490a11410a5ef51c73e6136ab4f9780878f2fbd39b0422b9e7dcb8c06182",
+      "bytes": 5365
+    },
+    {
+      "task_id": "HumanEval/96",
+      "file": "reference-96.pkl",
+      "sha256": "79882e6f1fc00c0fd8cda1543a78722260ecc73b643bb10edc0be7df32573987",
+      "bytes": 158771
+    },
+    {
+      "task_id": "HumanEval/97",
+      "file": "reference-97.pkl",
+      "sha256": "07e51cf91995ce50dc3ca0c86f4d1b469c0fcb5eaf7989f08f28ca81a3add0ec",
+      "bytes": 10960
+    },
+    {
+      "task_id": "HumanEval/98",
+      "file": "reference-98.pkl",
+      "sha256": "77f76663e810e4e60b3d6e752270022fd068e150c6b865edefafaf5dc5e0d865",
+      "bytes": 11202
+    },
+    {
+      "task_id": "HumanEval/99",
+      "file": "reference-99.pkl",
+      "sha256": "7dcd85edcd0816b3c3cb3e02fa834faddd12645c51f3a97224c335289bff9691",
+      "bytes": 9664
+    },
+    {
+      "task_id": "HumanEval/100",
+      "file": "reference-100.pkl",
+      "sha256": "1924a730cdafc2a0ebc91cfa52efa0fda31824f916139676ff2152ba2e43b678",
+      "bytes": 5017319
+    },
+    {
+      "task_id": "HumanEval/101",
+      "file": "reference-101.pkl",
+      "sha256": "3f47acaee0e777c133c0efffac7bb0ab39440eeb88e8f0ced200e54c87b00f7d",
+      "bytes": 61770
+    },
+    {
+      "task_id": "HumanEval/102",
+      "file": "reference-102.pkl",
+      "sha256": "7848dd8d448f165536f475174e35865f75d3bfd046f7f7d2c3d0291ab230ccc5",
+      "bytes": 12207
+    },
+    {
+      "task_id": "HumanEval/103",
+      "file": "reference-103.pkl",
+      "sha256": "09835dec0afd7346ede89642bbab1971de21547aa301b7a97f1e123a18e959a0",
+      "bytes": 20849
+    },
+    {
+      "task_id": "HumanEval/104",
+      "file": "reference-104.pkl",
+      "sha256": "ca22e43bb571a7a350ce166b5bee51046e575f54fa6d32e7e412f8b93d2badc8",
+      "bytes": 21876
+    },
+    {
+      "task_id": "HumanEval/105",
+      "file": "reference-105.pkl",
+      "sha256": "7a6c0490d5d14b2ddcc0c4c1b56da564f72046858d45a6ac2f17dacde9a1599e",
+      "bytes": 31689
+    },
+    {
+      "task_id": "HumanEval/106",
+      "file": "reference-106.pkl",
+      "sha256": "fa2fd4650e89afbc4600a4df44a3dff5d2f5dba3b8f9cb182ce9b8cf66b96df4",
+      "bytes": 68053
+    },
+    {
+      "task_id": "HumanEval/107",
+      "file": "reference-107.pkl",
+      "sha256": "56ef16e349943c70a81d478e6fda16b13c9c4ef5e8650e5c38c0391dd8e87cb5",
+      "bytes": 2781
+    },
+    {
+      "task_id": "HumanEval/108",
+      "file": "reference-108.pkl",
+      "sha256": "323bca54a7c1f5aeecd70efc39c598967d0b46878978ba14b7d536bb53517a74",
+      "bytes": 11214
+    },
+    {
+      "task_id": "HumanEval/109",
+      "file": "reference-109.pkl",
+      "sha256": "7b178fa2b25d639cf68fff748770efa134230b51ab190ee1acb5f9076317acef",
+      "bytes": 9706
+    },
+    {
+      "task_id": "HumanEval/110",
+      "file": "reference-110.pkl",
+      "sha256": "8d2f5703268dfcb380b4bab9278e7ca26222892fe39e7009e3548f1454c142b0",
+      "bytes": 11210
+    },
+    {
+      "task_id": "HumanEval/111",
+      "file": "reference-111.pkl",
+      "sha256": "6891bae1a4c34eb51023f1dd339fedb78567158af563e091278a0d20fbc977fa",
+      "bytes": 13007
+    },
+    {
+      "task_id": "HumanEval/112",
+      "file": "reference-112.pkl",
+      "sha256": "f7ebde15994fa27535295d111b0c8d63edeba8c36722dc19274b39f0ce415f5e",
+      "bytes": 19619
+    },
+    {
+      "task_id": "HumanEval/113",
+      "file": "reference-113.pkl",
+      "sha256": "9dc79a3c67c0571a21ab0b3e418777207775e80783fef3a8abe70ee463f1e6e6",
+      "bytes": 410064
+    },
+    {
+      "task_id": "HumanEval/114",
+      "file": "reference-114.pkl",
+      "sha256": "da5351f44a0760e80bb409ba6a38d0c9deef0542ce71c6f87ef3280eeed68383",
+      "bytes": 14279
+    },
+    {
+      "task_id": "HumanEval/115",
+      "file": "reference-115.pkl",
+      "sha256": "47da3818913743b0439112d11c97199a1c828924c974b9b27007cc6bc8565aa6",
+      "bytes": 8992
+    },
+    {
+      "task_id": "HumanEval/116",
+      "file": "reference-116.pkl",
+      "sha256": "2b2e138a3030595458864997d6950a03af32bf29db8d960b53e53e31f8694576",
+      "bytes": 32903
+    },
+    {
+      "task_id": "HumanEval/117",
+      "file": "reference-117.pkl",
+      "sha256": "bccc51670c0c5206890652e71a144e83fcf6ccb18699990be4f68ccd6284e8da",
+      "bytes": 14489
+    },
+    {
+      "task_id": "HumanEval/118",
+      "file": "reference-118.pkl",
+      "sha256": "5cf3529330511f8e325504818dfe3b0f39428f92b7ac8c3e71093f5fb5c625e5",
+      "bytes": 11286
+    },
+    {
+      "task_id": "HumanEval/119",
+      "file": "reference-119.pkl",
+      "sha256": "d1138d33dc2228a50c754bb795eb0733930f2a818b4b46b94117ae2843ef36bc",
+      "bytes": 7393
+    },
+    {
+      "task_id": "HumanEval/120",
+      "file": "reference-120.pkl",
+      "sha256": "9ffc4592a1c641bc3095b8e9d568a1f45d4a892604643748c9ee719970bebcd0",
+      "bytes": 20964
+    },
+    {
+      "task_id": "HumanEval/121",
+      "file": "reference-121.pkl",
+      "sha256": "155809e39084599d3dcafe9639e49b48bb8f596d03b2deb0e1506d2634447abd",
+      "bytes": 11256
+    },
+    {
+      "task_id": "HumanEval/122",
+      "file": "reference-122.pkl",
+      "sha256": "ed330c262be7e8ebbf76df562fd41d6d0c4b0765e8f391d00611dbe5de7490d2",
+      "bytes": 11714
+    },
+    {
+      "task_id": "HumanEval/123",
+      "file": "reference-123.pkl",
+      "sha256": "e37336819e8a1cccc00e2dfc394b1a8d73d1b0175ea223ee310dde9a2c3d6f5f",
+      "bytes": 39838
+    },
+    {
+      "task_id": "HumanEval/124",
+      "file": "reference-124.pkl",
+      "sha256": "2709def7d4f7ab84e45958232aa9e8f2c11111b6120d9f5eefc6a8a4aeca5740",
+      "bytes": 10136
+    },
+    {
+      "task_id": "HumanEval/125",
+      "file": "reference-125.pkl",
+      "sha256": "2bbecde41327efbaac7b0c0163f84135e65060ec225603a2dae50d0415c4abcf",
+      "bytes": 58751
+    },
+    {
+      "task_id": "HumanEval/126",
+      "file": "reference-126.pkl",
+      "sha256": "e4b271c4ff069884a0780e489a2fddfb19a7d37fe0bed3c6a2a4aaff3aba25a2",
+      "bytes": 10246
+    },
+    {
+      "task_id": "HumanEval/127",
+      "file": "reference-127.pkl",
+      "sha256": "d9e09fb854c4e5dd09e0ac61b39a46e3477178bd86d946bc6c424acd9a38ede7",
+      "bytes": 6601
+    },
+    {
+      "task_id": "HumanEval/128",
+      "file": "reference-128.pkl",
+      "sha256": "1c6454121849ce55e9189c72140f9c1450f191c9223072f956532ff542ce2631",
+      "bytes": 11673
+    },
+    {
+      "task_id": "HumanEval/129",
+      "file": "reference-129.pkl",
+      "sha256": "b23d3923c85964ce879ed5b187b0ed848d8340c3434ff5ccd85d4ff2e889a000",
+      "bytes": 7424
+    },
+    {
+      "task_id": "HumanEval/130",
+      "file": "reference-130.pkl",
+      "sha256": "b3ec6758606be6253e76f3efdb7b8ab8eacc93fc0d5ddbb37bd98b6174d37e63",
+      "bytes": 90086099
+    },
+    {
+      "task_id": "HumanEval/131",
+      "file": "reference-131.pkl",
+      "sha256": "85893d44c4704db631d1ac3f78792d7495b2e527f827ed316b662f5cbff2335a",
+      "bytes": 3567
+    },
+    {
+      "task_id": "HumanEval/132",
+      "file": "reference-132.pkl",
+      "sha256": "1452140377a2da14df05c06e60e3f0ecc32c417da59d132d94b5ce9fee95843a",
+      "bytes": 10266
+    },
+    {
+      "task_id": "HumanEval/133",
+      "file": "reference-133.pkl",
+      "sha256": "426c316537327fc7b94abb06a4540c0445cfd627e7b80ecef8ad71058c284b24",
+      "bytes": 11393
+    },
+    {
+      "task_id": "HumanEval/134",
+      "file": "reference-134.pkl",
+      "sha256": "93b6e26c4d80fdb0a4392058248a3c611ecab734190a12d4fc323fad185c3208",
+      "bytes": 10136
+    },
+    {
+      "task_id": "HumanEval/135",
+      "file": "reference-135.pkl",
+      "sha256": "119bce6f4b087979fb9bf96452e2e02239028940277ff97da9f4babdce9ab783",
+      "bytes": 11082
+    },
+    {
+      "task_id": "HumanEval/136",
+      "file": "reference-136.pkl",
+      "sha256": "fe59bb6049801ec1a08468b59ae8b55ba69f5bd627f5de0d00973511b6d8e766",
+      "bytes": 18121
+    },
+    {
+      "task_id": "HumanEval/137",
+      "file": "reference-137.pkl",
+      "sha256": "862636644b209de820fdff296a3d43f83df40f7bec8654cbf3aeac53d922e3bd",
+      "bytes": 15759
+    },
+    {
+      "task_id": "HumanEval/138",
+      "file": "reference-138.pkl",
+      "sha256": "ac63bc55af0503dff6d0cda7ac6b71308a1c16cb873174fed8d727de69beb7b7",
+      "bytes": 1336
+    },
+    {
+      "task_id": "HumanEval/139",
+      "file": "reference-139.pkl",
+      "sha256": "c0349d634bf2a1ad25516389a29f1f446469821b0004c3d21b05bbf9e812cdd0",
+      "bytes": 1829549
+    },
+    {
+      "task_id": "HumanEval/140",
+      "file": "reference-140.pkl",
+      "sha256": "01c02f6b3cc5fbe13f15f30b238b888db764e0ce591133e8b7e7a64e1d346b87",
+      "bytes": 37923
+    },
+    {
+      "task_id": "HumanEval/141",
+      "file": "reference-141.pkl",
+      "sha256": "fd59ad91c840398f6b6c55d8808fc55112f3a89517316abd8ad06ba09922a200",
+      "bytes": 11419
+    },
+    {
+      "task_id": "HumanEval/142",
+      "file": "reference-142.pkl",
+      "sha256": "88a11ea1842af83f82cf85a5ba30422cfda37db09fc49b0ff4bd92ff64993a81",
+      "bytes": 12885
+    },
+    {
+      "task_id": "HumanEval/143",
+      "file": "reference-143.pkl",
+      "sha256": "c30139ecbe98e84c752a1c7d10acf4d28bb7ae30ea53277a1d7e8b1e5099d803",
+      "bytes": 22977
+    },
+    {
+      "task_id": "HumanEval/144",
+      "file": "reference-144.pkl",
+      "sha256": "badc561897a08bd7795a9e45f72a1ef2bce2038feb0975e6dc7d2c5a8456aead",
+      "bytes": 10236
+    },
+    {
+      "task_id": "HumanEval/145",
+      "file": "reference-145.pkl",
+      "sha256": "f579c1dbca767a1a0eb9a75dbe28b8173bae6589d12a9a36f7d0d1a35b8ac991",
+      "bytes": 64894
+    },
+    {
+      "task_id": "HumanEval/146",
+      "file": "reference-146.pkl",
+      "sha256": "50f1022bf9205fe48eb89987c3af98f920d42449e2acfc40165b252f7dbc262f",
+      "bytes": 11071
+    },
+    {
+      "task_id": "HumanEval/147",
+      "file": "reference-147.pkl",
+      "sha256": "23021c060df4c508e9867f54aca3cbbb6cf9ddb7578f8fa8572f163b1b4a6ee6",
+      "bytes": 1553
+    },
+    {
+      "task_id": "HumanEval/148",
+      "file": "reference-148.pkl",
+      "sha256": "65be1ab777fd32bbe55e1f3dec213e5d5dcf5087b71c695df51373b17b4fd038",
+      "bytes": 10160
+    },
+    {
+      "task_id": "HumanEval/149",
+      "file": "reference-149.pkl",
+      "sha256": "9d26efa43d9a9236a6f4d8858b95aaaf2342c8fe3d834a027d680b8f140154ca",
+      "bytes": 39573
+    },
+    {
+      "task_id": "HumanEval/150",
+      "file": "reference-150.pkl",
+      "sha256": "9546bc1eba4f970827afe16ffbb94947453259ebd2b9b5db63102310315c2fe4",
+      "bytes": 11830
+    },
+    {
+      "task_id": "HumanEval/151",
+      "file": "reference-151.pkl",
+      "sha256": "83023a761ff554dc49d9e6e0e36a5529b9934839a7ef104fffa1e3ff9fa32e18",
+      "bytes": 11796
+    },
+    {
+      "task_id": "HumanEval/152",
+      "file": "reference-152.pkl",
+      "sha256": "1d2f440a3f344860bae0b9e93cafd3ac15d0940a3ae16144938b0a11ec6c0667",
+      "bytes": 25421
+    },
+    {
+      "task_id": "HumanEval/153",
+      "file": "reference-153.pkl",
+      "sha256": "3d86544be3725e1ff72a350d6fe93afdd43766c916b8172c720501c672de21d2",
+      "bytes": 6379
+    },
+    {
+      "task_id": "HumanEval/154",
+      "file": "reference-154.pkl",
+      "sha256": "b2e7b42c8bd1ee13eb063b4d2e2458b3d6f05c7549e29d78d4d1f4c5d685cba2",
+      "bytes": 10186
+    },
+    {
+      "task_id": "HumanEval/155",
+      "file": "reference-155.pkl",
+      "sha256": "a4b73fd4d56ba3f4c0154757f3ddf794aab22dafc9f4f45be4593da1e3dc44b2",
+      "bytes": 3981
+    },
+    {
+      "task_id": "HumanEval/156",
+      "file": "reference-156.pkl",
+      "sha256": "fbaa820ea1645752a9f70431feab7bef06cdd9fe20340efc7081d6ea79ed6d90",
+      "bytes": 3962
+    },
+    {
+      "task_id": "HumanEval/157",
+      "file": "reference-157.pkl",
+      "sha256": "38c4485758d86cfd6ca4e059b2b2aa59aff5f3896615ed33f4ef8c49c62e94a7",
+      "bytes": 10236
+    },
+    {
+      "task_id": "HumanEval/158",
+      "file": "reference-158.pkl",
+      "sha256": "8254a456e6679cfe72f84017dd605b93c9bd06d6fa1ffe7f7c7c2cd8f14d69db",
+      "bytes": 18988
+    },
+    {
+      "task_id": "HumanEval/159",
+      "file": "reference-159.pkl",
+      "sha256": "3bab0e888d666e5bca702a8699ef01725be50725f4a7b4d432781d160952514b",
+      "bytes": 17865
+    },
+    {
+      "task_id": "HumanEval/160",
+      "file": "reference-160.pkl",
+      "sha256": "00c255e348bf7f3c240ac5ca110a0346ef40c3535dc824854049c906cc189b19",
+      "bytes": 7040
+    },
+    {
+      "task_id": "HumanEval/161",
+      "file": "reference-161.pkl",
+      "sha256": "f5750652e38253d602b1b253c15ab781cbd2a7bb47acf60f918edb2fc1fc4be3",
+      "bytes": 55598
+    },
+    {
+      "task_id": "HumanEval/162",
+      "file": "reference-162.pkl",
+      "sha256": "9a9ced4868ad06b96117ec514609671df72a124aaec0021c52fabcfb3dcdaf55",
+      "bytes": 44234
+    },
+    {
+      "task_id": "HumanEval/163",
+      "file": "reference-163.pkl",
+      "sha256": "4a46112def2d728fec8b9c7938662b448f32f5dd371e48a76506c338ee30771f",
+      "bytes": 12004
+    }
+  ],
+  "canonical_bank_calls": 328,
+  "wall_seconds": 36.406972474,
+  "native_trusted_exec_sha256": "616e434f1739465665d2a413f46723c9e84e1b311405482665f598ada6824540",
+  "data_sha256": "e62f4130146963d969da64553f407a66e52d095adbfed4ee6733b4d59e14a3ed"
+}

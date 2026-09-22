@@ -1,0 +1,3655 @@
+{
+  "humaneval-gpt-4-1106-preview-v010.zip": {
+    "source": "https://github.com/evalplus/evalplus/releases/download/v0.1.0/gpt-4-1106-preview_temp_0.0.zip",
+    "started_utc": "2026-09-22T21:28:30.279405+00:00",
+    "elapsed_seconds": 0.5319999999992433,
+    "bytes": 99057,
+    "sha256": "cad51c9c1d1f0491adc79cbb5739e10891472497e391d510cbd27ed9707b6015"
+  },
+  "HumanEvalPlus-v019.jsonl.gz": {
+    "source": "https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.9/HumanEvalPlus.jsonl.gz",
+    "started_utc": "2026-09-22T21:28:32.742698+00:00",
+    "elapsed_seconds": 0.4850000000005821,
+    "bytes": 936542,
+    "sha256": "e62f4130146963d969da64553f407a66e52d095adbfed4ee6733b4d59e14a3ed"
+  },
+  "swe-lite-test.parquet": {
+    "source": "https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite/resolve/6ec7bb89b9342f664a54a6e0a6ea6501d3437cc2/data/test-00000-of-00001.parquet",
+    "started_utc": "2026-09-22T21:28:31.222273+00:00",
+    "elapsed_seconds": 0.7340000000003783,
+    "bytes": 1119540,
+    "sha256": "7a21f37b8bc179c7db5beeb14e88ac538ba283455c776e6b2535bbfb6e3551b4"
+  },
+  "evalplus_cohort": {
+    "archive": "data/humaneval-gpt-4-1106-preview-v010.zip",
+    "archive_sha256": "cad51c9c1d1f0491adc79cbb5739e10891472497e391d510cbd27ed9707b6015",
+    "asset_id": 137360609,
+    "asset_created_at": "2023-11-25T07:02:24Z",
+    "record_count": 164,
+    "records": [
+      {
+        "task_id": "HumanEval/0",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_0/0.py",
+        "path": "data/humaneval_candidates/HumanEval_0/0.py",
+        "sha256": "fadd9db3f7ac06c933c7997bd013cfa0c342b20239dc81021745cd04c0455b4c",
+        "bytes": 529
+      },
+      {
+        "task_id": "HumanEval/1",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_1/0.py",
+        "path": "data/humaneval_candidates/HumanEval_1/0.py",
+        "sha256": "0914083b7f44155a8124c3d6eb2fd3fcf0e84ea488bc0aaf19954678b62a7361",
+        "bytes": 941
+      },
+      {
+        "task_id": "HumanEval/2",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_2/0.py",
+        "path": "data/humaneval_candidates/HumanEval_2/0.py",
+        "sha256": "ae5f617d3faab99de17ec1e569cb597a02cde3dbfe16d3b818de7adea24c1282",
+        "bytes": 427
+      },
+      {
+        "task_id": "HumanEval/3",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_3/0.py",
+        "path": "data/humaneval_candidates/HumanEval_3/0.py",
+        "sha256": "4d6b2dd3a3135def10aa33e39b1b0201d1758943f360669c31f5a12a9c9d9ecc",
+        "bytes": 577
+      },
+      {
+        "task_id": "HumanEval/4",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_4/0.py",
+        "path": "data/humaneval_candidates/HumanEval_4/0.py",
+        "sha256": "1ecfd500a9aeab52cc02a8477aff9019e0120cdd17572284ce333329075585d6",
+        "bytes": 615
+      },
+      {
+        "task_id": "HumanEval/5",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_5/0.py",
+        "path": "data/humaneval_candidates/HumanEval_5/0.py",
+        "sha256": "f6d715ba04a47bb891acce3749a7f7ade0e66d5802e5d01548d1d616d999c767",
+        "bytes": 456
+      },
+      {
+        "task_id": "HumanEval/6",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_6/0.py",
+        "path": "data/humaneval_candidates/HumanEval_6/0.py",
+        "sha256": "c6b5d3bc924f6d615639c0b34c88a582991c8c66e57e4ba2911d693fdce0e08e",
+        "bytes": 857
+      },
+      {
+        "task_id": "HumanEval/7",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_7/0.py",
+        "path": "data/humaneval_candidates/HumanEval_7/0.py",
+        "sha256": "81d39b5f35c32e0a09f019dc1868fed1b81b1193c442b1f02cd0c247cfd52df1",
+        "bytes": 380
+      },
+      {
+        "task_id": "HumanEval/8",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_8/0.py",
+        "path": "data/humaneval_candidates/HumanEval_8/0.py",
+        "sha256": "f4c5b4fad5fccda5581b9b1a85ec554ec0c905b8d7c30b22024f8818518efbca",
+        "bytes": 543
+      },
+      {
+        "task_id": "HumanEval/9",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_9/0.py",
+        "path": "data/humaneval_candidates/HumanEval_9/0.py",
+        "sha256": "b4b8b65ca19128bc86bf2a9eb8283596eb2bd1416fc53719e301d4395dd99043",
+        "bytes": 459
+      },
+      {
+        "task_id": "HumanEval/10",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_10/0.py",
+        "path": "data/humaneval_candidates/HumanEval_10/0.py",
+        "sha256": "725fc24f4216df45d95c4b912b687252e3962b02076974dbc259a9b90c2631ee",
+        "bytes": 786
+      },
+      {
+        "task_id": "HumanEval/11",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_11/0.py",
+        "path": "data/humaneval_candidates/HumanEval_11/0.py",
+        "sha256": "2d22a9f7fdb780631fe935232492d939ffe5c3774d59f05745df5193637e8b26",
+        "bytes": 344
+      },
+      {
+        "task_id": "HumanEval/12",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_12/0.py",
+        "path": "data/humaneval_candidates/HumanEval_12/0.py",
+        "sha256": "7065e07156de000c9f21f12cc180b2358270c62d6cc5053b007255bd20e72b65",
+        "bytes": 449
+      },
+      {
+        "task_id": "HumanEval/13",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_13/0.py",
+        "path": "data/humaneval_candidates/HumanEval_13/0.py",
+        "sha256": "38edd69fff08f7c8db750077def1a976cad2547a5d579531f597c5732e51ae79",
+        "bytes": 102
+      },
+      {
+        "task_id": "HumanEval/14",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_14/0.py",
+        "path": "data/humaneval_candidates/HumanEval_14/0.py",
+        "sha256": "a36caa4d6967aa8cc92f71f616b09e55e394f0986d38688d1624515a410f9b09",
+        "bytes": 264
+      },
+      {
+        "task_id": "HumanEval/15",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_15/0.py",
+        "path": "data/humaneval_candidates/HumanEval_15/0.py",
+        "sha256": "63136a62d9243b8e909d12959d105ef95aee360f342fe8af20c3201d292bdd93",
+        "bytes": 85
+      },
+      {
+        "task_id": "HumanEval/16",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_16/0.py",
+        "path": "data/humaneval_candidates/HumanEval_16/0.py",
+        "sha256": "851e913a5b61409187017933f52188c09b9f6c1d69b2fef62468fd39de63734f",
+        "bytes": 87
+      },
+      {
+        "task_id": "HumanEval/17",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_17/0.py",
+        "path": "data/humaneval_candidates/HumanEval_17/0.py",
+        "sha256": "432672fb8ed957bd9bc17d2d87154816703cf8752b2ef39ca642e408ae22e678",
+        "bytes": 327
+      },
+      {
+        "task_id": "HumanEval/18",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_18/0.py",
+        "path": "data/humaneval_candidates/HumanEval_18/0.py",
+        "sha256": "eb23841da494c138289af371e941c578d74d974ead754b24a919191a6a188aec",
+        "bytes": 243
+      },
+      {
+        "task_id": "HumanEval/19",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_19/0.py",
+        "path": "data/humaneval_candidates/HumanEval_19/0.py",
+        "sha256": "52fbe1c28b8cf314bb346157770b7b4cf624af9f708fceaff331f1ea795a8d89",
+        "bytes": 466
+      },
+      {
+        "task_id": "HumanEval/20",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_20/0.py",
+        "path": "data/humaneval_candidates/HumanEval_20/0.py",
+        "sha256": "e66abe194ddc63f96876d93062aa4dd459c5aacc5f51d6493b8b4a8a4b5ba343",
+        "bytes": 772
+      },
+      {
+        "task_id": "HumanEval/21",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_21/0.py",
+        "path": "data/humaneval_candidates/HumanEval_21/0.py",
+        "sha256": "4cf9b3163cb830cece45bf671effd6a4ded18059ed84078c215d9f2df424e288",
+        "bytes": 497
+      },
+      {
+        "task_id": "HumanEval/22",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_22/0.py",
+        "path": "data/humaneval_candidates/HumanEval_22/0.py",
+        "sha256": "7e8683c749a91d9cb6cab7ad005a604a5a1491ef612715ff2fa464ad58cbc603",
+        "bytes": 334
+      },
+      {
+        "task_id": "HumanEval/23",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_23/0.py",
+        "path": "data/humaneval_candidates/HumanEval_23/0.py",
+        "sha256": "3830040337f377121eae1a1c8161f2fd0d6706a02f1983cc8d2b26c0386d4ac8",
+        "bytes": 54
+      },
+      {
+        "task_id": "HumanEval/24",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_24/0.py",
+        "path": "data/humaneval_candidates/HumanEval_24/0.py",
+        "sha256": "e233b8fe0960e45987f80c7dbd749e74f182ac330d8d331246750291e966e8d5",
+        "bytes": 127
+      },
+      {
+        "task_id": "HumanEval/25",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_25/0.py",
+        "path": "data/humaneval_candidates/HumanEval_25/0.py",
+        "sha256": "58f2a1623ae5632c58b901f3ed5031fd6e0b10fc0f9f31632cc36c8d0b01cb5c",
+        "bytes": 745
+      },
+      {
+        "task_id": "HumanEval/26",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_26/0.py",
+        "path": "data/humaneval_candidates/HumanEval_26/0.py",
+        "sha256": "29995d79ca7bd85ddc3b90add20d2c11d61a23aed658575b66fed32d07579425",
+        "bytes": 525
+      },
+      {
+        "task_id": "HumanEval/27",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_27/0.py",
+        "path": "data/humaneval_candidates/HumanEval_27/0.py",
+        "sha256": "5193d659fb0d217be446e20365ed635d62cf847f7853a0b3ff1b5a33a8d407be",
+        "bytes": 267
+      },
+      {
+        "task_id": "HumanEval/28",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_28/0.py",
+        "path": "data/humaneval_candidates/HumanEval_28/0.py",
+        "sha256": "6adee129d74e8fadb0bda08ffab73b5277437b7b98db5fd44b13a14a5dd74b79",
+        "bytes": 241
+      },
+      {
+        "task_id": "HumanEval/29",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_29/0.py",
+        "path": "data/humaneval_candidates/HumanEval_29/0.py",
+        "sha256": "f4a92f1e0fd73c9e046bfc3194217c795756224e1ca2134cb86bf14b43475288",
+        "bytes": 368
+      },
+      {
+        "task_id": "HumanEval/30",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_30/0.py",
+        "path": "data/humaneval_candidates/HumanEval_30/0.py",
+        "sha256": "0897f7af03a5e2816c1973898be2a12be8d86d15194224722009db10d0994bff",
+        "bytes": 271
+      },
+      {
+        "task_id": "HumanEval/31",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_31/0.py",
+        "path": "data/humaneval_candidates/HumanEval_31/0.py",
+        "sha256": "b5bc417f90245613d37f810166c5ebbbcbcb48480caaae37e1c7489a3bda46bb",
+        "bytes": 273
+      },
+      {
+        "task_id": "HumanEval/32",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_32/0.py",
+        "path": "data/humaneval_candidates/HumanEval_32/0.py",
+        "sha256": "2b30f0cc1b52fc9a7f26071b28f77dc814675e255c9d5a55855de1113e02b0cc",
+        "bytes": 1593
+      },
+      {
+        "task_id": "HumanEval/33",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_33/0.py",
+        "path": "data/humaneval_candidates/HumanEval_33/0.py",
+        "sha256": "e86ee99328dcd90f6d9224256c45cd45e4aa94fbd584c7690ad8996038799c52",
+        "bytes": 380
+      },
+      {
+        "task_id": "HumanEval/34",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_34/0.py",
+        "path": "data/humaneval_candidates/HumanEval_34/0.py",
+        "sha256": "81915792d865b083ec7f06f70e968bacd1cd655462db0853777f7fcfadaf8442",
+        "bytes": 174
+      },
+      {
+        "task_id": "HumanEval/35",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_35/0.py",
+        "path": "data/humaneval_candidates/HumanEval_35/0.py",
+        "sha256": "7d85f7d5f8faffe2253c1e5fc13b94b565c23630dced333635f3b5029a72e55d",
+        "bytes": 237
+      },
+      {
+        "task_id": "HumanEval/36",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_36/0.py",
+        "path": "data/humaneval_candidates/HumanEval_36/0.py",
+        "sha256": "4a5d5f5edaa69c67a651d86f0d68b1312c7cd46a8fc258fd1a9b3066ed79d22e",
+        "bytes": 162
+      },
+      {
+        "task_id": "HumanEval/37",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_37/0.py",
+        "path": "data/humaneval_candidates/HumanEval_37/0.py",
+        "sha256": "30130a7b1c0ea8dcf8ff89a47904ca5e86ab74a8f38314e2ad416fb759566a7f",
+        "bytes": 191
+      },
+      {
+        "task_id": "HumanEval/38",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_38/0.py",
+        "path": "data/humaneval_candidates/HumanEval_38/0.py",
+        "sha256": "911d2a00839dabdf06a4e5ffd1551c573e1fcbc818da6887aa45e2576e186ce7",
+        "bytes": 361
+      },
+      {
+        "task_id": "HumanEval/39",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_39/0.py",
+        "path": "data/humaneval_candidates/HumanEval_39/0.py",
+        "sha256": "a76ada2ba86858451eebe826aeea25f63b4e0023b467528b7ddf52848e698225",
+        "bytes": 641
+      },
+      {
+        "task_id": "HumanEval/40",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_40/0.py",
+        "path": "data/humaneval_candidates/HumanEval_40/0.py",
+        "sha256": "3bb82409b63f2e921755d93b2846565d385c0a83fcb7a4881bb0cf357315c4b4",
+        "bytes": 423
+      },
+      {
+        "task_id": "HumanEval/41",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_41/0.py",
+        "path": "data/humaneval_candidates/HumanEval_41/0.py",
+        "sha256": "6d7f5ae2da7db32bc984bafb6adeb2f47a9d3507234817aeb6103c09edde8df9",
+        "bytes": 968
+      },
+      {
+        "task_id": "HumanEval/42",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_42/0.py",
+        "path": "data/humaneval_candidates/HumanEval_42/0.py",
+        "sha256": "84fd28447187fe900e20dc449c11112a24bbc3fe9b0fe952bbb2b3469f34e520",
+        "bytes": 242
+      },
+      {
+        "task_id": "HumanEval/43",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_43/0.py",
+        "path": "data/humaneval_candidates/HumanEval_43/0.py",
+        "sha256": "953cafe13b8629719a5ec94a7adec2733de5b0d113355020ea76642b678f82e5",
+        "bytes": 149
+      },
+      {
+        "task_id": "HumanEval/44",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_44/0.py",
+        "path": "data/humaneval_candidates/HumanEval_44/0.py",
+        "sha256": "922c71a71700d1a982f39c145de049e02861d8670d1988e633679b4ad21e06bf",
+        "bytes": 152
+      },
+      {
+        "task_id": "HumanEval/45",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_45/0.py",
+        "path": "data/humaneval_candidates/HumanEval_45/0.py",
+        "sha256": "6e88552de5cb54b7e58cd3c6565e819aacf89507a485935a1e79d77ea12c5560",
+        "bytes": 48
+      },
+      {
+        "task_id": "HumanEval/46",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_46/0.py",
+        "path": "data/humaneval_candidates/HumanEval_46/0.py",
+        "sha256": "7d3088ccc2d92b9a1b29d3197249b01cf3860efcf108eaff7e15dfb9ab66b240",
+        "bytes": 243
+      },
+      {
+        "task_id": "HumanEval/47",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_47/0.py",
+        "path": "data/humaneval_candidates/HumanEval_47/0.py",
+        "sha256": "16be5175862190ebf2c2fe96eede8bb0057cae2aef8dafee14e70b3a2fd86686",
+        "bytes": 213
+      },
+      {
+        "task_id": "HumanEval/48",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_48/0.py",
+        "path": "data/humaneval_candidates/HumanEval_48/0.py",
+        "sha256": "1fd79e079515f3c1a5f65605d220cd9f15b4784ad09efaaaf7f794ba8243dc55",
+        "bytes": 278
+      },
+      {
+        "task_id": "HumanEval/49",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_49/0.py",
+        "path": "data/humaneval_candidates/HumanEval_49/0.py",
+        "sha256": "aee7a322f58b62fb25169ca9f6082d3e55deb4e353702c29cd3c054e5f1bd281",
+        "bytes": 56
+      },
+      {
+        "task_id": "HumanEval/50",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_50/0.py",
+        "path": "data/humaneval_candidates/HumanEval_50/0.py",
+        "sha256": "7513384307dfa6f65d28fadcbd504cda65b925a0e099ba42b6e8225208798d19",
+        "bytes": 210
+      },
+      {
+        "task_id": "HumanEval/51",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_51/0.py",
+        "path": "data/humaneval_candidates/HumanEval_51/0.py",
+        "sha256": "65ed193849c96981d4bafa6a2d274c82696cbb0e71078e6692f557a79c1bfa71",
+        "bytes": 80
+      },
+      {
+        "task_id": "HumanEval/52",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_52/0.py",
+        "path": "data/humaneval_candidates/HumanEval_52/0.py",
+        "sha256": "6bb0470bdcade76e580851c04abe16139791108431e5bf3d2292e8d409550711",
+        "bytes": 258
+      },
+      {
+        "task_id": "HumanEval/53",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_53/0.py",
+        "path": "data/humaneval_candidates/HumanEval_53/0.py",
+        "sha256": "4cdbdb1205e858d54e4665ea2b394fb7d27d0b1a286f6b5d65a3902c704c9676",
+        "bytes": 49
+      },
+      {
+        "task_id": "HumanEval/54",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_54/0.py",
+        "path": "data/humaneval_candidates/HumanEval_54/0.py",
+        "sha256": "74ec19007ae063f18f4c6a5d1030439588c25d0b51592d08e8e3e200214944e0",
+        "bytes": 72
+      },
+      {
+        "task_id": "HumanEval/55",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_55/0.py",
+        "path": "data/humaneval_candidates/HumanEval_55/0.py",
+        "sha256": "5d62b7da1e45a83cac6208508f24356553a1ffb8a0181cc7a4a004ad035a552a",
+        "bytes": 100
+      },
+      {
+        "task_id": "HumanEval/56",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_56/0.py",
+        "path": "data/humaneval_candidates/HumanEval_56/0.py",
+        "sha256": "b7f0e3fc4614cff31f301f9df7cf592460dfb4735055d04b7f51b87cdef0dc16",
+        "bytes": 261
+      },
+      {
+        "task_id": "HumanEval/57",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_57/0.py",
+        "path": "data/humaneval_candidates/HumanEval_57/0.py",
+        "sha256": "0fd4ab1b668fc725706c8ad4c32719c6d0e0f3427f10c940edc50ee68ae696ee",
+        "bytes": 411
+      },
+      {
+        "task_id": "HumanEval/58",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_58/0.py",
+        "path": "data/humaneval_candidates/HumanEval_58/0.py",
+        "sha256": "8e3356dbd37949dfa0cf2193346421ebb03023cc58c3e6dc3e16cae7d31fca8a",
+        "bytes": 68
+      },
+      {
+        "task_id": "HumanEval/59",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_59/0.py",
+        "path": "data/humaneval_candidates/HumanEval_59/0.py",
+        "sha256": "df25d635d727f324f58bcd026c0a21c4ab569e5c4ae47fbf1bf573865be1cf0d",
+        "bytes": 150
+      },
+      {
+        "task_id": "HumanEval/60",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_60/0.py",
+        "path": "data/humaneval_candidates/HumanEval_60/0.py",
+        "sha256": "457cac96cc71eca0586d8bddc54ba6f8553effea925fdd079633a7a4e8857e71",
+        "bytes": 58
+      },
+      {
+        "task_id": "HumanEval/61",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_61/0.py",
+        "path": "data/humaneval_candidates/HumanEval_61/0.py",
+        "sha256": "3fb340b3e90292d917b378838d3a9b0470dcf217cdaddd1e3f8b73ea1317ff94",
+        "bytes": 493
+      },
+      {
+        "task_id": "HumanEval/62",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_62/0.py",
+        "path": "data/humaneval_candidates/HumanEval_62/0.py",
+        "sha256": "2709c10fc991db07a8c2b195cf65b6f4e949e64cbef607fa8fa7fc6c080266e2",
+        "bytes": 76
+      },
+      {
+        "task_id": "HumanEval/63",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_63/0.py",
+        "path": "data/humaneval_candidates/HumanEval_63/0.py",
+        "sha256": "29975130b06b3b754048516052f27295068233800f6128a0704a895e04102ec2",
+        "bytes": 326
+      },
+      {
+        "task_id": "HumanEval/64",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_64/0.py",
+        "path": "data/humaneval_candidates/HumanEval_64/0.py",
+        "sha256": "029a2a436698d7f0888af00f68b2cda13490761e468a63b2b2dfdff0d804fa74",
+        "bytes": 169
+      },
+      {
+        "task_id": "HumanEval/65",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_65/0.py",
+        "path": "data/humaneval_candidates/HumanEval_65/0.py",
+        "sha256": "71e25fb6bf6b95be02d5d0dd38de6537a35135a8381a092bcea060f165b572b2",
+        "bytes": 187
+      },
+      {
+        "task_id": "HumanEval/66",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_66/0.py",
+        "path": "data/humaneval_candidates/HumanEval_66/0.py",
+        "sha256": "b51b084d48b41ac6828c876f55b804bb27402cfaafba71f83920db5ac26889a8",
+        "bytes": 75
+      },
+      {
+        "task_id": "HumanEval/67",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_67/0.py",
+        "path": "data/humaneval_candidates/HumanEval_67/0.py",
+        "sha256": "d3cae68c4085551084b10ce96634ec3129d9bdb702190feb7de6fa926a6563b9",
+        "bytes": 290
+      },
+      {
+        "task_id": "HumanEval/68",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_68/0.py",
+        "path": "data/humaneval_candidates/HumanEval_68/0.py",
+        "sha256": "9a6d9e7fd4335d37c8579c33003f1ab6dbd25de44fcc2950423ee9349069d2fb",
+        "bytes": 677
+      },
+      {
+        "task_id": "HumanEval/69",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_69/0.py",
+        "path": "data/humaneval_candidates/HumanEval_69/0.py",
+        "sha256": "fc7613a3ce0ce1012c731b1d4dac4946ae82e4a31e320c850e6273845df0dc19",
+        "bytes": 489
+      },
+      {
+        "task_id": "HumanEval/70",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_70/0.py",
+        "path": "data/humaneval_candidates/HumanEval_70/0.py",
+        "sha256": "237b18d952760a6d2e2677b8cfe189a1e793e452c7aa7fc4ed2d66695d53965d",
+        "bytes": 239
+      },
+      {
+        "task_id": "HumanEval/71",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_71/0.py",
+        "path": "data/humaneval_candidates/HumanEval_71/0.py",
+        "sha256": "386de8d2cf561646e24eab76478034506e9cd409187040672e4b85309f224f3b",
+        "bytes": 327
+      },
+      {
+        "task_id": "HumanEval/72",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_72/0.py",
+        "path": "data/humaneval_candidates/HumanEval_72/0.py",
+        "sha256": "4d18ff8e7d6f7f348d0c4d53dbe15aece164952dec1b3d2df00b8205434e42ac",
+        "bytes": 63
+      },
+      {
+        "task_id": "HumanEval/73",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_73/0.py",
+        "path": "data/humaneval_candidates/HumanEval_73/0.py",
+        "sha256": "55caa50110a5561cc52af0cb4ec1aa4c278a362b45f7f5f204c9d8f4fd4c934e",
+        "bytes": 285
+      },
+      {
+        "task_id": "HumanEval/74",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_74/0.py",
+        "path": "data/humaneval_candidates/HumanEval_74/0.py",
+        "sha256": "ee1ebdd6b2bad3c19901832271b19ac95d0644335e1ddcc37431854351a70cbd",
+        "bytes": 360
+      },
+      {
+        "task_id": "HumanEval/75",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_75/0.py",
+        "path": "data/humaneval_candidates/HumanEval_75/0.py",
+        "sha256": "8d06fe75b2595e7e34d5385b8aef87277b293c73cf6a63a9e2f078453f672c18",
+        "bytes": 503
+      },
+      {
+        "task_id": "HumanEval/76",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_76/0.py",
+        "path": "data/humaneval_candidates/HumanEval_76/0.py",
+        "sha256": "0a861465d9e7ce67387185b928bbcf4a0230f72a79ecb4011e1b68ba329e29c0",
+        "bytes": 188
+      },
+      {
+        "task_id": "HumanEval/77",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_77/0.py",
+        "path": "data/humaneval_candidates/HumanEval_77/0.py",
+        "sha256": "4a3d67dac1b17d36a75e18d1c7828bf900550f1dabd3a9387b6b4d4f5b4eee98",
+        "bytes": 83
+      },
+      {
+        "task_id": "HumanEval/78",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_78/0.py",
+        "path": "data/humaneval_candidates/HumanEval_78/0.py",
+        "sha256": "717cdb61d3159d841081fdf2f916191defa5e51e1cefb5940ad477e54ec5d1c8",
+        "bytes": 392
+      },
+      {
+        "task_id": "HumanEval/79",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_79/0.py",
+        "path": "data/humaneval_candidates/HumanEval_79/0.py",
+        "sha256": "5e1397ea7f6cbc1ae5b2e6fca49f30b5cd4f238851a84e603e63a54a8b5b06aa",
+        "bytes": 97
+      },
+      {
+        "task_id": "HumanEval/80",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_80/0.py",
+        "path": "data/humaneval_candidates/HumanEval_80/0.py",
+        "sha256": "900b725af6102e20b632490e08ec17a16effb4bb22fa261fe15a66948491bcae",
+        "bytes": 166
+      },
+      {
+        "task_id": "HumanEval/81",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_81/0.py",
+        "path": "data/humaneval_candidates/HumanEval_81/0.py",
+        "sha256": "9ffd1f62d2328e17ee2089013eb9884a13ef4deb69d4b80a341565454fdeeb4a",
+        "bytes": 910
+      },
+      {
+        "task_id": "HumanEval/82",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_82/0.py",
+        "path": "data/humaneval_candidates/HumanEval_82/0.py",
+        "sha256": "622294d85e714e64155dfafee015eddecfcbe9c0a6d36f111df4093449a376b6",
+        "bytes": 252
+      },
+      {
+        "task_id": "HumanEval/83",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_83/0.py",
+        "path": "data/humaneval_candidates/HumanEval_83/0.py",
+        "sha256": "c4b3064b5b376b1ae61dbe11374d89317cd96ae49c8165470a2fb0f91d0cce9c",
+        "bytes": 505
+      },
+      {
+        "task_id": "HumanEval/84",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_84/0.py",
+        "path": "data/humaneval_candidates/HumanEval_84/0.py",
+        "sha256": "865a5c19161f3bbdbddfa5d1f75b0b1b296e194db7ef62b4cf7e21231b250ce6",
+        "bytes": 281
+      },
+      {
+        "task_id": "HumanEval/85",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_85/0.py",
+        "path": "data/humaneval_candidates/HumanEval_85/0.py",
+        "sha256": "964387fb95f83144468f2337d13989d6f68b07184ce181915e632525c351d663",
+        "bytes": 87
+      },
+      {
+        "task_id": "HumanEval/86",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_86/0.py",
+        "path": "data/humaneval_candidates/HumanEval_86/0.py",
+        "sha256": "426c0ee9208810c2ecd437eb306efde2dd2b953829d7be42ee6304c82620784e",
+        "bytes": 197
+      },
+      {
+        "task_id": "HumanEval/87",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_87/0.py",
+        "path": "data/humaneval_candidates/HumanEval_87/0.py",
+        "sha256": "2dd8afee8d6c5ce9b51a4fc974941576c52bea7e93b176cd7acb13bbf9f5f619",
+        "bytes": 302
+      },
+      {
+        "task_id": "HumanEval/88",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_88/0.py",
+        "path": "data/humaneval_candidates/HumanEval_88/0.py",
+        "sha256": "58a297f1c61bcd4689091e73fee869ac3c8b254707584606e7c770fa6d43a10a",
+        "bytes": 410
+      },
+      {
+        "task_id": "HumanEval/89",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_89/0.py",
+        "path": "data/humaneval_candidates/HumanEval_89/0.py",
+        "sha256": "751161ed5196f9a58b5f23baa2d9909efd271a696071784c5835b9eeb5e39d51",
+        "bytes": 418
+      },
+      {
+        "task_id": "HumanEval/90",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_90/0.py",
+        "path": "data/humaneval_candidates/HumanEval_90/0.py",
+        "sha256": "a8ac98f6dd24f37ffe320271f9c0ef1260e482ec78df4f14b8ace9bec57d6adf",
+        "bytes": 166
+      },
+      {
+        "task_id": "HumanEval/91",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_91/0.py",
+        "path": "data/humaneval_candidates/HumanEval_91/0.py",
+        "sha256": "0de63b63665ac9d77ca4e29838464f7e637b5038352e5c7148385aac5c088520",
+        "bytes": 198
+      },
+      {
+        "task_id": "HumanEval/92",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_92/0.py",
+        "path": "data/humaneval_candidates/HumanEval_92/0.py",
+        "sha256": "1913772bfcbd0a4c06b31ccfab94ac2435c2a3f28a5afad82f7dc23bf21a1bb1",
+        "bytes": 152
+      },
+      {
+        "task_id": "HumanEval/93",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_93/0.py",
+        "path": "data/humaneval_candidates/HumanEval_93/0.py",
+        "sha256": "cab6d05eed6918727a5c4e740ebabb70d72881ea0cb63be5916a85049ad4a130",
+        "bytes": 386
+      },
+      {
+        "task_id": "HumanEval/94",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_94/0.py",
+        "path": "data/humaneval_candidates/HumanEval_94/0.py",
+        "sha256": "a635c4db8cc5412fb172f9124e5d0868f2e3855b108c99b50db2fe42a5cf71cb",
+        "bytes": 1015
+      },
+      {
+        "task_id": "HumanEval/95",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_95/0.py",
+        "path": "data/humaneval_candidates/HumanEval_95/0.py",
+        "sha256": "73f13e771550d90d66764e595dd846799a8d5e54c5f802a19086594977e71ad7",
+        "bytes": 219
+      },
+      {
+        "task_id": "HumanEval/96",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_96/0.py",
+        "path": "data/humaneval_candidates/HumanEval_96/0.py",
+        "sha256": "c2f7c60a4579c6e7df2e339343afe4f9349356a7b4c30bcb8af9514673f0228a",
+        "bytes": 304
+      },
+      {
+        "task_id": "HumanEval/97",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_97/0.py",
+        "path": "data/humaneval_candidates/HumanEval_97/0.py",
+        "sha256": "a0f28b86a63daa9424453e90e60e0a6b45ef3228aa40e42cddb809dead1efd5b",
+        "bytes": 61
+      },
+      {
+        "task_id": "HumanEval/98",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_98/0.py",
+        "path": "data/humaneval_candidates/HumanEval_98/0.py",
+        "sha256": "7b7b8a4827b94d9e37bb6a0e72cabcebfa0113d2ba3494d746cc6aa2a8be1d61",
+        "bytes": 156
+      },
+      {
+        "task_id": "HumanEval/99",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_99/0.py",
+        "path": "data/humaneval_candidates/HumanEval_99/0.py",
+        "sha256": "6e2315b792aa1185e1c87903f5bbf7ac4a0845b7575ef25145a07719b7f90a42",
+        "bytes": 361
+      },
+      {
+        "task_id": "HumanEval/100",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_100/0.py",
+        "path": "data/humaneval_candidates/HumanEval_100/0.py",
+        "sha256": "004a22ba91cf80a3b10a26f2bb016e36c30d3ef8782665e119d5aebe0c0c2e4d",
+        "bytes": 159
+      },
+      {
+        "task_id": "HumanEval/101",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_101/0.py",
+        "path": "data/humaneval_candidates/HumanEval_101/0.py",
+        "sha256": "92701702aa93bec5ec235b570e3f07c4ad8b433d0988853cbb938d865debfb1b",
+        "bytes": 323
+      },
+      {
+        "task_id": "HumanEval/102",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_102/0.py",
+        "path": "data/humaneval_candidates/HumanEval_102/0.py",
+        "sha256": "641dd7d313fe57252257d8141f3945fae391828c898b9841d7a1cf52a6a6e712",
+        "bytes": 198
+      },
+      {
+        "task_id": "HumanEval/103",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_103/0.py",
+        "path": "data/humaneval_candidates/HumanEval_103/0.py",
+        "sha256": "59621e9c02f047158e0abe4d926e2767b00abfb22cd8fc1d319ca82de30989ce",
+        "bytes": 212
+      },
+      {
+        "task_id": "HumanEval/104",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_104/0.py",
+        "path": "data/humaneval_candidates/HumanEval_104/0.py",
+        "sha256": "8c4631be462deded2d61482a26cc9b2109ff0bc4327e88a7f87993c4c9461dd5",
+        "bytes": 110
+      },
+      {
+        "task_id": "HumanEval/105",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_105/0.py",
+        "path": "data/humaneval_candidates/HumanEval_105/0.py",
+        "sha256": "8b441f84b509d9777c84cef9bf445a5c010d3cf600d00741878765bcf20369ff",
+        "bytes": 594
+      },
+      {
+        "task_id": "HumanEval/106",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_106/0.py",
+        "path": "data/humaneval_candidates/HumanEval_106/0.py",
+        "sha256": "7ed5f6c1061d9d214547f3f6deb5e2297472af4cae403a3f851ec05d573397df",
+        "bytes": 386
+      },
+      {
+        "task_id": "HumanEval/107",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_107/0.py",
+        "path": "data/humaneval_candidates/HumanEval_107/0.py",
+        "sha256": "a5d612dc61dd8b93df2d18ed388823ab2a36b984bd5f238f6474d10732176fea",
+        "bytes": 335
+      },
+      {
+        "task_id": "HumanEval/108",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_108/0.py",
+        "path": "data/humaneval_candidates/HumanEval_108/0.py",
+        "sha256": "c02e4404a8816886c2b3c97fd1dd65069cd9687d5ef407e9e0246f457fd3829c",
+        "bytes": 155
+      },
+      {
+        "task_id": "HumanEval/109",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_109/0.py",
+        "path": "data/humaneval_candidates/HumanEval_109/0.py",
+        "sha256": "82bae834746b77855a98035ecca946be7bc6c431c9c2b2740bfb13c2aa227197",
+        "bytes": 783
+      },
+      {
+        "task_id": "HumanEval/110",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_110/0.py",
+        "path": "data/humaneval_candidates/HumanEval_110/0.py",
+        "sha256": "da0bf71f75ad504ab75feb4293838e9a9bb9f3683b9bdfc089979d55fb7e4dbf",
+        "bytes": 532
+      },
+      {
+        "task_id": "HumanEval/111",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_111/0.py",
+        "path": "data/humaneval_candidates/HumanEval_111/0.py",
+        "sha256": "56920a08ab7e728fd751a36572c18523534d84bb7c524e0db9e1a257943abc73",
+        "bytes": 436
+      },
+      {
+        "task_id": "HumanEval/112",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_112/0.py",
+        "path": "data/humaneval_candidates/HumanEval_112/0.py",
+        "sha256": "a1f2509f39a92fa8b6384dd1ae18e5a2501e20cb1ef18e0d2b79dcce740ddade",
+        "bytes": 313
+      },
+      {
+        "task_id": "HumanEval/113",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_113/0.py",
+        "path": "data/humaneval_candidates/HumanEval_113/0.py",
+        "sha256": "e1e86f964c29a670ce8cb1e1b9c1e24c09d46347109219eaa02ed132b1fc9487",
+        "bytes": 257
+      },
+      {
+        "task_id": "HumanEval/114",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_114/0.py",
+        "path": "data/humaneval_candidates/HumanEval_114/0.py",
+        "sha256": "1eab4d7c4ddcca02b533f02003860f52b470cbed2b0e2a3fbbc8438860090250",
+        "bytes": 244
+      },
+      {
+        "task_id": "HumanEval/115",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_115/0.py",
+        "path": "data/humaneval_candidates/HumanEval_115/0.py",
+        "sha256": "18b2bc1a149f1a2d896880aa0cd4019395c8e3a196cfca12ae7c4fca50e0d162",
+        "bytes": 1464
+      },
+      {
+        "task_id": "HumanEval/116",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_116/0.py",
+        "path": "data/humaneval_candidates/HumanEval_116/0.py",
+        "sha256": "275d06981d94157659ddf27a4c21811b746398d9a2e9230317b7c3700f5448bb",
+        "bytes": 82
+      },
+      {
+        "task_id": "HumanEval/117",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_117/0.py",
+        "path": "data/humaneval_candidates/HumanEval_117/0.py",
+        "sha256": "4a9c0cd83a1bab6389ffe6377f97a75274b028b8fd47d3a7abcf8c4c71481343",
+        "bytes": 414
+      },
+      {
+        "task_id": "HumanEval/118",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_118/0.py",
+        "path": "data/humaneval_candidates/HumanEval_118/0.py",
+        "sha256": "36fc51a2429608dfbfc876c86156e17ae2a9c5acfed298ca32d4ae9d61ecff9f",
+        "bytes": 484
+      },
+      {
+        "task_id": "HumanEval/119",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_119/0.py",
+        "path": "data/humaneval_candidates/HumanEval_119/0.py",
+        "sha256": "715707404f911f7bc3dbe8b9ad2c616bfdacc9a951d07827fbb09a15a6f732af",
+        "bytes": 956
+      },
+      {
+        "task_id": "HumanEval/120",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_120/0.py",
+        "path": "data/humaneval_candidates/HumanEval_120/0.py",
+        "sha256": "4f2afb79fdcbbcfa7c6b4882c3d65e899b1e1243f33b07bfa580b98911dbef10",
+        "bytes": 164
+      },
+      {
+        "task_id": "HumanEval/121",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_121/0.py",
+        "path": "data/humaneval_candidates/HumanEval_121/0.py",
+        "sha256": "a1b931d64cfc789d0ad12cfe7905bd3e118dd0cb46e1fe0dc2bfeef94a3c7cdc",
+        "bytes": 92
+      },
+      {
+        "task_id": "HumanEval/122",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_122/0.py",
+        "path": "data/humaneval_candidates/HumanEval_122/0.py",
+        "sha256": "acfa7b6f8d3d7b2d1c5d4d9137cb921b233d92bd8dcb7659c78b1b829864bb87",
+        "bytes": 279
+      },
+      {
+        "task_id": "HumanEval/123",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_123/0.py",
+        "path": "data/humaneval_candidates/HumanEval_123/0.py",
+        "sha256": "82467fb775296049c07629b42f2ff6b25943ec415eb5a5397d0f48fba1a151a6",
+        "bytes": 220
+      },
+      {
+        "task_id": "HumanEval/124",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_124/0.py",
+        "path": "data/humaneval_candidates/HumanEval_124/0.py",
+        "sha256": "628ae9716fec446bf63cdea1636656676234c3d28d9431612f6a4091ee415fb2",
+        "bytes": 685
+      },
+      {
+        "task_id": "HumanEval/125",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_125/0.py",
+        "path": "data/humaneval_candidates/HumanEval_125/0.py",
+        "sha256": "f24dd293fd858202ed36d1e022bac8eed9019627be91100973db4b2c4c490d2a",
+        "bytes": 367
+      },
+      {
+        "task_id": "HumanEval/126",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_126/0.py",
+        "path": "data/humaneval_candidates/HumanEval_126/0.py",
+        "sha256": "ab51429b9bbb1f0d36683e0162a7a824a640f058a05899241b338a4978992361",
+        "bytes": 105
+      },
+      {
+        "task_id": "HumanEval/127",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_127/0.py",
+        "path": "data/humaneval_candidates/HumanEval_127/0.py",
+        "sha256": "f608e2340745c50f381a49859423510123abd42dc096c2d17acafde0daadc16a",
+        "bytes": 746
+      },
+      {
+        "task_id": "HumanEval/128",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_128/0.py",
+        "path": "data/humaneval_candidates/HumanEval_128/0.py",
+        "sha256": "2f47387fef1cb46d0e257b81081a8c411c7ef9deb72e7197fa3832173f5fe509",
+        "bytes": 288
+      },
+      {
+        "task_id": "HumanEval/129",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_129/0.py",
+        "path": "data/humaneval_candidates/HumanEval_129/0.py",
+        "sha256": "70a92561bc25611ae32015043c4fb1d1de72a292a87fe21eb82792c2cbae2371",
+        "bytes": 588
+      },
+      {
+        "task_id": "HumanEval/130",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_130/0.py",
+        "path": "data/humaneval_candidates/HumanEval_130/0.py",
+        "sha256": "795d2ee898d94fa459f2d2dde360d48cbf1068dd85fb29bd4fd900e81e213b93",
+        "bytes": 439
+      },
+      {
+        "task_id": "HumanEval/131",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_131/0.py",
+        "path": "data/humaneval_candidates/HumanEval_131/0.py",
+        "sha256": "6764356a75c280b0dfc77aa1c1519dc99710693214dfe6eb78a9c05110757d9b",
+        "bytes": 206
+      },
+      {
+        "task_id": "HumanEval/132",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_132/0.py",
+        "path": "data/humaneval_candidates/HumanEval_132/0.py",
+        "sha256": "f631d2fb0f3dc39257f29da9bd22de6af06175436baf2cfdfa08480f58d4c855",
+        "bytes": 268
+      },
+      {
+        "task_id": "HumanEval/133",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_133/0.py",
+        "path": "data/humaneval_candidates/HumanEval_133/0.py",
+        "sha256": "53ae51592b5b4c7f2a2bbb0534ffc5ae554224d9d6eaa3d7bb2d5ea56d544c9e",
+        "bytes": 533
+      },
+      {
+        "task_id": "HumanEval/134",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_134/0.py",
+        "path": "data/humaneval_candidates/HumanEval_134/0.py",
+        "sha256": "eb8c43884694fdcc05c02bc91c4c2c95652b365fb9a2b2fff16c9a4e027d7f35",
+        "bytes": 443
+      },
+      {
+        "task_id": "HumanEval/135",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_135/0.py",
+        "path": "data/humaneval_candidates/HumanEval_135/0.py",
+        "sha256": "f738773eb00a342147b1ba4bb24e09da7135f06aa9a17028dc00cf95e1e2779c",
+        "bytes": 122
+      },
+      {
+        "task_id": "HumanEval/136",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_136/0.py",
+        "path": "data/humaneval_candidates/HumanEval_136/0.py",
+        "sha256": "85aed02c4bba423f92950295ca8eac95db3722f412db6da427aedd8579c3d324",
+        "bytes": 420
+      },
+      {
+        "task_id": "HumanEval/137",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_137/0.py",
+        "path": "data/humaneval_candidates/HumanEval_137/0.py",
+        "sha256": "e63679c4defb7bb20679d3ef423ea15a58b353c7fc3b49ccf8e18e27b3f7e686",
+        "bytes": 425
+      },
+      {
+        "task_id": "HumanEval/138",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_138/0.py",
+        "path": "data/humaneval_candidates/HumanEval_138/0.py",
+        "sha256": "21408dea046956b4115bf468a23a723847ac7f253912550e2b1b093bde67e2b7",
+        "bytes": 120
+      },
+      {
+        "task_id": "HumanEval/139",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_139/0.py",
+        "path": "data/humaneval_candidates/HumanEval_139/0.py",
+        "sha256": "1bff27eb753677e7e77affda636b3bb14c453174f32bee50b850504b09138c2a",
+        "bytes": 190
+      },
+      {
+        "task_id": "HumanEval/140",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_140/0.py",
+        "path": "data/humaneval_candidates/HumanEval_140/0.py",
+        "sha256": "36902e0904cffd8b1ec9b4c7a700d0122daed0bae4bde0178598242d17fcab21",
+        "bytes": 227
+      },
+      {
+        "task_id": "HumanEval/141",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_141/0.py",
+        "path": "data/humaneval_candidates/HumanEval_141/0.py",
+        "sha256": "90c5fbb22c73f2d75c5252d8d2dfdba0a823db2926693273d87f3ae53d03565b",
+        "bytes": 408
+      },
+      {
+        "task_id": "HumanEval/142",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_142/0.py",
+        "path": "data/humaneval_candidates/HumanEval_142/0.py",
+        "sha256": "92ef389a26919b745ad3439ea0bbc8d29a29db5f07dab3dafb5455c719ddc989",
+        "bytes": 701
+      },
+      {
+        "task_id": "HumanEval/143",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_143/0.py",
+        "path": "data/humaneval_candidates/HumanEval_143/0.py",
+        "sha256": "07ea8e95a95cb36e581f3a9cbf91591d0f7c2ed2a16a74e8905348adb00e8669",
+        "bytes": 341
+      },
+      {
+        "task_id": "HumanEval/144",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_144/0.py",
+        "path": "data/humaneval_candidates/HumanEval_144/0.py",
+        "sha256": "ce908a6b78d979c50e402742fe179dfbff66c00735099336a2324ebc0d2fad1e",
+        "bytes": 477
+      },
+      {
+        "task_id": "HumanEval/145",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_145/0.py",
+        "path": "data/humaneval_candidates/HumanEval_145/0.py",
+        "sha256": "6692c1ee628a992a009ab41216587971ac45e7305af1f48dba11f7544d98fef4",
+        "bytes": 183
+      },
+      {
+        "task_id": "HumanEval/146",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_146/0.py",
+        "path": "data/humaneval_candidates/HumanEval_146/0.py",
+        "sha256": "fad164a42412d475eb7952955f29d0192ae6a9d31d97278b422909d8fde77e5a",
+        "bytes": 227
+      },
+      {
+        "task_id": "HumanEval/147",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_147/0.py",
+        "path": "data/humaneval_candidates/HumanEval_147/0.py",
+        "sha256": "2729f90048ae01f98a173c3124e3c252ca9a9017441718d95c29915dda25bb03",
+        "bytes": 368
+      },
+      {
+        "task_id": "HumanEval/148",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_148/0.py",
+        "path": "data/humaneval_candidates/HumanEval_148/0.py",
+        "sha256": "3d8cde00b1fdc28544cc0110c0d8d4ece4bce337208cdca749b9d951b6c6147d",
+        "bytes": 402
+      },
+      {
+        "task_id": "HumanEval/149",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_149/0.py",
+        "path": "data/humaneval_candidates/HumanEval_149/0.py",
+        "sha256": "bebd60cd499087a4da0c1376266ae64868795fe2b5ec179b7015c4f58af1a677",
+        "bytes": 289
+      },
+      {
+        "task_id": "HumanEval/150",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_150/0.py",
+        "path": "data/humaneval_candidates/HumanEval_150/0.py",
+        "sha256": "a96b7035921c4c1a6d7adbfbb6aed9863eea43243359600589b3aaadc01f9023",
+        "bytes": 250
+      },
+      {
+        "task_id": "HumanEval/151",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_151/0.py",
+        "path": "data/humaneval_candidates/HumanEval_151/0.py",
+        "sha256": "6daf47b4fb9e2e7ba448e668ebae97b42b06a2ec1cdf79222d995c44c6810181",
+        "bytes": 113
+      },
+      {
+        "task_id": "HumanEval/152",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_152/0.py",
+        "path": "data/humaneval_candidates/HumanEval_152/0.py",
+        "sha256": "24e206fdecdf6642497a306f486480e5dff5600f9f711b88cd90535d01a81c03",
+        "bytes": 129
+      },
+      {
+        "task_id": "HumanEval/153",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_153/0.py",
+        "path": "data/humaneval_candidates/HumanEval_153/0.py",
+        "sha256": "df54d990bfaf1b223bc764bc0712791acfdd0d2b7a24d0ac900e0732ee265daf",
+        "bytes": 410
+      },
+      {
+        "task_id": "HumanEval/154",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_154/0.py",
+        "path": "data/humaneval_candidates/HumanEval_154/0.py",
+        "sha256": "33a4abf125cfde38aee20f5a90315643603f04ac300cd5ae1a3d27201aa080a4",
+        "bytes": 202
+      },
+      {
+        "task_id": "HumanEval/155",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_155/0.py",
+        "path": "data/humaneval_candidates/HumanEval_155/0.py",
+        "sha256": "8957fc109e7f07223f897b0582db64ab8bdaabc190be1dd6fdb62adf49d18c35",
+        "bytes": 198
+      },
+      {
+        "task_id": "HumanEval/156",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_156/0.py",
+        "path": "data/humaneval_candidates/HumanEval_156/0.py",
+        "sha256": "b2b3731d3977cd7c9bd706a07b9b180e9066f3a5cf31672c0c16e1ee009d39d2",
+        "bytes": 433
+      },
+      {
+        "task_id": "HumanEval/157",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_157/0.py",
+        "path": "data/humaneval_candidates/HumanEval_157/0.py",
+        "sha256": "96f9451c51887724ffc450107a66517505f1a36964b9c7f650869a15e81d4204",
+        "bytes": 117
+      },
+      {
+        "task_id": "HumanEval/158",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_158/0.py",
+        "path": "data/humaneval_candidates/HumanEval_158/0.py",
+        "sha256": "6a0f289c5c8c591aa97fbec6fa915464e1b0e10c046c8bb3dcf320c66dca9435",
+        "bytes": 516
+      },
+      {
+        "task_id": "HumanEval/159",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_159/0.py",
+        "path": "data/humaneval_candidates/HumanEval_159/0.py",
+        "sha256": "1c1e7cb451b824942e454b86760728d8f1d05591521cd2eb8189bb663398f01e",
+        "bytes": 347
+      },
+      {
+        "task_id": "HumanEval/160",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_160/0.py",
+        "path": "data/humaneval_candidates/HumanEval_160/0.py",
+        "sha256": "7ebf5c62ca013f50f315980ef94e8ea2b0bff93241702e64b22c99d4dda5f5c5",
+        "bytes": 190
+      },
+      {
+        "task_id": "HumanEval/161",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_161/0.py",
+        "path": "data/humaneval_candidates/HumanEval_161/0.py",
+        "sha256": "8ec2bb102cec7668968f24cd98285719b5d5e56c694bb009bfef492e393b2159",
+        "bytes": 184
+      },
+      {
+        "task_id": "HumanEval/162",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_162/0.py",
+        "path": "data/humaneval_candidates/HumanEval_162/0.py",
+        "sha256": "65256acb90e5570c7b66f2673df4da3e9fccd0bb2f5d48e42732de3ec7f964e4",
+        "bytes": 135
+      },
+      {
+        "task_id": "HumanEval/163",
+        "member": "gpt-4-1106-preview_temp_0.0/HumanEval_163/0.py",
+        "path": "data/humaneval_candidates/HumanEval_163/0.py",
+        "sha256": "98c4503733352d01b2394bf71d4af73f92a92c2be71242bc2c4bb852bcc9da45",
+        "bytes": 440
+      }
+    ],
+    "candidate_executions": 0,
+    "archived_outcome_files_opened": false
+  },
+  "swe_cohort": {
+    "dataset_path": "data/swe-lite-test.parquet",
+    "dataset_sha256": "7a21f37b8bc179c7db5beeb14e88ac538ba283455c776e6b2535bbfb6e3551b4",
+    "test_split_count": 300,
+    "eligible_count": 180,
+    "tasks": [
+      {
+        "instance_id": "pallets__flask-4045",
+        "repo": "pallets/flask",
+        "version": "2.0",
+        "base_commit": "d8c37f43724cd9fb0870f77877b7c4c7e38a19e0",
+        "FAIL_TO_PASS": [
+          "tests/test_blueprints.py::test_dotted_name_not_allowed",
+          "tests/test_blueprints.py::test_route_decorator_custom_endpoint_with_dots"
+        ],
+        "PASS_TO_PASS": [
+          "tests/test_basic.py::test_method_route_no_methods",
+          "tests/test_basic.py::test_disallow_string_for_allowed_methods",
+          "tests/test_basic.py::test_error_handler_unknown_code",
+          "tests/test_basic.py::test_request_locals",
+          "tests/test_basic.py::test_exception_propagation",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-True-False-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[None-False-False-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-True-False-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[True-False-False-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-True-False-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-True-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-True-False]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-False-True]",
+          "tests/test_basic.py::test_werkzeug_passthrough_errors[False-False-False-False]",
+          "tests/test_basic.py::test_get_method_on_g",
+          "tests/test_basic.py::test_g_iteration_protocol",
+          "tests/test_basic.py::test_run_defaults",
+          "tests/test_basic.py::test_run_server_port",
+          "tests/test_basic.py::test_run_from_config[None-None-pocoo.org:8080-pocoo.org-8080]",
+          "tests/test_basic.py::test_run_from_config[localhost-None-pocoo.org:8080-localhost-8080]",
+          "tests/test_basic.py::test_run_from_config[None-80-pocoo.org:8080-pocoo.org-80]",
+          "tests/test_basic.py::test_run_from_config[localhost-80-pocoo.org:8080-localhost-80]",
+          "tests/test_basic.py::test_run_from_config[localhost-0-localhost:8080-localhost-0]",
+          "tests/test_basic.py::test_run_from_config[None-None-localhost:8080-localhost-8080]",
+          "tests/test_basic.py::test_run_from_config[None-None-localhost:0-localhost-0]",
+          "tests/test_basic.py::test_app_freed_on_zero_refcount",
+          "tests/test_blueprints.py::test_template_filter",
+          "tests/test_blueprints.py::test_add_template_filter",
+          "tests/test_blueprints.py::test_template_filter_with_name",
+          "tests/test_blueprints.py::test_add_template_filter_with_name",
+          "tests/test_blueprints.py::test_template_test",
+          "tests/test_blueprints.py::test_add_template_test",
+          "tests/test_blueprints.py::test_template_test_with_name",
+          "tests/test_blueprints.py::test_add_template_test_with_name",
+          "tests/test_blueprints.py::test_template_global"
+        ],
+        "ordering_sha256": "01360a2f18101053d61781c6e7486949a98b9ea793480a30ab0bcd55dfe9d6f9"
+      },
+      {
+        "instance_id": "sympy__sympy-18835",
+        "repo": "sympy/sympy",
+        "version": "1.6",
+        "base_commit": "516fa83e69caf1e68306cfc912a13f36c434d51c",
+        "FAIL_TO_PASS": [
+          "test_uniq"
+        ],
+        "PASS_TO_PASS": [
+          "test_is_palindromic",
+          "test_postorder_traversal",
+          "test_flatten",
+          "test_iproduct",
+          "test_group",
+          "test_subsets",
+          "test_variations",
+          "test_cartes",
+          "test_filter_symbols",
+          "test_numbered_symbols",
+          "test_sift",
+          "test_take",
+          "test_dict_merge",
+          "test_prefixes",
+          "test_postfixes",
+          "test_topological_sort",
+          "test_strongly_connected_components",
+          "test_connected_components",
+          "test_rotate",
+          "test_multiset_partitions",
+          "test_multiset_combinations",
+          "test_multiset_permutations",
+          "test_partitions",
+          "test_binary_partitions",
+          "test_bell_perm",
+          "test_involutions",
+          "test_derangements",
+          "test_necklaces",
+          "test_bracelets",
+          "test_generate_oriented_forest",
+          "test_unflatten",
+          "test_common_prefix_suffix",
+          "test_minlex",
+          "test_ordered",
+          "test_runs",
+          "test_reshape",
+          "test_kbins",
+          "test_has_dups",
+          "test__partition",
+          "test_ordered_partitions",
+          "test_rotations"
+        ],
+        "ordering_sha256": "0212426c87e83a3ef2af0397a9bca06f3409fd6d417a911134bd240400253a14"
+      },
+      {
+        "instance_id": "sympy__sympy-12454",
+        "repo": "sympy/sympy",
+        "version": "1.0",
+        "base_commit": "d3fcdb72bfcbb560eb45264ac1c03f359436edef",
+        "FAIL_TO_PASS": [
+          "test_is_upper",
+          "test_hessenberg"
+        ],
+        "PASS_TO_PASS": [
+          "test_args",
+          "test_division",
+          "test_sum",
+          "test_addition",
+          "test_fancy_index_matrix",
+          "test_multiplication",
+          "test_power",
+          "test_creation",
+          "test_tolist",
+          "test_as_mutable",
+          "test_determinant",
+          "test_det_LU_decomposition",
+          "test_berkowitz_minors",
+          "test_slicing",
+          "test_submatrix_assignment",
+          "test_extract",
+          "test_reshape",
+          "test_applyfunc",
+          "test_expand",
+          "test_random",
+          "test_LUdecomp",
+          "test_LUsolve",
+          "test_QRsolve",
+          "test_inverse",
+          "test_matrix_inverse_mod",
+          "test_util",
+          "test_jacobian_hessian",
+          "test_QR",
+          "test_QR_non_square",
+          "test_nullspace",
+          "test_columnspace",
+          "test_wronskian",
+          "test_subs",
+          "test_xreplace",
+          "test_transpose",
+          "test_conjugate",
+          "test_conj_dirac",
+          "test_trace",
+          "test_shape",
+          "test_col_row_op",
+          "test_zip_row_op",
+          "test_issue_3950",
+          "test_issue_3981",
+          "test_evalf",
+          "test_is_symbolic",
+          "test_is_lower",
+          "test_is_nilpotent",
+          "test_zeros_ones_fill",
+          "test_empty_zeros",
+          "test_inv_iszerofunc",
+          "test_jacobian_metrics",
+          "test_jacobian2",
+          "test_issue_4564",
+          "test_nonvectorJacobian",
+          "test_vec",
+          "test_vech",
+          "test_vech_errors",
+          "test_diag",
+          "test_get_diag_blocks1",
+          "test_get_diag_blocks2",
+          "test_inv_block",
+          "test_creation_args",
+          "test_diagonal_symmetrical",
+          "test_diagonalization",
+          "test_jordan_form",
+          "test_jordan_form_complex_issue_9274",
+          "test_issue_10220",
+          "test_Matrix_berkowitz_charpoly",
+          "test_exp",
+          "test_has",
+          "test_errors",
+          "test_len",
+          "test_integrate",
+          "test_diff",
+          "test_getattr",
+          "test_cholesky",
+          "test_LDLdecomposition",
+          "test_cholesky_solve",
+          "test_LDLsolve",
+          "test_lower_triangular_solve",
+          "test_upper_triangular_solve",
+          "test_diagonal_solve",
+          "test_singular_values",
+          "test_condition_number",
+          "test_equality",
+          "test_col_join",
+          "test_row_insert",
+          "test_col_insert",
+          "test_normalized",
+          "test_print_nonzero",
+          "test_zeros_eye",
+          "test_is_zero",
+          "test_rotation_matrices",
+          "test_DeferredVector",
+          "test_DeferredVector_not_iterable",
+          "test_DeferredVector_Matrix",
+          "test_GramSchmidt",
+          "test_casoratian",
+          "test_zero_dimension_multiply",
+          "test_slice_issue_2884",
+          "test_slice_issue_3401",
+          "test_copyin",
+          "test_invertible_check",
+          "test_issue_5964",
+          "test_issue_7604",
+          "test_is_Identity",
+          "test_dot",
+          "test_dual",
+          "test_anti_symmetric",
+          "test_issue_5321",
+          "test_issue_5320",
+          "test_issue_11944",
+          "test_cross",
+          "test_hash",
+          "test_adjoint",
+          "test_simplify_immutable",
+          "test_rank",
+          "test_issue_11434",
+          "test_rank_regression_from_so",
+          "test_replace",
+          "test_replace_map",
+          "test_atoms",
+          "test_pinv_solve",
+          "test_gauss_jordan_solve",
+          "test_issue_7201",
+          "test_free_symbols",
+          "test_hermitian",
+          "test_doit",
+          "test_issue_9457_9467_9876",
+          "test_issue_9422",
+          "test_issue_10770",
+          "test_issue_10658",
+          "test_partial_pivoting",
+          "test_iszero_substitution"
+        ],
+        "ordering_sha256": "05b72da8c185e3bd1e1fda692f2934aacc2de897045ef69477be68c9473282d1"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "repo": "scikit-learn/scikit-learn",
+        "version": "0.21",
+        "base_commit": "02dc9ed680e7f53f1b0d410dcdd37341c7958eb1",
+        "FAIL_TO_PASS": [
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown_strings"
+        ],
+        "PASS_TO_PASS": [
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_sparse",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dense",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_deprecationwarnings",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_force_new_behaviour",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categorical_features",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_not_fitted",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_no_categorical_features",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-int32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float64]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-int32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float64]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-int32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float64]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[int32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float32]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float64]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_set_params",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[mixed]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_inverse",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[mixed]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[string]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object-string-cat]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_unsorted_categories",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories_mixed_columns",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_pandas",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names_unicode",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[mixed]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object-string-cat]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_inverse",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[numeric]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[object]",
+          "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes",
+          "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas",
+          "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning"
+        ],
+        "ordering_sha256": "0780a5c7a68c1f8d4fa572f1818e94c2cd2ba086ae42ce92cc7a5c791adabda6"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5413",
+        "repo": "pytest-dev/pytest",
+        "version": "4.6",
+        "base_commit": "450d2646233c670654744d3d24330b69895bb9d2",
+        "FAIL_TO_PASS": [
+          "testing/code/test_excinfo.py::test_excinfo_repr_str"
+        ],
+        "PASS_TO_PASS": [
+          "testing/code/test_excinfo.py::test_excinfo_simple",
+          "testing/code/test_excinfo.py::test_excinfo_getstatement",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_entries",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_entry_getsource",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_entry_getsource_in_construct",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_cut",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_filter",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_filter_selective[<lambda>-True]",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_filter_selective[<lambda>-False]",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_filter_selective[tracebackhide2-True]",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_filter_selective[tracebackhide3-False]",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_recursion_index",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_only_specific_recursion_errors",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_no_recursion_index",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_getcrashentry",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_getcrashentry_empty",
+          "testing/code/test_excinfo.py::test_excinfo_exconly",
+          "testing/code/test_excinfo.py::test_excinfo_for_later",
+          "testing/code/test_excinfo.py::test_excinfo_errisinstance",
+          "testing/code/test_excinfo.py::test_excinfo_no_sourcecode",
+          "testing/code/test_excinfo.py::test_entrysource_Queue_example",
+          "testing/code/test_excinfo.py::test_codepath_Queue_example",
+          "testing/code/test_excinfo.py::test_match_succeeds",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_source",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_source_excinfo",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_source_not_existing",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_many_line_source_not_existing",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_source_failing_fullsource",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_local",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_local_with_error",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_local_with_exception_in_class_property",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_local_truncated",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_tracebackentry_lines",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_tracebackentry_lines2",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_tracebackentry_lines_var_kw_args",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_tracebackentry_short",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_tracebackentry_no",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_traceback_tbfilter",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_traceback_short_no_source",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_traceback_and_excinfo",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_traceback_with_invalid_cwd",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_excinfo_addouterr",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_excinfo_reprcrash",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_repr_traceback_recursion",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_reprexcinfo_getrepr",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_reprexcinfo_unicode",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_toterminal_long",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_toterminal_long_missing_source",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_toterminal_long_incomplete_source",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_toterminal_long_filenames",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions0]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions1]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions2]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions3]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions4]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions5]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions6]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions7]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions8]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions9]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions10]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions11]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions12]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions13]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions14]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions15]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions16]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions17]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions18]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions19]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions20]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions21]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions22]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_format_excinfo[reproptions23]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_traceback_repr_style",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_chain_repr",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_repr_chain_suppression[from_none]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_repr_chain_suppression[explicit_suppress]",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_chain_repr_without_traceback[cause-The",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_chain_repr_without_traceback[context-During",
+          "testing/code/test_excinfo.py::TestFormattedExcinfo::test_exc_chain_repr_cycle",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[None-short]",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[None-long]",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[utf8-short]",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[utf8-long]",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[utf16-short]",
+          "testing/code/test_excinfo.py::test_repr_traceback_with_unicode[utf16-long]",
+          "testing/code/test_excinfo.py::test_exception_repr_extraction_error_on_recursion",
+          "testing/code/test_excinfo.py::test_no_recursion_index_on_recursion_error",
+          "testing/code/test_excinfo.py::TestTraceback_f_g_h::test_traceback_cut_excludepath",
+          "testing/code/test_excinfo.py::test_match_raises_error",
+          "testing/code/test_excinfo.py::test_cwd_deleted"
+        ],
+        "ordering_sha256": "08056b8152ed283c2988ac33e5fff204426d136cf3aab48b92030248d4e25884"
+      }
+    ],
+    "membership_audit": [
+      {
+        "instance_id": "astropy__astropy-12907",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "6d7487a3e32a383b573bce9899c40e5b28a0b37d16c2a3c4a4075de171591ee8"
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "32b3a9561503ffae94797bc6adadff3ca302dbd687363aa311ca71ca716862be"
+      },
+      {
+        "instance_id": "astropy__astropy-14365",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "8da6344865c88c0ecff59af7bd6b7abce53b52c406ed0c78b274491c80a7d8ca"
+      },
+      {
+        "instance_id": "astropy__astropy-14995",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "b128695872383ad11f5f72a2dccdba60469066a43716f45dc6eabd737bf093e6"
+      },
+      {
+        "instance_id": "astropy__astropy-6938",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "c8c88d722c296991d3311136190c722e36d049ce5d458dd65b33580d26b796c3"
+      },
+      {
+        "instance_id": "astropy__astropy-7746",
+        "repo": "astropy/astropy",
+        "eligibility": "eligible",
+        "ordering_sha256": "39f4dc49ee9540f05fb246d60af49122ae82089b4b32754ae262b4a0e1f07254"
+      },
+      {
+        "instance_id": "django__django-10914",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "28ae655c9f84e60df4ae57e51ad4c0bc7bca2febf2239688ff0664aa68719ea1"
+      },
+      {
+        "instance_id": "django__django-10924",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "3f39c0d95f78fc6adace4293a6773facc9907bc6e657fe53f94aa4393f57966e"
+      },
+      {
+        "instance_id": "django__django-11001",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "0bb9e06d837ae4a77f0fd46767ceab29fabcbf7e98fa0ceb3ce610bd72740861"
+      },
+      {
+        "instance_id": "django__django-11019",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "3f327b5c4730782a3764100dc89bb9a096df526891932b8de7ca40043caeefc8"
+      },
+      {
+        "instance_id": "django__django-11039",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "29e77fa348ee0c6b06033ac671506d48adc100db8abf619177a570fe401eeadd"
+      },
+      {
+        "instance_id": "django__django-11049",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "d39b86087ff6fb0477e42291dcdfd5698f595163314c1858d747fc5ed938c68f"
+      },
+      {
+        "instance_id": "django__django-11099",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "70cd563489802a806a64a064cdf931b15c1ea58f36ec2a8544b9802aef853d92"
+      },
+      {
+        "instance_id": "django__django-11133",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "a8f1dbdc95dd22a03a05236d8cc738a04d26eecea94137490311adc8d4ac9b3d"
+      },
+      {
+        "instance_id": "django__django-11179",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "c805b8bf24713ef463a43fe86cd651048a0eb6d68cb2065b5ad8652aeda6e053"
+      },
+      {
+        "instance_id": "django__django-11283",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "5faec73c132e0cd8694f5f3d5fe24456e3dea2314e82172405894fed62bd73a7"
+      },
+      {
+        "instance_id": "django__django-11422",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "518724e336da5dbfb4188bead5b83742d42a4488a2c8c176c6601865fbb3d7b8"
+      },
+      {
+        "instance_id": "django__django-11564",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "f1b3e6424a1ba13463296fd03971d5b17d1b811b8d53bee7d221af45b08f5e54"
+      },
+      {
+        "instance_id": "django__django-11583",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "006f870083b40cac05c5e111b60db5116a0e461fb29b4f7e2b3a433e119c4aa2"
+      },
+      {
+        "instance_id": "django__django-11620",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "64969569f61010d7ee079823788158a1e509099e2d4336224ed1e6c059e251eb"
+      },
+      {
+        "instance_id": "django__django-11630",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "2ca4b2cfea5cd3ae80798134db20c1e3833815d5a52b1f1dcd8c794568849e7e"
+      },
+      {
+        "instance_id": "django__django-11742",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "9236c62dc734014d721aee771b12d41d4d1414c194bb26683d404ddf15f8af93"
+      },
+      {
+        "instance_id": "django__django-11797",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "1474feb25198c5eecb89ac845a3b8a13ca8572e7590753e0ea66655019f5f3a8"
+      },
+      {
+        "instance_id": "django__django-11815",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "17c20bf8c2451f2613c5578f9c80b4bd1f8e86cb21d15eb252790cc7fb9e15ea"
+      },
+      {
+        "instance_id": "django__django-11848",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "90a4520e8d558e6850956564fea5b17a533ba8f25125e3cf1c8aec95d8030186"
+      },
+      {
+        "instance_id": "django__django-11905",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8c1b62b31c61df6b1f9d2635e3f4d0deca2a4f8dbea148ab2687b8a9538507fd"
+      },
+      {
+        "instance_id": "django__django-11910",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "c24e12650dca10a13d22d338f8e47c890bfe9f54d6d5b7acc39ebf1f99056ddb"
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "6306e248132ed153f1e8bf0458ea56d27137bdf7dda71f9d1ad008c76a7882ad"
+      },
+      {
+        "instance_id": "django__django-11999",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "e7d582ccf5c43345cf64877137b2846cbc4fd58a6e61f23ee777ce0c626840c4"
+      },
+      {
+        "instance_id": "django__django-12113",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b21f6921f732fe01c7a91744a9c4927e8f2d37d7a43fa6ed4ef0f9ae5b990f09"
+      },
+      {
+        "instance_id": "django__django-12125",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "76c0eb6e9f60fc30cf7710c9116a43cdc3e5315565491237d608f3effa8020be"
+      },
+      {
+        "instance_id": "django__django-12184",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "85e42581e1eab91077937236d15b5178d0bf7b74a3c081369cd4300c8171b068"
+      },
+      {
+        "instance_id": "django__django-12284",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "79696689182a403f0237d1a99b33de5a6206dfd0457c8ea7eecf62ebcd3af2b5"
+      },
+      {
+        "instance_id": "django__django-12286",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "bd1a114485d97834b35c1e3cc85ee719a150a836738d7f84eae78a7052899b5f"
+      },
+      {
+        "instance_id": "django__django-12308",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "2aa1dc79974d60dfea9faa1b02086907e07a769302a69da2de24451e215c0fa0"
+      },
+      {
+        "instance_id": "django__django-12453",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "380fe827112b8125c0b7f768af84e9a4fd7eb74a1c6df83390d62038988110a9"
+      },
+      {
+        "instance_id": "django__django-12470",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "827696676942b10693807a83ba6272d85e5e0b1bbfdfc2da6527cdaff09b5d01"
+      },
+      {
+        "instance_id": "django__django-12497",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "ba7961b5a04faab1f0162f726eba7489b84e7a309ba17b943fd7cefbd7c5e7b7"
+      },
+      {
+        "instance_id": "django__django-12589",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "97c6faaa4427c98ad5b79887dbdd235198584bf196890ad41f990a440c8e7679"
+      },
+      {
+        "instance_id": "django__django-12700",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "a345158720e37682ee63a8f6de69178bd4082ee7be3b4a888bfe0ff0ab9e1d19"
+      },
+      {
+        "instance_id": "django__django-12708",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "af2d22fe93a4d259bbd5348aca1a38866f13f72ec2d357b7fcb539c92871480c"
+      },
+      {
+        "instance_id": "django__django-12747",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "e129ec36af77d154189dee4a1c5f0f3e1f249ac562c55df715384ae10e53a313"
+      },
+      {
+        "instance_id": "django__django-12856",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8cfa60ed087e4478cc4c94a435dbc191039b2516d4519955e58fc70291684d4a"
+      },
+      {
+        "instance_id": "django__django-12908",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "31c5d867a79e925e74bca9bf107da0c0c0952d40bf90b21ffa7044c04ee14e09"
+      },
+      {
+        "instance_id": "django__django-12915",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "170c6689a21bee4dcb69745c2966ee6eaba3251849afe07bec0768eb30c8a7d3"
+      },
+      {
+        "instance_id": "django__django-12983",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b6787bee602d1c7b4aca4d3cfe9c4f93bd146de518535920dde6b396f963a4bd"
+      },
+      {
+        "instance_id": "django__django-13028",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "29394c7c8e41bbf04733256d8773ec33f5ac5a27cea526a88efb8c828f4ad130"
+      },
+      {
+        "instance_id": "django__django-13033",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "cab5c7cd411952472f6db0291b34ff8885362253f00b6531592de55916069a6e"
+      },
+      {
+        "instance_id": "django__django-13158",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "5a3f0854dae1bf5602c9101a0e482b3a2fe067a26bf757b90264b603b70b7a14"
+      },
+      {
+        "instance_id": "django__django-13220",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "9fd80aa69653307ff5c5bce945ef96e990f3ff90fcf33bfd56d5743e79fb99af"
+      },
+      {
+        "instance_id": "django__django-13230",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b68c43472f185a04f8f0dc90303436371d1f8cac4d58c3331fe340c406ba5846"
+      },
+      {
+        "instance_id": "django__django-13265",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b54945bed67d68db51064abd164aa238f9e254f686013d4d0889401175dff29a"
+      },
+      {
+        "instance_id": "django__django-13315",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "851f624e9ef1004332001265b1f7a9384f802a3d9f34bc92b8485864999ec52e"
+      },
+      {
+        "instance_id": "django__django-13321",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "0af07a70218c72696b274ba368a7dc1416aa556c04fed21e0a0b170bb84eb93e"
+      },
+      {
+        "instance_id": "django__django-13401",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "43ab6dcac14a2011ed3e441a1ccbcae96903a9366343867b24f7ef3754fc1c79"
+      },
+      {
+        "instance_id": "django__django-13447",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "56513950000d1741d736fc7a6dbef63f42c9066003a152b6c68d83ee93c6488f"
+      },
+      {
+        "instance_id": "django__django-13448",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "0f2c995e9fa9f3c976155a7aa1d029c36b3a2bc84dfd1223d62af68040599757"
+      },
+      {
+        "instance_id": "django__django-13551",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "668416da607662e89407a1ebe26d78c019f944ea36f2cfde819088b86f462da4"
+      },
+      {
+        "instance_id": "django__django-13590",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "497f3192ff715f7df6bc90371c878c319bbdf3fab170a05442bdad7c40805ef0"
+      },
+      {
+        "instance_id": "django__django-13658",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "71a16a520c6c31986ed4c3cb09f5de4caafd7f8e4ed810854c1ba6cf60b2f4e9"
+      },
+      {
+        "instance_id": "django__django-13660",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "bf841aa7c05a7bec330b534e809e98d183d92fd0cf85b5b156e65a51aff4ee47"
+      },
+      {
+        "instance_id": "django__django-13710",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "256d68c385e728ee134f869599a92c88d6408293b5391a0e829b56e0258d6f7e"
+      },
+      {
+        "instance_id": "django__django-13757",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "c32a28732e075316294bf74874ac7fb83837bf60cea86ef222193ef5c0079047"
+      },
+      {
+        "instance_id": "django__django-13768",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "ee5358e408835f3420449233e85db492055cd9a3917ad286474a821b629d682d"
+      },
+      {
+        "instance_id": "django__django-13925",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b52d5787c220f9f30f721470140740541560568b9b9577b15364f3ccf183fde8"
+      },
+      {
+        "instance_id": "django__django-13933",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "4e1b9e63ff4f18c9449d38a7e935e157228d0b96b1a5e41bd253127acd50905a"
+      },
+      {
+        "instance_id": "django__django-13964",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "07379c97d4bd51f860c29400821a67644cfb423a48b103ce90c3f7fece1c575f"
+      },
+      {
+        "instance_id": "django__django-14016",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "ef6c8c801dd52671c57bfd1bbfdda1494e27b0b2000a1a188ca7450d1390acf0"
+      },
+      {
+        "instance_id": "django__django-14017",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "569a4e039c86f12d2b3440fa08f411986905e54f0e877ffa4dce59b103ba7350"
+      },
+      {
+        "instance_id": "django__django-14155",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "6253da0ff58ecb7a1c64a9b35bcd203d14c262aebcccd2909025dbb31828ebb7"
+      },
+      {
+        "instance_id": "django__django-14238",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "5f8597b2be58a57937f9c705004a82f838ab3c1c95a8a059767d757003ae6851"
+      },
+      {
+        "instance_id": "django__django-14382",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "2bfd8f6901bff4d337f44462b7cae2aebb0e6df7a7890b8a98050a71efb90590"
+      },
+      {
+        "instance_id": "django__django-14411",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8ddc636d53ca8fc19589cbc0066b23454666ea986cd6defd795fef3667c39bc8"
+      },
+      {
+        "instance_id": "django__django-14534",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8e3c4f1178b95a0afb85c63dda34a31b824bb679635bb5a3d6b373d2005ae43c"
+      },
+      {
+        "instance_id": "django__django-14580",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "bd3c97679564d73a687dde26b8fafa3e83cb4a7dfcb914011d38c27e9eb7b844"
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b8dfdf90f49cd368fba77f737f48d2c10bd0c86d2c778123db871b929f2923a2"
+      },
+      {
+        "instance_id": "django__django-14667",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "5af01e86adf774a2088e716a7a976780d84a00e5470938b77b82d99b832f1da4"
+      },
+      {
+        "instance_id": "django__django-14672",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "142ba3ae6d1bb1bcddbccf7d7069e65820f28748cbda8e142726f386a6008fc7"
+      },
+      {
+        "instance_id": "django__django-14730",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "496cfdd2c0db5f3b7090f461e92168bd92869ed6e067cf813d9dee931964680a"
+      },
+      {
+        "instance_id": "django__django-14752",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "eaa8b32b3e1960e4b19fd05e9087a7b9c280ca75bf16350fcaced2058fc4c4c9"
+      },
+      {
+        "instance_id": "django__django-14787",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "ac5ecbb2ae3f23f0d692b353237507e31c5c8f973a4e915a99be6baa4fd76f15"
+      },
+      {
+        "instance_id": "django__django-14855",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "579a6bd7fd426621cf09bb0503c51085d32cac0f9abb089ab88efe3ee44082a9"
+      },
+      {
+        "instance_id": "django__django-14915",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "c902867e5bab24501eef6de995641bfdfd257f512ec4a9560676cbe8adfcdf5b"
+      },
+      {
+        "instance_id": "django__django-14997",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "6b6ce53faa4923c63176002507cbdc11b7e2e6a70b1721d153ee54708694ca0b"
+      },
+      {
+        "instance_id": "django__django-14999",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "620d1725b48abfec6200a2ea7e8b97bccb5692e158cc7f5e160767cfba31cb10"
+      },
+      {
+        "instance_id": "django__django-15061",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "e8afc046073b3bb1bdddb2f94f171cb68418f9cc8921dfffaf75a80f7c953e39"
+      },
+      {
+        "instance_id": "django__django-15202",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "068767ff5244e94a00d21a67041362522013e51fda4b7de2ecd6050f5bdfc4b6"
+      },
+      {
+        "instance_id": "django__django-15213",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b4ca9e7d8acc463befa5324358b6a3f854efa9eba016fe67eccf7a92cfa2e19b"
+      },
+      {
+        "instance_id": "django__django-15252",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "104f086f2e8b820b0ce1141903d8206133fc9eee0e0e682306a2304a820a76a7"
+      },
+      {
+        "instance_id": "django__django-15320",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "07a0bc0397871a26d81d68f2ca0ef502886afa8066243ca1bc9f8aa7661a0f6e"
+      },
+      {
+        "instance_id": "django__django-15347",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "fe3af12869143e6ac9965f9ec8b8b02d2d650d0ce334b6dc9916f8d9bc44b218"
+      },
+      {
+        "instance_id": "django__django-15388",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "54c6ec0d50fa3c7c80d4fc38778139c02fd9ac2b7137a4c95170d332c1887287"
+      },
+      {
+        "instance_id": "django__django-15400",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "4ec889fe9a78f29ae43dcc26734cd92e3824b633466112f63a67adda0a71ac02"
+      },
+      {
+        "instance_id": "django__django-15498",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "3bd12650e3fa802283f210fe49ca72d238d1c1d94208691a9a96c4d715acb6ac"
+      },
+      {
+        "instance_id": "django__django-15695",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "14a9481a71a972caa422f8a3c414643ddde7fe74a3c078d26947f73c4c4fe9c5"
+      },
+      {
+        "instance_id": "django__django-15738",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "803755c10137f3b66f993a0078d04cc670ad6690177e2a5d88d42a6c2850a32e"
+      },
+      {
+        "instance_id": "django__django-15781",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8e1ecbb6876ffca6c45a26150f45669cb5ab53b25bf8f44feba59c1f85a785af"
+      },
+      {
+        "instance_id": "django__django-15789",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "d421cb95718b2a6001ca002100fb556dd61dad1d6111d76a7e254981b5f3dd13"
+      },
+      {
+        "instance_id": "django__django-15790",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "0ccd9a45932a49c48b1c8eaee74fad0d1aa787e1b4d33e74e0a7ab4bbcdd9b13"
+      },
+      {
+        "instance_id": "django__django-15814",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "824e703c06f6c09905954a46e93989a1fb50994ea5a623e9b7c12625ba31eb25"
+      },
+      {
+        "instance_id": "django__django-15819",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "d25e12cedc3465a1d4c8c2130f84676a0da851d076c5a7f8db56f614a8e00b49"
+      },
+      {
+        "instance_id": "django__django-15851",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "e28f4c2438270d978239595e3f430292cb5604c594ed41df5db064ad94cef7fb"
+      },
+      {
+        "instance_id": "django__django-15902",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "395f86f761d537c233b6c5da7a1b6e6f55d0929b07a00d5039758b43710dc1a4"
+      },
+      {
+        "instance_id": "django__django-15996",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "5499692da363e753d624d521ca8efdf9775e2dec1bb7a3db6b0c7d98047e4cb6"
+      },
+      {
+        "instance_id": "django__django-16041",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "860b1c46df292747b4cb7cd370cf9d0e89714984ed1bfd835910fbcd3ece78fa"
+      },
+      {
+        "instance_id": "django__django-16046",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "ea97146f76de5b1a1c7abb9bf7c6ee9daefb7a55b403489d5b73f4ff8fa76ef5"
+      },
+      {
+        "instance_id": "django__django-16139",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "f854a6cc6a0911b10541a6ffa2f71dcb9ca443c830d50f09b61ec7e3b25de5df"
+      },
+      {
+        "instance_id": "django__django-16229",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "2c2355fa21f9fa31287f52f059775457eafb8f97a09e25e7b8c96ee793d8f307"
+      },
+      {
+        "instance_id": "django__django-16255",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "e13217fd5a7da4d9c48e0d5a57ed6429b1b325645f2ed461c61874674dd601fc"
+      },
+      {
+        "instance_id": "django__django-16379",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "da62cf6a3a58aab58bd2dcc65439a9b8179f780fbaa4d55a710b1cd9b11db06f"
+      },
+      {
+        "instance_id": "django__django-16400",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "8da65e802a9969550d9328192689a09292d6141b90e0681cbacc0253bfe61ec8"
+      },
+      {
+        "instance_id": "django__django-16408",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "baa3e8a6b07bfd332978e4f0275c21bce2067522cbc1be5deeb88ba8acfc2551"
+      },
+      {
+        "instance_id": "django__django-16527",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "b1ccc991f613767c89fa1f6f378ed19d18c4dcc77c5d832c97a5637ec29d283f"
+      },
+      {
+        "instance_id": "django__django-16595",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "d8c68e5cb9db282074780445944a6b7f0f77857f39a5883f9a95fadad1e84863"
+      },
+      {
+        "instance_id": "django__django-16816",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "56a0e448659d1565715acb210947bdc95212d053ac487e962134bf0257871df0"
+      },
+      {
+        "instance_id": "django__django-16820",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "999539ace8a52515b68bbf18418db84abb9291638a8b527e364369af9effbc50"
+      },
+      {
+        "instance_id": "django__django-16873",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "2ec70bc5aae444267b8226a258b0431694cf491695cfaaffc88c002b6888862a"
+      },
+      {
+        "instance_id": "django__django-16910",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "3b95559030583c2f05d3bf06a175df4287756ed650e9fd2fbdb512bebc459f8c"
+      },
+      {
+        "instance_id": "django__django-17051",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "31037f60f7499fb6ac1dc3c4bb4d03b0b468159e83caf6753e960d1d5226ba63"
+      },
+      {
+        "instance_id": "django__django-17087",
+        "repo": "django/django",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "67da336e9fef63852fb35ccbb3e7ecbde3941560fdb619458f3c34e4fde24718"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-18869",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "f1910852033268812a180c86d0e991595ee3856fa4bddc18c789172a1ab34177"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22711",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "b94bfd0db52e418301acff3461c1d5c989771158d7daef44a1bbe87bf69f0a50"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22835",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "97d28260ff549dad4ee25d644689622a19f6fda0158fa57a093c933a8a75d297"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23299",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "ac48deabe56f4324d590fcbe608741b0d59483e69e0b4117d8789ae8ee085ca4"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23314",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "fdbdcd8935f952f8fe99be19e66493cda8eece6679d748a6297cb3c3d518b235"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23476",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "af1c439fda941b0467c3dcbea197967d655a91ae9c80f2b83ded3065d3655cfc"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23562",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "995d1534044c4f3db038a09f75ce2e3ff2139de314cc75a768e3007a742b2c01"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23563",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "f1cd2788623a397bdc397eddc495d5b5260bc7fb5f9823c671d07ce5ab16538d"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23913",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "0b71b8548e45d98abbe84e9c6e410fe4da56a0a55827643e07cebe4ab56e4568"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23964",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "286afe627c62dcefbd2a7410ef3f1d589a4be7ea30bb10eac412f2c0b9d81813"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-23987",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "71fc3e978ea61285bd7ca7feb412bdd5b86ca7b0b71c110bd770dc4d7a5d253f"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24149",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "217b48c1646198efab2b51d409e544ecb9e5f54236fe6d13c3db7be8d3459631"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24265",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "dfcd7c971a923605b741e3cc1b604f28f7e0920f7bdcf86c223d591e8ba049d3"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24334",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "d241e8119f1e729a484333c26006f4ecfa66aceffb190dc1102856a9c2b99a89"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "2ea9282350cbcc8e7108333c458a248c758c17d308078d00ee983a5554a78819"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25079",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "1a815253a7e37f3a303318ad194eab9df88a90d5ff77ad772bfd12c5b6f9401c"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25311",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "0c8f2bbac14e79d34319892094c3edbc848270408b934b85ac68025885916693"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25332",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "921da1b606dde828d4736da04cebc8bfba66f029fd2ca79f7a1f5edb56ab0783"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25433",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "3fc1f409b02c8696b2c3ce1897ba405be6e89869d4be28cc3305e79183c8c9b5"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25442",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "99eff2dc0eed6f2759c47c61f62fbf52a8ebff7a488581b6afa4e25f7cc61dce"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-25498",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "c4a7e569b43617d04392c3c837705f9bd813a0a32c88ac669653043206039073"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-26011",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "2dfdb553d1a861de33bc11471115b56b874bfdd04ab929b2a270a22b42b50ccd"
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-26020",
+        "repo": "matplotlib/matplotlib",
+        "eligibility": "eligible",
+        "ordering_sha256": "75fbf9f03274648e4c7f1d5b462a52d4dde3eff6efa4d13c8daf0a415d657ee2"
+      },
+      {
+        "instance_id": "mwaskom__seaborn-2848",
+        "repo": "mwaskom/seaborn",
+        "eligibility": "eligible",
+        "ordering_sha256": "3ec5f71846efbe9a994492ff254c88c3526c67248fa8fd8ba4d318443adb16f5"
+      },
+      {
+        "instance_id": "mwaskom__seaborn-3010",
+        "repo": "mwaskom/seaborn",
+        "eligibility": "eligible",
+        "ordering_sha256": "929b28f054078a67dd655909c66735c7d1543b749304ea853d1fd64d53e5b065"
+      },
+      {
+        "instance_id": "mwaskom__seaborn-3190",
+        "repo": "mwaskom/seaborn",
+        "eligibility": "eligible",
+        "ordering_sha256": "6dc5dda5860bde4dea442dd1c267948c99be3feb34ec0ae5a08f820c1d14e918"
+      },
+      {
+        "instance_id": "mwaskom__seaborn-3407",
+        "repo": "mwaskom/seaborn",
+        "eligibility": "eligible",
+        "ordering_sha256": "bc37683784ee3d3c3b8c7ba68514789cb8647f5de94bf1d56084c8873947a72d"
+      },
+      {
+        "instance_id": "pallets__flask-4045",
+        "repo": "pallets/flask",
+        "eligibility": "eligible",
+        "ordering_sha256": "01360a2f18101053d61781c6e7486949a98b9ea793480a30ab0bcd55dfe9d6f9"
+      },
+      {
+        "instance_id": "pallets__flask-4992",
+        "repo": "pallets/flask",
+        "eligibility": "eligible",
+        "ordering_sha256": "e4df77f44670f1bbadd225922f986ce2ffacc3251a0edcef5c573a4fa50b2897"
+      },
+      {
+        "instance_id": "pallets__flask-5063",
+        "repo": "pallets/flask",
+        "eligibility": "eligible",
+        "ordering_sha256": "83101fa0acbc3d3de0738f1d83a32adec65c33a2522095f6dad98a22342efb20"
+      },
+      {
+        "instance_id": "psf__requests-1963",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "d516f0934a2890c758498dd8f30946b35953aecadc876d585da4ea8f6e43db88"
+      },
+      {
+        "instance_id": "psf__requests-2148",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "4273a8b758bf4c86a157112f59c855faefbf29fbdc8a41e973607b737a17a7e5"
+      },
+      {
+        "instance_id": "psf__requests-2317",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "b0c2992e9f1b6d23bfd17183935359b12fbe9d7dd6113241bc2afa945358c940"
+      },
+      {
+        "instance_id": "psf__requests-2674",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "8ba6946fdadf3aae39b3e0b58ca3113f189f6160548f3faeae13eb1e864826d5"
+      },
+      {
+        "instance_id": "psf__requests-3362",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "997c1a4b46100a3b9b1bbecb42fa596cd4c116eada3146ffa4d5d4918bb4422a"
+      },
+      {
+        "instance_id": "psf__requests-863",
+        "repo": "psf/requests",
+        "eligibility": "eligible",
+        "ordering_sha256": "3fee006a00ac7dd5770b4d6749d083c573974e97b87471bea2e93adb4fd3547f"
+      },
+      {
+        "instance_id": "pydata__xarray-3364",
+        "repo": "pydata/xarray",
+        "eligibility": "eligible",
+        "ordering_sha256": "5edad9b9f642a8d2e99b7619d2639787a80e4a91ce317fe6d9d00e65e4d43e81"
+      },
+      {
+        "instance_id": "pydata__xarray-4094",
+        "repo": "pydata/xarray",
+        "eligibility": "eligible",
+        "ordering_sha256": "f5aef92b831c59e62412d545b27b33c8a3ef4df80ee02dc5140f9e9ad6d0b8f5"
+      },
+      {
+        "instance_id": "pydata__xarray-4248",
+        "repo": "pydata/xarray",
+        "eligibility": "eligible",
+        "ordering_sha256": "f47d0e11f961832bf61399a7939a4faa696fa90456ff95c1b539138baa6d53c0"
+      },
+      {
+        "instance_id": "pydata__xarray-4493",
+        "repo": "pydata/xarray",
+        "eligibility": "eligible",
+        "ordering_sha256": "e80d0b7da0e65d13421fffecf4f6e713c638d85722a6a760206a00e981305bba"
+      },
+      {
+        "instance_id": "pydata__xarray-5131",
+        "repo": "pydata/xarray",
+        "eligibility": "eligible",
+        "ordering_sha256": "abfece1fd0c37a15be71c886ecfde7fc5f2e01edbe798a071588de2fda42496d"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-5859",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "884bc5d28bfaad645cd461ee36e25cddd71c5261e414b3c2142b59a7e51c9200"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-6506",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "cd6821bcbba3c041e7fc35b747ca7b0b70b85991fb96243c90f6daf47c3073da"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-7080",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "3c4d47881110bfcfcd88c9e96d16a2660417c467511d9fec1fda1f4113dad360"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-7114",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "998b6a5c49d0b6a6b5bcc40581d993071bbbbbe54428b4fa729938cd0451ee09"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-7228",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "6aa9497f5b580f292358e747a9236e0d37a34bc4f009335dddf9efffa2ba4cc3"
+      },
+      {
+        "instance_id": "pylint-dev__pylint-7993",
+        "repo": "pylint-dev/pylint",
+        "eligibility": "outside prospective pytest repository allowlist",
+        "ordering_sha256": "9d2fd892a02678a9c9593b9b55bae3a73172ff700d2b67727224eda793e3ffb9"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-11143",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "dcc180697dbb765ce0f0928dbbbd319edebef827667f109e229720cbe964211b"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-11148",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "2ad77797d7ef62cc53512fcb4a6382c77e1620b172ed360bc7c6a9d960561725"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5103",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "19cbfd54a22208f6bc3fc6410ae40a37574cb1c64ce0fdc604ea22dac1b0c3d7"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5221",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "97f6f7e13b40d4daf75bf9825dca80e9bc48aed53e59dbfa07dadcd528dce662"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5227",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "0b1d5702a48c320e0161691efbf2c587d551eb43dfe9913fbb0416851f1c0ad8"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5413",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "08056b8152ed283c2988ac33e5fff204426d136cf3aab48b92030248d4e25884"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5495",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "ba660daf3dc9b9da4e2443ca87076e9abd9825f03029bce5545cb433b68ebd16"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5692",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "1cb118c36cc41ea35d773443498fa3fc1f1aff5714272bf952246f186b5611e7"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-6116",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "9d6ac8ae32861a4263f4705bed4e5844af1a97020320164417482a9d88e4e4d1"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7168",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "98f6a24a12806b642cebf796729e3b29984632d9315e6273bdd11b8c86976f1e"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7220",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "911d6e755437d523d1e7801c23bd3ba97e08805d3f19c2f3551fe8a349188ac1"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7373",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "a50caa3ba2c864cbcd5ebd792b5b8d8bb0ea411b83d75a9efa9aca5ca41ad1cb"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7432",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "405664ce563cc0a6806d49d0c38987c37b45eb0e34e9d702a037890bd040513d"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7490",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "1376853772f3e72910e17c17e44b6d7683e419d97809fa8e4016910e61df80a1"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-8365",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "1f4661d299d67f71b8a512d5ec50b89ce9cf03b4cf504defb0c9a157e64f86b8"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-8906",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "da653998e77c33b42effc6f72cf6f68a6366d1617be5c428278021040354e3d3"
+      },
+      {
+        "instance_id": "pytest-dev__pytest-9359",
+        "repo": "pytest-dev/pytest",
+        "eligibility": "eligible",
+        "ordering_sha256": "9d9e77c63646034df20b15be665d6862da6a69e3ceb65d677fb8e6e29f0d364a"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-10297",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "08773afa8fe2c55c331e622acde7efb5a4243c0890fd65c73b6d80138e1cdaae"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-10508",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "f4772ed9fcec6605f3e3e4b68c54e676111215168dff2eb2c968d8eca294399c"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-10949",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "baa6e91b52e1dc28da97db316a8bde9ef1cf6eeaffdadb287381c7a3a811528d"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-11040",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "5dbb211ae177367ce3736128ad4581b8b578fe092e460cf972543121984dd473"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-11281",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "89e6b072fd913610e6c54559cbf277f5f31486957e1dfb65d137d8471f63ab64"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "0780a5c7a68c1f8d4fa572f1818e94c2cd2ba086ae42ce92cc7a5c791adabda6"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13142",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "68f79873b00afaca3d6b99bf2afa583a7ae64a64ef493c873ef7b2f567242002"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13241",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "cf4924ffc5bbb9d029d617b455459c750d750a5c247c1ba9144480d072fdf3bf"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13439",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "4a5953a147006d6f234f0d69b3f8e61ed5bf3606d1870a5ee955706d095488be"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13496",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "347f06a5b3930a29a0ff392904fbf93fa37b2888d0a5899bce4815f3f4625a7a"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13497",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "6c6870d30dffbcf3fbdda15a5daa37e964d612f03a7288637edd9ba2f14a3909"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13584",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "4c0de1cfaf4175b95d1bbd8737e6234b02e6b282ba44ec961d2e1d2d446234ad"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-13779",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "db8814f7aace2657a87f6a58ac1c92dca95ba002a883a09ced0aea5a0c441d38"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-14087",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "24bfc5066b3b394caf8930b6fe3d368514249ec0533e3bc6480d3450f725cc98"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-14092",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "75415db4176f5543fb35f799d0b91ac5bf60fd9377c99f7b5d06bfe891ae5e31"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-14894",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "b654c5dcaa2b89da09c332d71fbf712f6b8de012e814965bbeef1ebe3db899c2"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-14983",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "1c1127a3f944b1948002371e3c8b87582d2accfd63eccd16aba1110147e4010b"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-15512",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "884c4f9ebbb3aeac043dd1712729f8565aafd3c505019e6fae32c525a7258a80"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-15535",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "d8f882b49c7488bc404e5e11dc6c3e7a74440029f1760ab1136c0af239b6e5fe"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-25500",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "a4c7a622fcb5a2522e1bc1ef983c729d3ee340a6764903edc8a788106672de31"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-25570",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "3f3111f802a600498c4c680e88e0617c241ed8624e7deb48cbd9361119668edf"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-25638",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "c125181415a90505be7d270e3f543bc606eb670c0d36eff75e172ea45f5a8479"
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-25747",
+        "repo": "scikit-learn/scikit-learn",
+        "eligibility": "eligible",
+        "ordering_sha256": "ea73f024424567a3842b78e554ac8ad52a99e5ef568c5fff47be736f43d8d39d"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10325",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "a90989dccd4b872395b6a58fda3237cc74387d349b62f252ab6a00bea6269546"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10451",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "3b150f9ae632ff807c0beb4df967654aa33e151b6f32cb8c2508146652d7953e"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-11445",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "9b7ed16274aaef7fbb4752715beceb35146442c54f14f9eba5c9ca94c0f3ee17"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7686",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "507a7a07d88ac1d4fba52686e9bc50b773188a4407cbf6636d5567547ae0c2e2"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7738",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "ff114bf6ef93901856562625cea7b6629fc3f3716b0216d09bfc67163251f807"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7975",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "a3e5f59105e8beb25e53baa80e51a890578cbd66f8f0491d4c300693ec6a28a2"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8273",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "69397730233439fb3d7e9e2b470f29fa1d8b314878889a6816be8ad2bb4f589c"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8282",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "e53ce27a34ef6a56be69e60345d8c43500d9bee02808dbd6634ee31e967d3708"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8435",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "aaa1d874cbe8cba5ede524b0d3e16c1b7a921b0010f2623be8642a842ebf5472"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8474",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "9ab7dadd8fffbdf3d1c4d71764f93d6f8635aa8b36dc5c2a771da9663e78c0b3"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8506",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "14e9c2446af87e034cfe48177958e394c3917efd8e7e8ac81f5cf2ff48b3d7ea"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8595",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "692170d0030c18d86c0c56ba1e4634b40afeab59c3e27c9c96739e9c653ec10c"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8627",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "16747694eed0adb400c9954aed7f26f7ca18ef04c40d8a1d70f0a504face3e1a"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8713",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "3732d772658681ceca80e0e6ccf6ed58d03a12bbb7553eed652a83e7195e0ff5"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8721",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "9bef9bbb0e452aa754ce3dc0c3221308cd328b36663c3f8aa880fbb8dbf113dd"
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-8801",
+        "repo": "sphinx-doc/sphinx",
+        "eligibility": "eligible",
+        "ordering_sha256": "6b7451ef82d933a5c825a5fc8adbd38c193f164215169a178546f7d197f0ffcb"
+      },
+      {
+        "instance_id": "sympy__sympy-11400",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "66a99747833c1b441a0667dd7f9f902824db9d5d61254b515822f898d4b3d98e"
+      },
+      {
+        "instance_id": "sympy__sympy-11870",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "df4aeef94248cadaf6dc67c94b3274cf13e1fe4349853e4a3b354c333bb08f8a"
+      },
+      {
+        "instance_id": "sympy__sympy-11897",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e70b66a051577a17bb866a433972049cdd0f05a02201b8080bca39723b125bcf"
+      },
+      {
+        "instance_id": "sympy__sympy-12171",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "3126a0c065245978fd8ede12aa48bda2ac4009b91e1b74fd68a935b71e9b50af"
+      },
+      {
+        "instance_id": "sympy__sympy-12236",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "fb326596878d23f47b4b5f670cec133be10ef9fc194133be21e96bfa68a7a1f9"
+      },
+      {
+        "instance_id": "sympy__sympy-12419",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "1aed7e845ce7170b7f0688b6d292738189b36aa82125e80f30ae62f9b467d66d"
+      },
+      {
+        "instance_id": "sympy__sympy-12454",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "05b72da8c185e3bd1e1fda692f2934aacc2de897045ef69477be68c9473282d1"
+      },
+      {
+        "instance_id": "sympy__sympy-12481",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "08f52ba53bc87b102ec8f40dbc2c3ecedf28eb86f723c8ba5771e82400cf809e"
+      },
+      {
+        "instance_id": "sympy__sympy-13031",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "28b597c1cfe61bf5a4e3156c7a27bf05271d94244e075923de7c7ba95dd104e5"
+      },
+      {
+        "instance_id": "sympy__sympy-13043",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "7c9b36e333a76378c189c8a8950ea02fd7490fb026ca1b6628bf495508828e31"
+      },
+      {
+        "instance_id": "sympy__sympy-13146",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "3534a24fc13d576269a8d4fdf270641424712e1df18b211bc76072387d38f761"
+      },
+      {
+        "instance_id": "sympy__sympy-13177",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "c0453346bc36b2c9c5ad3b9ce7f118ed56b40fd16917518d95d3e7d3a4a309c4"
+      },
+      {
+        "instance_id": "sympy__sympy-13437",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ba1d3ccce6b7e59846de55732955b5eeae76412e45376db40851079fd6e02e56"
+      },
+      {
+        "instance_id": "sympy__sympy-13471",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e1a35fbc5875362a4b95a6f0dd98aa695cd14c7056c48fde90db1c5638df2746"
+      },
+      {
+        "instance_id": "sympy__sympy-13480",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "9e9dfec355303f596354c3e04c601ef8ce3b72d3d4932b549f9cb48568525329"
+      },
+      {
+        "instance_id": "sympy__sympy-13647",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "11239075c9029d3fd8ba8dc1398f5e855a1c08c5d5df8272c0e6abb191b2de65"
+      },
+      {
+        "instance_id": "sympy__sympy-13773",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "5d8673a59cd33f1a33ac98390dd5a7eb5bacbdbf7558fb27f811de2ca75f31a8"
+      },
+      {
+        "instance_id": "sympy__sympy-13895",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "1f84f090d018a42e94001e4ab677a48fd2b3103b9072c6634955281372314ee2"
+      },
+      {
+        "instance_id": "sympy__sympy-13915",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ece42f84da90608563c2fa1ec90e139dbc5bd0ed574e362b2adeb955a1271bef"
+      },
+      {
+        "instance_id": "sympy__sympy-13971",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "6e05ce8e1bdb496f41f8d536d9bbefdf3bc85a2cc92b94747697b2f6b53542a4"
+      },
+      {
+        "instance_id": "sympy__sympy-14024",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "edb26fba6e9d767b8e658359e7c2bd630a6ade3f6ebff487455b94beeb7c9b8d"
+      },
+      {
+        "instance_id": "sympy__sympy-14308",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "f087edfa45de2f30b3edf027a26611b613efca6bde8e2dd5161651716c53a7b0"
+      },
+      {
+        "instance_id": "sympy__sympy-14317",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ede34adb182a82a99b9f5841389bcfdfd7ec26bfd7afeb16dc827b4d2649ec3a"
+      },
+      {
+        "instance_id": "sympy__sympy-14396",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "4fe959fa6360b019865fe031497319c191ca31113bcc9182645f7b2606883f54"
+      },
+      {
+        "instance_id": "sympy__sympy-14774",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "7e4e1a81ddc8388482e0cd4a12ceb2fbf56cf50b5e76f143e0b3ad40b12c52da"
+      },
+      {
+        "instance_id": "sympy__sympy-14817",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "81cfaf4fd3c48b33d315acabce6a97b35484b3da1ca3deb46633e11c63e529b2"
+      },
+      {
+        "instance_id": "sympy__sympy-15011",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "492eb0e10e04890f70d32dabe32c8361d4ad292a097a7f321750afb3d26b6d01"
+      },
+      {
+        "instance_id": "sympy__sympy-15308",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "84511a74327e3f8fc19857a88863ee980a55da6f0d81c7c2e02cf8b33f2d5234"
+      },
+      {
+        "instance_id": "sympy__sympy-15345",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "7f794f4865125e7247e77f41e82b59c5b137c071de8bd4037cf5d4db7c335eec"
+      },
+      {
+        "instance_id": "sympy__sympy-15346",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "f4eae9a379a7406c3e37d6b9cd934b1bc26a8e0731f04f2fab22fb49403f3041"
+      },
+      {
+        "instance_id": "sympy__sympy-15609",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "b01d74aaa038233604efcd9f00a525c208bfefdd5f0361d6dfa03dc7a8e21dc3"
+      },
+      {
+        "instance_id": "sympy__sympy-15678",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e11a4f0747e8dcf2a64afe30ea0151263edc799b62cb1cd7c372eb56f627d0ef"
+      },
+      {
+        "instance_id": "sympy__sympy-16106",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "6e1d7cb9f7a3ee61c9dff4a91ebdeb6eba03729ab932593c64330a286fc85fe0"
+      },
+      {
+        "instance_id": "sympy__sympy-16281",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "a80849a37cfa24e848014b1365d4d018cc39b4ab7d1b61bd0ea1a660953cf98d"
+      },
+      {
+        "instance_id": "sympy__sympy-16503",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "72d6baf244a3fcef232042016bdc2e928200a6796b0b1511bd4fa3471b549da3"
+      },
+      {
+        "instance_id": "sympy__sympy-16792",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e3714a3faf7b8a3b6f59032c9f5c80d7be1d5fd22ab98bbe6b43af9b858c898d"
+      },
+      {
+        "instance_id": "sympy__sympy-16988",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "86e10ed04f4e0e30b07751325156cdc8565684cfc223aa270d739ead68fda35d"
+      },
+      {
+        "instance_id": "sympy__sympy-17022",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "350abb9e9675c7ae07d2f715a990fc37cc9ec01934c565cd2c566beae6dfbbd9"
+      },
+      {
+        "instance_id": "sympy__sympy-17139",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "d1331dc293bb5d56be1adbce1b02a1067fa5b608e7393593f45e526ba6be1234"
+      },
+      {
+        "instance_id": "sympy__sympy-17630",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ac5ab65626af246ba976d9565cfa021427566a6a1d4f8ae32e03684239eed4c5"
+      },
+      {
+        "instance_id": "sympy__sympy-17655",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "698e6aa803ba90f9d80896824be0909c8c4d10f9a7ea2a3b46812ad5578143ab"
+      },
+      {
+        "instance_id": "sympy__sympy-18057",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ac718bbfd7c1c3cb5005ebfb0eff3cb34a2c201f9e9fd4136ef5ba2a8c288549"
+      },
+      {
+        "instance_id": "sympy__sympy-18087",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "14c308046e42d4a6b7ac9dcadf790186edac594f1f0a97b5b529d2c5054ea559"
+      },
+      {
+        "instance_id": "sympy__sympy-18189",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "6b0bd8e2e86bcbe7ee184bd1383cdebc4f458b035bbc8f5af9defda65ce81349"
+      },
+      {
+        "instance_id": "sympy__sympy-18199",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ebfaa79dbd80e877526b08ae5dda0cbd2451a0e19062d4cb3301533b6f2a5dfd"
+      },
+      {
+        "instance_id": "sympy__sympy-18532",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "4cb011e426a5313677d2bba41f215cd7c1814498accc59cbfae5b3cf61d317a2"
+      },
+      {
+        "instance_id": "sympy__sympy-18621",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "38f7a493e6f3755f26b9ef85781beec8db63a69deec27b44840a896bfaab4a8a"
+      },
+      {
+        "instance_id": "sympy__sympy-18698",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "b19f47df714f3d940e1592c36b51a14d429766d21676de6a30241804f99184dc"
+      },
+      {
+        "instance_id": "sympy__sympy-18835",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "0212426c87e83a3ef2af0397a9bca06f3409fd6d417a911134bd240400253a14"
+      },
+      {
+        "instance_id": "sympy__sympy-19007",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "b8dd5ec70e1d3c9e5751bda2f5a0b7d82188c621585c2cfb1ea4ad92f11df5b8"
+      },
+      {
+        "instance_id": "sympy__sympy-19254",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "21894325c2c374a7bf2571b9e4105945bf8ff93dfff2d39bb7dd50b8cc22b971"
+      },
+      {
+        "instance_id": "sympy__sympy-19487",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "386deb1760046ee412dbf075c1f45024cfd39662257f213d0285329ce4853f82"
+      },
+      {
+        "instance_id": "sympy__sympy-20049",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "6099dde8f5e840247652c0a4e6589ca3d73bf4e23e2cc289066a025f8e89a7bc"
+      },
+      {
+        "instance_id": "sympy__sympy-20154",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "2df2a2e2009fc14ac9f5c79dc21eb495ec41aa0ba1f471a68ebdc860fdf0cc3e"
+      },
+      {
+        "instance_id": "sympy__sympy-20212",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "74e9e1cfd1e62bc6de3a73e20189dd132461c8ce1b500456cdc1ea7516b4b1b4"
+      },
+      {
+        "instance_id": "sympy__sympy-20322",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "2f045ace52f4cf0249f2326096d0e5523e9b5f1916cafb1efb1c128004b7368d"
+      },
+      {
+        "instance_id": "sympy__sympy-20442",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "1f8ac88b675c4c954bbd67e9d562024d0339f71cbe821f1d989c63747670def9"
+      },
+      {
+        "instance_id": "sympy__sympy-20590",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "464eb50d77d4a06af5ad6dbb481b837e940a42ac88c994e390b962709cd1e0e8"
+      },
+      {
+        "instance_id": "sympy__sympy-20639",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "a6b240991b01fbdb9be41b6fac38976c791ee63838791b41bc3a42db9afa9177"
+      },
+      {
+        "instance_id": "sympy__sympy-21055",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "f0c4ed0a83b88d909d0b673eec7a5c06c127cf38571eafa2abb483df2fb4c254"
+      },
+      {
+        "instance_id": "sympy__sympy-21171",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e43118c9c192a6e7f159180442af19f94566b11ed6b81aab9025f2c27fe8f160"
+      },
+      {
+        "instance_id": "sympy__sympy-21379",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "e8c7cefab4abc53d2461a63f1190df963e64b2b27469d22187e381d08ef764eb"
+      },
+      {
+        "instance_id": "sympy__sympy-21612",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "641992fca347cb6df29555fa498bf1cd16e25427dee003c3a26816c7a093d1ea"
+      },
+      {
+        "instance_id": "sympy__sympy-21614",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "eeeeacaf0858a9775cee5d15bfef8c6c12ce532f096da028b8b601fc0937b7a1"
+      },
+      {
+        "instance_id": "sympy__sympy-21627",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "d5da6465d5ea8c2f2c2da59c9382b174a7905705c020834da4e81d2ab6ab4b0c"
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ac22396b9d9c51ad8d141b83965b3869eeb0fd09bc3c2bee1be9632dd6a9b8c5"
+      },
+      {
+        "instance_id": "sympy__sympy-22005",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "9be49fb91f5f5250cf83d40c2afdf73771b0c54775a08da9e13608eba9e549af"
+      },
+      {
+        "instance_id": "sympy__sympy-22714",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "f0d47674254859d4e4d428129dc86eaf42c0c869347e6d12491899e4162f7a8f"
+      },
+      {
+        "instance_id": "sympy__sympy-22840",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "965380e82136e76c9a98644777e40b87ea70bca7741f303129199f21efd9fb00"
+      },
+      {
+        "instance_id": "sympy__sympy-23117",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "5fc390940fca337203d7844f133ab3c355ad7ad05763955f6469877babf7792f"
+      },
+      {
+        "instance_id": "sympy__sympy-23191",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "c400c691fb93dd44c532360fa24eab993b74bb8062d0c9cede80b934d7de3002"
+      },
+      {
+        "instance_id": "sympy__sympy-23262",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "3b98a12a1415e005fb5e80fb9884e0c09a518bc4714a0bda57d7940995740d9d"
+      },
+      {
+        "instance_id": "sympy__sympy-24066",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "42954ae256b0954e66113581fdb00c8cca4573ed9b1317f457dbd17e25edf507"
+      },
+      {
+        "instance_id": "sympy__sympy-24102",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "a1683e3c69d7c244b4e2ac87a027e065dba926ffed45f1d589055d7711c29941"
+      },
+      {
+        "instance_id": "sympy__sympy-24152",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "1bf161d33b0215fa5049d6cb64d0cf13833d9d56de74f241f81dc63792fd70fc"
+      },
+      {
+        "instance_id": "sympy__sympy-24213",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "ca575ec8ff4f63cbeb0bfc6142862404fd4a1611259c25934da94cee9923884a"
+      },
+      {
+        "instance_id": "sympy__sympy-24909",
+        "repo": "sympy/sympy",
+        "eligibility": "eligible",
+        "ordering_sha256": "1e83b85023c381b4f44d03d11fde2b4099c351582b03ab92295cf4e573e5e8c0"
+      }
+    ],
+    "record_count": 10,
+    "candidate_executions": 0,
+    "records": [
+      {
+        "instance_id": "pallets__flask-4045",
+        "archive": "20231010_rag_claude2",
+        "model_name_or_path": "20231010_rag_claude2",
+        "record_sha256": "42cd9659a52bee3b338aa986b3fe30176e90dd4119c5ccbb1fb935e8fa70a935",
+        "patch_sha256": "73d6ac5fb81e2e596560596b662d592e4a48985b0248e916b472663e66df4699",
+        "patch_bytes": 465,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "pallets__flask-4045",
+        "archive": "20231010_rag_gpt35",
+        "model_name_or_path": "20231010_rag_gpt35",
+        "record_sha256": "b1dcfe28b352d408234a57cea1cca83d17296fa5bea736202dc3e810c730969f",
+        "patch_sha256": "72d464c867a934f68493b3e937e5bb1f74ace8d4e052fbf1c9e66987e5105ffd",
+        "patch_bytes": 590,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "sympy__sympy-18835",
+        "archive": "20231010_rag_claude2",
+        "model_name_or_path": "20231010_rag_claude2",
+        "record_sha256": "54a034823e46cf7a63626b7dbdf4b88f8a48f86a80d7294c6f74550e94214faa",
+        "patch_sha256": "445c6e393cd26aee8cf182542b209080ab09cd485606e41ad554d96ee86c7fe4",
+        "patch_bytes": 639,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "sympy__sympy-18835",
+        "archive": "20231010_rag_gpt35",
+        "model_name_or_path": "20231010_rag_gpt35",
+        "record_sha256": "58a1b91a6e507f0c5aa9b509b3c1ba1c8661e29c1f0d69805a901e01bc36fc0c",
+        "patch_sha256": "cc5604dd66c06967ceceb0ec0e349747fe77badcc705df39bb2ff6edc31629cf",
+        "patch_bytes": 375,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "sympy__sympy-12454",
+        "archive": "20231010_rag_claude2",
+        "model_name_or_path": "20231010_rag_claude2",
+        "record_sha256": "0767052efba97839966a63da68813a723841cd6d468a94c4677173805fa04f81",
+        "patch_sha256": "10767ec508d8e6f7a0f3c2a114b3e316f75f78abd33f4f5ddf23c7c2547818a2",
+        "patch_bytes": 524,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "sympy__sympy-12454",
+        "archive": "20231010_rag_gpt35",
+        "model_name_or_path": "20231010_rag_gpt35",
+        "record_sha256": "7d1de711c952a6671e3e307eaba6e8ad8358a0351879cd0169c3b6e2cc05fd00",
+        "patch_sha256": "fe5323c2c41ce90feb456ffa7e1c5cbef6f909fee7688cc7d0cf35699ba12bae",
+        "patch_bytes": 1305,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "archive": "20231010_rag_claude2",
+        "model_name_or_path": "20231010_rag_claude2",
+        "record_sha256": "5860878e732011b84005839d8e8e035331f186ffa73a27385412728f643521bb",
+        "patch_sha256": "5d112887cd601dc3a2ca586da5b8e89a47bf7e7af58da655f8676decbe09300e",
+        "patch_bytes": 1075,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "archive": "20231010_rag_gpt35",
+        "model_name_or_path": "20231010_rag_gpt35",
+        "record_sha256": "b40d3f4620a36fa65e7af90d1011e65ee3b6deca7e94b214b5206e92e5d11d6c",
+        "patch_sha256": "659361c096301f3cd408663390f99d7d9682eb7a2f37b5518d4fd6305334404e",
+        "patch_bytes": 3215,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5413",
+        "archive": "20231010_rag_claude2",
+        "model_name_or_path": "20231010_rag_claude2",
+        "record_sha256": "65849ea21d3f4e6b12717fbcff6e76c8ba98c132a56bb36d780ef8b9d96b1402",
+        "patch_sha256": "27b646c067039b165ff88534bf4591847e9ba12c6b77e9f147378c48de3187b6",
+        "patch_bytes": 748,
+        "empty_or_missing_patch": false
+      },
+      {
+        "instance_id": "pytest-dev__pytest-5413",
+        "archive": "20231010_rag_gpt35",
+        "model_name_or_path": "20231010_rag_gpt35",
+        "record_sha256": "dbd6de08ea06dded0174bdfcd993c744d455a5ab90b5198284a7096813477581",
+        "patch_sha256": "1e648531679fd7ee0a0de8e567ee5c039f60017b2001614257f3a93a93d596e2",
+        "patch_bytes": 453,
+        "empty_or_missing_patch": false
+      }
+    ]
+  },
+  "swe_logs": {
+    "records": [
+      {
+        "archive": "20231010_rag_claude2",
+        "instance_id": "pallets__flask-4045",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_claude2/logs/pallets__flask-4045.20231010_rag_claude2.eval.log",
+        "path": "data/logs/20231010_rag_claude2/pallets__flask-4045.log",
+        "bytes": 3036,
+        "sha256": "4c489f35f50c2c90f3ccfd9651a8add594a69ce2a9b7a7a64c029841407b7192",
+        "started_utc": "2026-09-22T22:01:18.825029+00:00",
+        "elapsed_seconds": 0.3280000000013388
+      },
+      {
+        "archive": "20231010_rag_claude2",
+        "instance_id": "sympy__sympy-18835",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_claude2/logs/sympy__sympy-18835.20231010_rag_claude2.eval.log",
+        "path": "data/logs/20231010_rag_claude2/sympy__sympy-18835.log",
+        "bytes": 3523,
+        "sha256": "329cbdd799d6219a114206b9de8f63c776a2e96055691c5011ccd5b7c1033a5e",
+        "started_utc": "2026-09-22T22:01:19.157494+00:00",
+        "elapsed_seconds": 0.17199999999866122
+      },
+      {
+        "archive": "20231010_rag_claude2",
+        "instance_id": "sympy__sympy-12454",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_claude2/logs/sympy__sympy-12454.20231010_rag_claude2.eval.log",
+        "path": "data/logs/20231010_rag_claude2/sympy__sympy-12454.log",
+        "bytes": 1165,
+        "sha256": "8168b4fc316f8dd04d1f247ca1f2f9dfd47c9243fdc0648f1a950db347043f5e",
+        "started_utc": "2026-09-22T22:01:19.334332+00:00",
+        "elapsed_seconds": 0.1720000000022992
+      },
+      {
+        "archive": "20231010_rag_claude2",
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_claude2/logs/scikit-learn__scikit-learn-12471.20231010_rag_claude2.eval.log",
+        "path": "data/logs/20231010_rag_claude2/scikit-learn__scikit-learn-12471.log",
+        "bytes": 236884,
+        "sha256": "70829b6d3d89b188b47725d96e3815cb96c1bf32bda4cb69dea7a094e06d7086",
+        "started_utc": "2026-09-22T22:01:19.502744+00:00",
+        "elapsed_seconds": 0.3129999999982829
+      },
+      {
+        "archive": "20231010_rag_claude2",
+        "instance_id": "pytest-dev__pytest-5413",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_claude2/logs/pytest-dev__pytest-5413.20231010_rag_claude2.eval.log",
+        "path": "data/logs/20231010_rag_claude2/pytest-dev__pytest-5413.log",
+        "bytes": 24673,
+        "sha256": "4201c4dd2930e6af382e97d9cf74ab78575ddd1bea0c6e8d853905643cd572d5",
+        "started_utc": "2026-09-22T22:01:19.819382+00:00",
+        "elapsed_seconds": 0.25
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "instance_id": "pallets__flask-4045",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_gpt35/logs/pallets__flask-4045.20231010_rag_gpt35.eval.log",
+        "path": "data/logs/20231010_rag_gpt35/pallets__flask-4045.log",
+        "bytes": 17794,
+        "sha256": "95bba513a97270dda39a485f1e0303053e4ce9f6088fa3af2e68b4d297c9fe29",
+        "started_utc": "2026-09-22T22:01:20.071447+00:00",
+        "elapsed_seconds": 0.1709999999984575
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "instance_id": "sympy__sympy-18835",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_gpt35/logs/sympy__sympy-18835.20231010_rag_gpt35.eval.log",
+        "path": "data/logs/20231010_rag_gpt35/sympy__sympy-18835.log",
+        "bytes": 3832,
+        "sha256": "7a90e0f7011b84e23823d93af834615ed785612aa78b09e36d973dbc94a9115e",
+        "started_utc": "2026-09-22T22:01:20.236979+00:00",
+        "elapsed_seconds": 0.1720000000022992
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "instance_id": "sympy__sympy-12454",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_gpt35/logs/sympy__sympy-12454.20231010_rag_gpt35.eval.log",
+        "path": "data/logs/20231010_rag_gpt35/sympy__sympy-12454.log",
+        "bytes": 568,
+        "sha256": "bab23b9aa073c8ab6552738b2f7a436589b7f9f62508ef807dad202cc888398f",
+        "started_utc": "2026-09-22T22:01:20.413848+00:00",
+        "elapsed_seconds": 0.21900000000096043
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "instance_id": "scikit-learn__scikit-learn-12471",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_gpt35/logs/scikit-learn__scikit-learn-12471.20231010_rag_gpt35.eval.log",
+        "path": "data/logs/20231010_rag_gpt35/scikit-learn__scikit-learn-12471.log",
+        "bytes": 933,
+        "sha256": "b7c128af0cd072adf7b458d50b932449edbbdb6661809a60fe2cac46882be82d",
+        "started_utc": "2026-09-22T22:01:20.619840+00:00",
+        "elapsed_seconds": 0.18799999999828287
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "instance_id": "pytest-dev__pytest-5413",
+        "url": "https://swe-bench-submissions.s3.amazonaws.com/lite/20231010_rag_gpt35/logs/pytest-dev__pytest-5413.20231010_rag_gpt35.eval.log",
+        "path": "data/logs/20231010_rag_gpt35/pytest-dev__pytest-5413.log",
+        "bytes": 5375,
+        "sha256": "33a0b28df9517b1c71b9debc8a9dd83a37cc6203d820e1ac763ad4dbf30591f5",
+        "started_utc": "2026-09-22T22:01:20.811038+00:00",
+        "elapsed_seconds": 0.1709999999984575
+      }
+    ],
+    "candidate_calls": 0
+  },
+  "swe_prediction_archives": {
+    "source_commit": "05ad61feb9c9f334dc340baea7c4f31cf7854274",
+    "screened": [
+      {
+        "archive": "20231010_rag_claude2",
+        "selected": true
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "selected": true
+      }
+    ],
+    "selected": [
+      {
+        "archive": "20231010_rag_claude2",
+        "path": "data/20231010_rag_claude2.jsonl",
+        "sha256": "c929fa8f9a650e58537ef2656b633682de1a27743d97de664ba617c0583af45f",
+        "records": 300,
+        "source_blob_sha": "77b027d91ec9af343c561b6f6373dc528be0d0b9",
+        "source_commit": "05ad61feb9c9f334dc340baea7c4f31cf7854274"
+      },
+      {
+        "archive": "20231010_rag_gpt35",
+        "path": "data/20231010_rag_gpt35.jsonl",
+        "sha256": "89793cff063f75ec5345c8eea5836bd512d339c0d52899b835e3777ce054de1d",
+        "records": 300,
+        "source_blob_sha": "0667b15ea5d7366b5f69f567efc0e09f67d055f4",
+        "source_commit": "05ad61feb9c9f334dc340baea7c4f31cf7854274"
+      }
+    ],
+    "outcomes_used": false
+  }
+}

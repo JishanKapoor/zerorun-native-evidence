@@ -1,0 +1,202 @@
+{
+  "classification": "S2 fixed-cohort application on exposed revisions; not R11 historical transfer or independent field study",
+  "evalplus": {
+    "evalplus-c05b20b2": {
+      "records": 328,
+      "qualification_counts": {
+        "CONFORMS": 315,
+        "INCONCLUSIVE": 11,
+        "VIOLATION": 2
+      },
+      "native_agreement_counts": {
+        "True": 322,
+        "False": 6
+      },
+      "audit_wall_seconds": 3.2684563000002527,
+      "capture_sha256": "a2046f5e146b1ea5da583a1a6405295533c64a03e31be52119808c856211ff61",
+      "capture_bytes": 21930907,
+      "qualified_ids": {
+        "VIOLATION": [
+          "HumanEval/32|base",
+          "HumanEval/32|plus"
+        ],
+        "INCONCLUSIVE": [
+          "HumanEval/15|plus",
+          "HumanEval/24|plus",
+          "HumanEval/100|plus",
+          "HumanEval/109|base",
+          "HumanEval/109|plus",
+          "HumanEval/129|base",
+          "HumanEval/129|plus",
+          "HumanEval/130|base",
+          "HumanEval/130|plus",
+          "HumanEval/147|base",
+          "HumanEval/147|plus"
+        ],
+        "UNSUPPORTED": []
+      },
+      "native_grade_counts": {
+        "base": {
+          "pass": 140,
+          "fail": 24
+        },
+        "plus": {
+          "pass": 133,
+          "fail": 31
+        }
+      },
+      "observer_health_failures": {
+        "native_complete": 0,
+        "transport_intact": 0,
+        "semantic_coverage": 4
+      },
+      "actual_committed_obligations": 123418,
+      "events": 124000,
+      "native_call_summary": {
+        "counts": {
+          "records": 328,
+          "reference_errors": 0,
+          "native_errors": 0
+        },
+        "candidate_bank_calls": 656,
+        "wall_seconds": 194.10589978000002,
+        "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+        "reference_manifest_sha256": "68189c7b115311be45e36588672b470e7a957ddaf695f21ccd0469d04123e6e9",
+        "peak_memory_bytes": 573587456
+      }
+    },
+    "evalplus-6eb1e199": {
+      "records": 328,
+      "qualification_counts": {
+        "CONFORMS": 318,
+        "INCONCLUSIVE": 10
+      },
+      "native_agreement_counts": {
+        "True": 322,
+        "False": 6
+      },
+      "audit_wall_seconds": 3.7844288000014785,
+      "capture_sha256": "9fc5c624f740952a1a66b1fb4e844aec4e92911c67302efaedaa965bee6c02fa",
+      "capture_bytes": 21948699,
+      "qualified_ids": {
+        "VIOLATION": [],
+        "INCONCLUSIVE": [
+          "HumanEval/15|plus",
+          "HumanEval/24|plus",
+          "HumanEval/100|plus",
+          "HumanEval/109|base",
+          "HumanEval/109|plus",
+          "HumanEval/129|plus",
+          "HumanEval/130|base",
+          "HumanEval/130|plus",
+          "HumanEval/147|base",
+          "HumanEval/147|plus"
+        ],
+        "UNSUPPORTED": []
+      },
+      "native_grade_counts": {
+        "base": {
+          "pass": 141,
+          "fail": 23
+        },
+        "plus": {
+          "pass": 133,
+          "fail": 31
+        }
+      },
+      "observer_health_failures": {
+        "native_complete": 0,
+        "transport_intact": 0,
+        "semantic_coverage": 4
+      },
+      "actual_committed_obligations": 124226,
+      "events": 124036,
+      "native_call_summary": {
+        "counts": {
+          "records": 328,
+          "reference_errors": 0,
+          "native_errors": 0
+        },
+        "candidate_bank_calls": 656,
+        "wall_seconds": 194.74815674,
+        "source_sha256": "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf",
+        "reference_manifest_sha256": "68189c7b115311be45e36588672b470e7a957ddaf695f21ccd0469d04123e6e9",
+        "peak_memory_bytes": 572837888
+      }
+    }
+  },
+  "swe": {
+    "swe-a5ecda66": {
+      "records": 10,
+      "qualification_counts": {
+        "INCONCLUSIVE": 10
+      },
+      "native_agreement_counts": {
+        "True": 10
+      },
+      "audit_wall_seconds": 0.01044019999972079,
+      "capture_sha256": "9eb5c01c163a863cb7214931c518dd5f7ba1eade6c3c841a4bc993c2b74f14e1",
+      "capture_bytes": 119310,
+      "qualified_ids": {
+        "VIOLATION": [],
+        "INCONCLUSIVE": [
+          "20231010_rag_claude2|pallets__flask-4045",
+          "20231010_rag_claude2|sympy__sympy-18835",
+          "20231010_rag_claude2|sympy__sympy-12454",
+          "20231010_rag_claude2|scikit-learn__scikit-learn-12471",
+          "20231010_rag_claude2|pytest-dev__pytest-5413",
+          "20231010_rag_gpt35|pallets__flask-4045",
+          "20231010_rag_gpt35|sympy__sympy-18835",
+          "20231010_rag_gpt35|sympy__sympy-12454",
+          "20231010_rag_gpt35|scikit-learn__scikit-learn-12471",
+          "20231010_rag_gpt35|pytest-dev__pytest-5413"
+        ],
+        "UNSUPPORTED": []
+      },
+      "native_found": 0,
+      "marker_counts": {
+        "start": 0,
+        "end": 0
+      },
+      "native_component_calls": 70,
+      "preservation": true
+    },
+    "swe-489a34eb": {
+      "records": 10,
+      "qualification_counts": {
+        "INCONCLUSIVE": 10
+      },
+      "native_agreement_counts": {
+        "True": 10
+      },
+      "audit_wall_seconds": 0.006888799998705508,
+      "capture_sha256": "2e2526f2fa277a6621336705ffc2eb26d19886247669266424e327d9ebe735ad",
+      "capture_bytes": 119310,
+      "qualified_ids": {
+        "VIOLATION": [],
+        "INCONCLUSIVE": [
+          "20231010_rag_claude2|pallets__flask-4045",
+          "20231010_rag_claude2|sympy__sympy-18835",
+          "20231010_rag_claude2|sympy__sympy-12454",
+          "20231010_rag_claude2|scikit-learn__scikit-learn-12471",
+          "20231010_rag_claude2|pytest-dev__pytest-5413",
+          "20231010_rag_gpt35|pallets__flask-4045",
+          "20231010_rag_gpt35|sympy__sympy-18835",
+          "20231010_rag_gpt35|sympy__sympy-12454",
+          "20231010_rag_gpt35|scikit-learn__scikit-learn-12471",
+          "20231010_rag_gpt35|pytest-dev__pytest-5413"
+        ],
+        "UNSUPPORTED": []
+      },
+      "native_found": 0,
+      "marker_counts": {
+        "start": 0,
+        "end": 0
+      },
+      "native_component_calls": 70,
+      "preservation": true
+    }
+  },
+  "interpretation": "Corrected saved replay R1, after observed application outcomes; original analysis retained",
+  "original_summary_sha256": "0fd946fd9df1e6418335a6548f6d69a1a9c95a1c3399b29c6879adaa6aafe168"
+}

@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "records": 328,
+    "reference_errors": 0,
+    "native_errors": 0
+  },
+  "candidate_bank_calls": 656,
+  "wall_seconds": 194.10589978000002,
+  "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+  "reference_manifest_sha256": "68189c7b115311be45e36588672b470e7a957ddaf695f21ccd0469d04123e6e9",
+  "peak_memory_bytes": 573587456
+}

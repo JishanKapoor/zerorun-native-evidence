@@ -1,0 +1,3 @@
+Vendored unmodified pycontract_core.py from the preserved pinned PyContract development source. SHA256 c882ea868b57b66eb3afd4d36a002212d0f7cbaa34800bfab3680e82c2285511.
+Apache-2.0 license retained in LICENSE.txt. Original project: https://github.com/pyrv/pycontract .
+No third-party candidate code or benchmark dataset is included in this distribution.

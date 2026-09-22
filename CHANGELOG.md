@@ -1,0 +1,14 @@
+# Changes
+
+## 0.2.1
+
+First packaged release of the native-evidence replay utility. This is distinct from historical ZeroRun test-result reuse releases.
+
+- Five Python/CLI operations with content-identified bundles and full record inventories.
+- Two explicitly bounded native-observation grammars, PyContract monitoring and a separate ordinary-Python comparator.
+- Explicit source pins, typed values, strict JSON keys/numbers/depth, producer seals and effective execution-mode checks.
+- Native progress beyond observed dispositions is treated as an observation gap; separately acquired native values that disagree with observations restrict qualification.
+- Native fields remain separate from checker labels in exports. Missing records remain visible in comparisons.
+- Packaged profiles, schema summary, authored observation examples and licensed pinned PyContract core.
+
+Draft development failures and their original outputs are retained in the separate study evidence: permissive Python-to-JSON conversion, inconsistent CLI depth checking, overclaiming semantic coverage from transport health, and an analysis output-path collision safely refused by exclusive file creation. No original native result was overwritten and no candidate was repeated to improve an outcome.

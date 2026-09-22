@@ -1,0 +1,9 @@
+# R1 post-application software correction
+
+The first S2 application and its original analysis are retained unchanged. Review identified an invalid inference in the draft checker: intact producer sequence/seal records were accepted as semantic coverage even when native progress exceeded the observed disposition prefix. Five such cases occurred across the two fixed EvalPlus runs (HumanEval/15 plus in both, HumanEval/129 base in the before run and plus in both). These cannot establish a native evaluator contradiction. The exact callback-disable mechanism is not asserted from records that did not capture it.
+
+In release 0.2.1, a native committed prefix longer than the disposition prefix yields INCONCLUSIVE. The opposite direction remains a commitment violation when all other premises are qualified: more decisions than committed obligations is the exposed pre-241 find_zero relationship. This preserves the distinction between missing observation and missing commitment.
+
+The two runs also have six task/bank records each whose independent native values differ from the observed execution. The corrected public audit reports this preservation disagreement and restricts overall qualification to INCONCLUSIVE, while retaining the raw relationship status and both native values. It does not pretend to eliminate timing perturbation or revise native outcomes. A comparison may proceed only over explicitly stated native premises; missing qualification is never converted to a candidate failure.
+
+The original 0.2.0 draft code snapshots, first analysis, native recordings and failed tests remain in `study_s2/evidence/` and `study_s2/analysis/`. A separately named `analysis-r1/` contains the corrected replay. No native application was rerun, no candidate was replaced, and no original frozen result was improved retrospectively. Final manuscript results must distinguish original acquisition, development diagnosis and corrected saved-evidence interpretation.
