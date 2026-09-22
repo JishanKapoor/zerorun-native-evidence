@@ -19,3 +19,4 @@ jobs:
       - run: python -m pip install --no-deps dist/*.whl
       - run: python -m pytest tests -q
       - run: zerorun --version
+      - run: python research/verify_observations.py
