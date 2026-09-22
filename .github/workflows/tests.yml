@@ -1,5 +1,13 @@
 name: Software validation
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      source_ref:
+        description: Exact source commit or tag to validate
+        required: false
+        default: ''
 permissions:
   contents: read
 jobs:
@@ -11,6 +19,9 @@ jobs:
         python: ['3.11', '3.12', '3.13', '3.14']
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref || github.sha }}
+      - run: git rev-parse HEAD
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
@@ -19,4 +30,7 @@ jobs:
       - run: python validation/package_checks.py dist
       - run: python -m pip install --no-deps dist/*.whl
       - run: python -m pytest tests -q
+      - run: python validation/boundary_campaign.py
       - run: zerorun --version
+      - run: python research/verify_observations.py
+      - run: python research/native_consumer.py
