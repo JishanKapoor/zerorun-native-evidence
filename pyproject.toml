@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69", "wheel"]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "0.3.0"
 description = "Provenance-preserving replay checks for bounded native evaluator observations"
 readme = "README.md"
 requires-python = ">=3.11"
-license = {text = "MIT; vendored PyContract core under Apache-2.0"}
+license = "MIT AND Apache-2.0"
+license-files = ["LICENSE.txt", "Licence.txt", "src/zerorun_harness/_vendor/LICENSE.txt", "src/zerorun_harness/_vendor/NOTICE.txt"]
 authors = [{name = "Jishan Kapoor"}]
 dependencies = []
 

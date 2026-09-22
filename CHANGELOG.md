@@ -2,6 +2,8 @@
 
 ## 0.3.0
 
+- Fix platform-dependent license discovery with explicit PEP 639 license files and pinned build dependencies; verify package metadata and every RECORD hash in CI.
+
 - Add hash-verified reconstruction of frozen native inputs and complete acquisition mount instructions; repair API-reference encoding.
 
 - Check supplied SWE admission, native grading report and resolution alongside the selected map. Record the precise fields covered by native agreement; an invalid supplied reference restricts qualification.
