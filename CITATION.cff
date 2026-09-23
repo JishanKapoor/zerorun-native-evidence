@@ -2,14 +2,14 @@ cff-version: 1.2.0
 message: "Please cite this software version and its accompanying observation records."
 type: software
 title: "ZeroRun Harness"
-version: 0.3.0
+version: 0.4.0
 date-released: 2026-09-22
 authors:
   - family-names: Kapoor
     given-names: Jishan
     affiliation: "Independent researcher, Toronto, Canada"
 repository-code: "https://github.com/JishanKapoor/zerorun-native-evidence"
-url: "https://github.com/JishanKapoor/zerorun-native-evidence/releases/tag/v0.3.0"
+url: "https://github.com/JishanKapoor/zerorun-native-evidence/releases/tag/v0.4.0"
 license: MIT
 keywords:
   - runtime verification

@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MIT
-import copy, json, math, subprocess, sys
+import copy, json
 from importlib.resources import files
 import pytest
 from zerorun_harness import capture, audit, compare, export, report
-from zerorun_harness.api import InvalidEvidence, canonical, digest, profiles
+from zerorun_harness.api import InvalidEvidence, canonical
 from zerorun_harness.cli import main, read
 
 

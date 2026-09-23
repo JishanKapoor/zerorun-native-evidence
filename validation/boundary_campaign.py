@@ -91,7 +91,6 @@ def run():
     )
     sw["native_reference"] = {"selected": {"x": "PASSED"}}
     totals = Counter()
-    examples = []
     for base in [ev, sw, full_controls.row()]:
         for field in ["observation", "native_reference"]:
             for path in paths(base[field]):

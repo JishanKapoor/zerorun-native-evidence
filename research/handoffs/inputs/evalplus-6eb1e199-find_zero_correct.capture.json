@@ -1,0 +1,25 @@
+{
+  "schema": "zerorun-capture/1",
+  "mode": "saved-evidence",
+  "records": [
+    {
+      "id": "find_zero_correct",
+      "family": "evalplus",
+      "observation": {},
+      "native_reference": {
+        "grade": "pass",
+        "details": [
+          true,
+          true
+        ],
+        "wall_seconds": 0.013490597000000548
+      },
+      "provenance": {
+        "source_sha256": "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf",
+        "input_sha256": "d6e30c8552664f6b5560bf4753158d3180561f87b869ad7430860a3296823a47",
+        "candidate_sha256": "821b97a003dc26156d88b6fa1fb9b31c16e3c8f51e9968667612c0bc91d84f16"
+      }
+    }
+  ],
+  "sha256": "87826cbc84f9b5b3a94e5df257b37d098f11dc947db62a9ea669a67d19c8d270"
+}

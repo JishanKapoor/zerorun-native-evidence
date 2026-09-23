@@ -1,0 +1,46 @@
+{
+  "schema": "zerorun-native-recipe/1",
+  "record_id": "identity_correct",
+  "role": "policy-protection",
+  "maintenance_action": "Protect native complete rejection, ordinary acceptance and permitted short-circuit commitment under the exposed fixture.",
+  "source_files": {
+    "evalplus/__init__.py": "fd8bd103579e95d9a9114272caf122360d6957c5ee4d67dc047884fefe0c48c2",
+    "evalplus/config.py": "dc14b4400cbf05d5bcab5b94d785f046cca22b0dbc10bc9756f8356dc42f18e3",
+    "evalplus/eval/__init__.py": "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf",
+    "evalplus/eval/_special_oracle.py": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd",
+    "evalplus/eval/utils.py": "0aec25f437dbc7637219ba749ba71921670e71cd2e70b1cc23988896c0754bb1"
+  },
+  "input": {
+    "dataset": "humaneval",
+    "entry_point": "identity",
+    "code": "def identity(x):\n    return x\n",
+    "inputs": [
+      [
+        5
+      ],
+      [
+        7
+      ]
+    ],
+    "expected": [
+      5,
+      7
+    ],
+    "atol": 0.0,
+    "fast_check": false,
+    "time_limits": [
+      1.0,
+      1.0
+    ]
+  },
+  "reference_origin_sha256": "63bb2e07401d8aefbd6be2812d269c0ff8afd4158af5aeae787073dc531df0a0",
+  "reference": {
+    "worker_status": 0,
+    "progress": 2,
+    "details": [
+      true,
+      true
+    ]
+  },
+  "reference_sha256": "247386737ab336254070aa3d4c7c65418745a242e7bc3f41fb830e747459e560"
+}

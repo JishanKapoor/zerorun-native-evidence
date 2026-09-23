@@ -1,7 +1,8 @@
 include LICENSE.txt Licence.txt THIRD_PARTY_NOTICES.md
 include CHANGELOG.md RESEARCH_REPRODUCTION.md API_REFERENCE.md
 include CITATION.cff .zenodo.json
-recursive-include src/zerorun_harness/resources *.json
+recursive-include src/zerorun_harness/resources *.json *.txt
+include EXPORTS.md
 recursive-include src/zerorun_harness/examples *.json
 recursive-include src/zerorun_harness/_vendor *.txt
 recursive-include tests *.py

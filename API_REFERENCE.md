@@ -1,4 +1,4 @@
-# ZeroRun Harness 0.3.0 API and operating boundaries
+# ZeroRun Harness 0.4.0 API and operating boundaries
 
 ## Installation and execution
 
@@ -37,7 +37,9 @@ SWE observations retain `source_sha256`, boolean `found`, boolean `observer_cove
 
 ## Functions and outputs
 
-Version 0.3.0 emits `zerorun-audit/2`, `zerorun-compare/2` and `zerorun-native-export/2`. Input captures still use `zerorun-capture/1`. Retained version-1 audit files belong to the earlier engine and remain available as historical outputs; do not edit their schema tag to claim migration.
+Version 0.4.0 also accepts `export(bundle, mode=..., recipe=...)`; see [the exact export-level and native-recipe contract](EXPORTS.md). The default `native-values` mode and existing output schemas remain compatible. Other modes produce saved capture JSON, a workbench integration script or a standalone native component script. Export generation executes no native code; running the latter script does.
+
+Version 0.4.0 emits `zerorun-audit/2`, `zerorun-compare/2` and `zerorun-native-export/2`. Input captures still use `zerorun-capture/1`. Retained version-1 audit files belong to the earlier engine and remain available as historical outputs; do not edit their schema tag to claim migration.
 
 Audit and export include `native_agreement_fields`: the fields within the declared comparison scope. A null agreement means those premises are unassessable; an empty field list with a null reference means no independent comparison was supplied. EvalPlus compares native grade/details. SWE always requires valid selected maps and additionally checks `found`, `report` and `resolution` when supplied by the reference. All four native report categories must contain typed success/failure identity lists. Valid resolution strings are `RESOLVED_NO`, `RESOLVED_PARTIAL`, `RESOLVED_FULL`. The checker compares native values; it does not recompute grading policy.
 

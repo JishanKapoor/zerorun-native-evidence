@@ -319,8 +319,12 @@ def compare(left, right):
     }
 
 
-def export(bundle):
+def export(bundle, *, mode="native-values", recipe=None):
     """Export primitive native fields with qualification, never convert a verdict into a score."""
+    if mode != "native-values" or recipe is not None:
+        from .handoffs import export_level
+
+        return export_level(bundle, mode, recipe)
     result = audit(bundle)
     byid = {r["id"]: r for r in result["records"]}
     rows = []

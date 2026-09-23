@@ -1,9 +1,6 @@
 # SPDX-License-Identifier: MIT
 """Public-boundary regressions identified after the first release validation."""
 
-import copy
-import json
-from importlib.resources import files
 
 import pytest
 

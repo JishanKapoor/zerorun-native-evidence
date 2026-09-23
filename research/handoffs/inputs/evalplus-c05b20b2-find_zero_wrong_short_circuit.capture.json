@@ -1,0 +1,24 @@
+{
+  "schema": "zerorun-capture/1",
+  "mode": "saved-evidence",
+  "records": [
+    {
+      "id": "find_zero_wrong_short_circuit",
+      "family": "evalplus",
+      "observation": {},
+      "native_reference": {
+        "grade": "fail",
+        "details": [
+          false
+        ],
+        "wall_seconds": 0.021403997000000174
+      },
+      "provenance": {
+        "source_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+        "input_sha256": "d6e30c8552664f6b5560bf4753158d3180561f87b869ad7430860a3296823a47",
+        "candidate_sha256": "e8f0e59e04134a603b7752705fc58729240a2513f84370c7346a9f2b862c7254"
+      }
+    }
+  ],
+  "sha256": "f1dd5ba8b476cc08f21a27faebd6763d1ffff5fd2b4b27b9e787d153ffac693e"
+}

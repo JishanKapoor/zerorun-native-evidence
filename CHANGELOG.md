@@ -1,3 +1,7 @@
+# 0.4.0
+
+Added explicit event, integration and standalone native component exports. Generated scripts pin all native Python source bytes, validate input/reference identities, avoid unverified bytecode, preserve output files and compare native values without ZeroRun. Existing capture, audit and native-values export schemas remain unchanged.
+
 # Changes
 
 ## 0.3.0

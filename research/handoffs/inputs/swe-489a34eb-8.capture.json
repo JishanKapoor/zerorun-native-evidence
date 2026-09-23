@@ -1,0 +1,177 @@
+{
+  "schema": "zerorun-capture/1",
+  "mode": "saved-evidence",
+  "records": [
+    {
+      "id": "20231010_rag_gpt35|scikit-learn__scikit-learn-12471",
+      "family": "swe",
+      "observation": {
+        "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961",
+        "parser_calls": [],
+        "selected": {},
+        "found": false,
+        "observer_coverage": false,
+        "native_report": {
+          "FAIL_TO_PASS": {
+            "success": [],
+            "failure": [
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown_strings"
+            ]
+          },
+          "PASS_TO_PASS": {
+            "success": [],
+            "failure": [
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_sparse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dense",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_deprecationwarnings",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_force_new_behaviour",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categorical_features",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_not_fitted",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_no_categorical_features",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_set_params",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_inverse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[string]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object-string-cat]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_unsorted_categories",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories_mixed_columns",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_pandas",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names_unicode",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object-string-cat]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_inverse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes",
+              "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning"
+            ]
+          },
+          "FAIL_TO_FAIL": {
+            "success": [],
+            "failure": []
+          },
+          "PASS_TO_FAIL": {
+            "success": [],
+            "failure": []
+          }
+        },
+        "native_resolution": "RESOLVED_NO"
+      },
+      "native_reference": {
+        "selected": {},
+        "found": false,
+        "report": {
+          "FAIL_TO_PASS": {
+            "success": [],
+            "failure": [
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown_strings"
+            ]
+          },
+          "PASS_TO_PASS": {
+            "success": [],
+            "failure": [
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_sparse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dense",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_deprecationwarnings",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_force_new_behaviour",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categorical_features",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_not_fitted",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_no_categorical_features",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float32-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[float64-float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[int32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float32]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype_pandas[float64]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_set_params",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_inverse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_categories[string]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories[object-string-cat]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_unsorted_categories",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_specified_categories_mixed_columns",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_pandas",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_feature_names_unicode",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[error-object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[mixed]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object-string-cat]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_inverse",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[numeric]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[object]",
+              "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes",
+              "sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas",
+              "sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning"
+            ]
+          },
+          "FAIL_TO_FAIL": {
+            "success": [],
+            "failure": []
+          },
+          "PASS_TO_FAIL": {
+            "success": [],
+            "failure": []
+          }
+        },
+        "resolution": "RESOLVED_NO"
+      },
+      "provenance": {
+        "source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961",
+        "input_sha256": "b7c128af0cd072adf7b458d50b932449edbbdb6661809a60fe2cac46882be82d",
+        "candidate_sha256": "659361c096301f3cd408663390f99d7d9682eb7a2f37b5518d4fd6305334404e"
+      }
+    }
+  ],
+  "sha256": "d073053bc723f7e8bdef4529a518a5ecc5910888dbb6af3419c991303bd06dd8"
+}

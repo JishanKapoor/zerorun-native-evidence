@@ -55,18 +55,39 @@ def main(argv=None):
         p.add_argument("--output", required=True)
         if command == "compare":
             p.add_argument("other")
+        if command == "export":
+            p.add_argument(
+                "--mode",
+                choices=[
+                    "native-values",
+                    "event-replay",
+                    "integration-replay",
+                    "native-regression",
+                ],
+                default="native-values",
+            )
+            p.add_argument(
+                "--recipe",
+                help="Versioned native recipe JSON, required for native-regression",
+            )
     args = parser.parse_args(argv)
     try:
         first = read(args.input)
         value = (
-            compare(first, read(args.other))
-            if args.command == "compare"
-            else {
-                "capture": capture,
-                "audit": audit,
-                "export": export,
-                "report": report,
-            }[args.command](first)
+            export(
+                first, mode=args.mode, recipe=read(args.recipe) if args.recipe else None
+            )
+            if args.command == "export"
+            else (
+                compare(first, read(args.other))
+                if args.command == "compare"
+                else {
+                    "capture": capture,
+                    "audit": audit,
+                    "export": export,
+                    "report": report,
+                }[args.command](first)
+            )
         )
         data = (
             value

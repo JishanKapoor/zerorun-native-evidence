@@ -1,0 +1,153 @@
+{
+  "schema": "zerorun-capture/1",
+  "mode": "saved-evidence",
+  "records": [
+    {
+      "id": "20231010_rag_gpt35|sympy__sympy-18835",
+      "family": "swe",
+      "observation": {
+        "source_sha256": "c891dee92350f8927abfdf8a7c5c664df7838f1c65f2ffe069f854c5ec57ff95",
+        "parser_calls": [],
+        "selected": {},
+        "found": false,
+        "observer_coverage": false,
+        "native_report": {
+          "FAIL_TO_PASS": {
+            "success": [],
+            "failure": [
+              "test_uniq"
+            ]
+          },
+          "PASS_TO_PASS": {
+            "success": [],
+            "failure": [
+              "test_is_palindromic",
+              "test_postorder_traversal",
+              "test_flatten",
+              "test_iproduct",
+              "test_group",
+              "test_subsets",
+              "test_variations",
+              "test_cartes",
+              "test_filter_symbols",
+              "test_numbered_symbols",
+              "test_sift",
+              "test_take",
+              "test_dict_merge",
+              "test_prefixes",
+              "test_postfixes",
+              "test_topological_sort",
+              "test_strongly_connected_components",
+              "test_connected_components",
+              "test_rotate",
+              "test_multiset_partitions",
+              "test_multiset_combinations",
+              "test_multiset_permutations",
+              "test_partitions",
+              "test_binary_partitions",
+              "test_bell_perm",
+              "test_involutions",
+              "test_derangements",
+              "test_necklaces",
+              "test_bracelets",
+              "test_generate_oriented_forest",
+              "test_unflatten",
+              "test_common_prefix_suffix",
+              "test_minlex",
+              "test_ordered",
+              "test_runs",
+              "test_reshape",
+              "test_kbins",
+              "test_has_dups",
+              "test__partition",
+              "test_ordered_partitions",
+              "test_rotations"
+            ]
+          },
+          "FAIL_TO_FAIL": {
+            "success": [],
+            "failure": []
+          },
+          "PASS_TO_FAIL": {
+            "success": [],
+            "failure": []
+          }
+        },
+        "native_resolution": "RESOLVED_NO"
+      },
+      "native_reference": {
+        "selected": {},
+        "found": false,
+        "report": {
+          "FAIL_TO_PASS": {
+            "success": [],
+            "failure": [
+              "test_uniq"
+            ]
+          },
+          "PASS_TO_PASS": {
+            "success": [],
+            "failure": [
+              "test_is_palindromic",
+              "test_postorder_traversal",
+              "test_flatten",
+              "test_iproduct",
+              "test_group",
+              "test_subsets",
+              "test_variations",
+              "test_cartes",
+              "test_filter_symbols",
+              "test_numbered_symbols",
+              "test_sift",
+              "test_take",
+              "test_dict_merge",
+              "test_prefixes",
+              "test_postfixes",
+              "test_topological_sort",
+              "test_strongly_connected_components",
+              "test_connected_components",
+              "test_rotate",
+              "test_multiset_partitions",
+              "test_multiset_combinations",
+              "test_multiset_permutations",
+              "test_partitions",
+              "test_binary_partitions",
+              "test_bell_perm",
+              "test_involutions",
+              "test_derangements",
+              "test_necklaces",
+              "test_bracelets",
+              "test_generate_oriented_forest",
+              "test_unflatten",
+              "test_common_prefix_suffix",
+              "test_minlex",
+              "test_ordered",
+              "test_runs",
+              "test_reshape",
+              "test_kbins",
+              "test_has_dups",
+              "test__partition",
+              "test_ordered_partitions",
+              "test_rotations"
+            ]
+          },
+          "FAIL_TO_FAIL": {
+            "success": [],
+            "failure": []
+          },
+          "PASS_TO_FAIL": {
+            "success": [],
+            "failure": []
+          }
+        },
+        "resolution": "RESOLVED_NO"
+      },
+      "provenance": {
+        "source_sha256": "c891dee92350f8927abfdf8a7c5c664df7838f1c65f2ffe069f854c5ec57ff95",
+        "input_sha256": "7a90e0f7011b84e23823d93af834615ed785612aa78b09e36d973dbc94a9115e",
+        "candidate_sha256": "cc5604dd66c06967ceceb0ec0e349747fe77badcc705df39bb2ff6edc31629cf"
+      }
+    }
+  ],
+  "sha256": "6e7609a42227a24b2dae943b838bb49af179af06ee2f64e5bab85461351ea526"
+}
