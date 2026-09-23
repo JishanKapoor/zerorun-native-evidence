@@ -39,7 +39,8 @@ COLLECTION_SCAN_LIMIT = 4096
 SCALAR_BASE = ctypes.c_int.__bases__[0]
 SCALAR_VALUE = type.__getattribute__(SCALAR_BASE, "__dict__")["value"]
 SCALAR_NAMES = {"__module__", "_type_", "__dict__", "__weakref__", "__doc__",
-                "__ctype_be__", "__ctype_le__"}
+                "__ctype_be__", "__ctype_le__", "__firstlineno__",
+                "__static_attributes__"}
 
 
 def exact_kind(value, *kinds):
@@ -53,7 +54,18 @@ def native_scalar_value(value):
     if not exact_kind(value,*SCALARS):
         raise PrimitiveError("Unsupported native scalar type")
     namespace=type.__getattribute__(kind,"__dict__")
+    # CPython 3.13+ adds inert class-definition metadata to standard ctypes
+    # scalars. Admit only its native shape, without invoking candidate hooks.
+    metadata_valid = (
+        ("__firstlineno__" not in namespace
+         or (type(namespace["__firstlineno__"]) is int
+             and namespace["__firstlineno__"] > 0))
+        and ("__static_attributes__" not in namespace
+             or (type(namespace["__static_attributes__"]) is tuple
+                 and len(namespace["__static_attributes__"]) == 0))
+    )
     if (not set(namespace)<=SCALAR_NAMES
+            or not metadata_valid
             or type.__getattribute__(kind,"__bases__")!=(SCALAR_BASE,)
             or type(SCALAR_VALUE) is not GetSetDescriptorType
             or SCALAR_VALUE.__objclass__ is not SCALAR_BASE

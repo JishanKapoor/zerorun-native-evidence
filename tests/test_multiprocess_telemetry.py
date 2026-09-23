@@ -356,12 +356,19 @@ def test_every_poststart_setup_or_drain_failure_cleans_group_and_fds(tmp_path, m
 
 
 @pytest.mark.parametrize("failure", ["nonzero", "missing", "malformed", "bad-schema"])
-def test_all_supervisor_failures_clean_recorded_native_group(tmp_path, monkeypatch, failure):
+@pytest.mark.parametrize("live_identity", [123, None, 124])
+def test_all_supervisor_failures_clean_recorded_native_group(tmp_path, monkeypatch, failure, live_identity):
     adapter = tmp_path / "adapter.py"
     adapter.write_text("def run(session, argument): return None")
     cleaned = []
     monkeypatch.setattr(t, "_runtime_supported", lambda method: True)
     monkeypatch.setattr(t, "_terminate_group", lambda pid: cleaned.append(pid) or "SIGKILL")
+    # The Process and group receipt below are simulated. Their identity must
+    # also be simulated: PID 200 can name an unrelated process on a CI host.
+    # Exercise both an owned/dead original leader and a reused live PID.
+    lookups = []
+    monkeypatch.setattr(t, "_linux_process_identity",
+                        lambda pid: lookups.append(pid) or live_identity)
 
     class Process:
         pid = 100
@@ -381,8 +388,10 @@ def test_all_supervisor_failures_clean_recorded_native_group(tmp_path, monkeypat
     monkeypatch.setattr(t.subprocess, "Popen", Process)
     receipt = t.capture_native_pair(adapter, hashlib.sha256(adapter.read_bytes()).hexdigest(), {})
     assert receipt["status"] == "INCOMPLETE"
-    assert receipt["failure_cleanup"] == {"group_pid": 200, "action": "SIGKILL", "recorded_starttime":123, "direct_pid_fallback":None, "group_retry":None}
-    assert cleaned == [200]
+    action = "live_process_identity_mismatch" if live_identity == 124 else "SIGKILL"
+    assert receipt["failure_cleanup"] == {"group_pid": 200, "action": action, "recorded_starttime":123, "direct_pid_fallback":None, "group_retry":None}
+    assert lookups == [200]
+    assert cleaned == ([] if live_identity == 124 else [200])
 
 
 @pytest.mark.parametrize("value", ["0", "-1", "1\n", "bad", "1" * 40])

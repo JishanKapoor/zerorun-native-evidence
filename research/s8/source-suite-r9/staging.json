@@ -1,0 +1,8 @@
+{
+  "source_label": "source-suite-r9",
+  "files": 245,
+  "source_manifest_sha256": "add2a4297f90d77aea7839c26860ab63d2c0ed0ac21366c78a79b0a25e0b6b87",
+  "source_suite_passed": true,
+  "removed_obsolete_members": [],
+  "scope": "Exact tested development source; final installed native results retain separate receipts"
+}

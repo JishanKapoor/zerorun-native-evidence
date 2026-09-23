@@ -99,6 +99,50 @@ def test_missing_native_lock_backing_is_a_projection_refusal():
         read(native, "scalar")
 
 
+@pytest.mark.parametrize("synchronized", [False, True])
+def test_standard_scalar_class_definition_metadata(monkeypatch, synchronized):
+    native = mp.Value("i", 7) if synchronized else ctypes.c_int(7)
+    monkeypatch.setattr(ctypes.c_int, "__firstlineno__", 191, raising=False)
+    monkeypatch.setattr(ctypes.c_int, "__static_attributes__", (), raising=False)
+    assert read(native, "scalar") == 7
+
+
+@pytest.mark.parametrize("name,value", [
+    ("__firstlineno__", True), ("__firstlineno__", 0),
+    ("__firstlineno__", "191"), ("__static_attributes__", []),
+    ("__static_attributes__", ("value",)), ("unexpected_hook", None),
+])
+def test_altered_scalar_metadata_is_refused(monkeypatch, name, value):
+    native = ctypes.c_int(7)
+    monkeypatch.setattr(ctypes.c_int, name, value, raising=False)
+    with pytest.raises(PrimitiveError):
+        read(native, "scalar")
+
+
+@pytest.mark.parametrize("name", ["__firstlineno__", "__static_attributes__"])
+def test_scalar_metadata_never_dispatches_candidate_protocols(monkeypatch, name):
+    called = []
+
+    class Candidate:
+        def __eq__(self, other):
+            called.append("eq")
+            return True
+
+        def __gt__(self, other):
+            called.append("gt")
+            return True
+
+        def __len__(self):
+            called.append("len")
+            return 0
+
+    native = ctypes.c_int(7)
+    monkeypatch.setattr(ctypes.c_int, name, Candidate(), raising=False)
+    with pytest.raises(PrimitiveError):
+        read(native, "scalar")
+    assert called == []
+
+
 @pytest.mark.parametrize("mutation", ["projection", "binding-digest", "fact-schema"])
 def test_recorder_freezes_verified_declarations_against_later_caller_mutation(mutation):
     policy = profile()
