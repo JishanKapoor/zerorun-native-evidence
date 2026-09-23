@@ -34,6 +34,7 @@ def installed(tmp_path, monkeypatch):
 
     entry.load = forbidden
     dist = SimpleNamespace(
+        metadata={"Name": "zerorun-exposed-domain"},
         version="1.0.0",
         entry_points=[entry],
         files=["domain/profile.json"],
@@ -138,11 +139,22 @@ def test_archive_does_not_retarget_after_plugin_removal(installed, monkeypatch):
 
 def test_ambiguous_registration_refused(installed, monkeypatch):
     manifest, _, dist = installed
+    other = copy.copy(dist)
+    other.metadata = {"Name": "different-domain-distribution"}
     monkeypatch.setattr(
-        "zerorun_harness.extensions.metadata.distributions", lambda: [dist, dist]
+        "zerorun_harness.extensions.metadata.distributions", lambda: [dist, other]
     )
     with pytest.raises(InvalidEvidence, match="exactly one"):
         load_extension(manifest["extension"])
+
+
+def test_repeated_search_path_is_one_physical_installation(installed, monkeypatch):
+    manifest, profile, dist = installed
+    monkeypatch.setattr(
+        "zerorun_harness.extensions.metadata.distributions",
+        lambda: [dist, copy.copy(dist)],
+    )
+    assert load_extension(manifest["extension"]) == profile
 
 
 @pytest.mark.parametrize(

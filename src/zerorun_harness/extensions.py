@@ -4,7 +4,7 @@
 import copy
 from importlib import metadata
 import json
-from pathlib import PurePosixPath
+from pathlib import Path, PurePosixPath
 import re
 
 from .api import InvalidEvidence, canonical, digest, fingerprint
@@ -36,9 +36,22 @@ def load_extension(selection):
         "Invalid extension identity",
     )
     candidates = []
+    registrations = set()
     for dist in metadata.distributions():
         for entry in dist.entry_points:
             if entry.group == GROUP and entry.name == selection["id"]:
+                # importlib.metadata may enumerate the same installation twice
+                # when sys.path repeats a directory. Resolve physical origins;
+                # distinct distributions/resources remain genuinely ambiguous.
+                identity = (
+                    str(Path(dist.locate_file("")).resolve()),
+                    dist.metadata.get("Name"),
+                    dist.version,
+                    entry.value,
+                )
+                if identity in registrations:
+                    continue
+                registrations.add(identity)
                 candidates.append((dist, entry))
     require(
         len(candidates) == 1,
