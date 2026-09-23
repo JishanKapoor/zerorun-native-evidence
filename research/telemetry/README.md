@@ -1,0 +1,3 @@
+# Bounded telemetry qualification
+
+See root TELEMETRY.md. The package includes validation/telemetry_campaign.py and validation/telemetry_fixtures/. Run the campaign in the pinned Linux CPython 3.11.16 container with the installed package location at /package, fixture directory at /fixtures, native EvalPlus source 6eb1e199c2e370518e7bf3e8eee6322c2b23c89c at /native, and a new writable /results. The validator starts fresh supervisors and does not evaluate cohort candidates. The source qualification receipt retained here predates final packaging; final installed receipts are separately retained in the S5 delivery. All expected native return values are authored controls. The native guard reference script imports no production observer or checker.

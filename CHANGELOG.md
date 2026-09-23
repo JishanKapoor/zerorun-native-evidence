@@ -1,3 +1,7 @@
+# 0.5.0
+
+Implement R11 A4 bounded acquisition telemetry: fresh supervisors, pre-guard fork descriptors, nonblocking framed writes, CRC and sequence/seal checks, bounded primitive storage, explicit native/transport health, preserved native exceptions and failure controls. Runtime qualification is Linux CPython 3.11.16, fork, optimize=0. Earlier observations and the replay API are unchanged.
+
 # 0.4.0
 
 Added explicit event, integration and standalone native component exports. Generated scripts pin all native Python source bytes, validate input/reference identities, avoid unverified bytecode, preserve output files and compare native values without ZeroRun. Existing capture, audit and native-values export schemas remain unchanged.
