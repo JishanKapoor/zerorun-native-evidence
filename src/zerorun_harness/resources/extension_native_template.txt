@@ -148,6 +148,11 @@ def main():
             if isinstance(exc, (KeyboardInterrupt, SystemExit)):
                 code = 130 if isinstance(exc, KeyboardInterrupt) else 2
         finally:
+            receipt['classification_dependency'] = any(name == 'zerorun_harness' or name.startswith('zerorun_harness.') for name in sys.modules)
+            if receipt['classification_dependency']:
+                receipt['result'] = 'UNASSESSABLE'
+                receipt['exception'] = 'FrameworkImportedByNativeRecipe'
+                code = 2
             receipt['elapsed_seconds'] = time.monotonic() - start
             receipt['python'] = sys.version
             receipt['uid'] = os.getuid() if hasattr(os, 'getuid') else None
