@@ -6,9 +6,10 @@ from pathlib import Path
 import subprocess
 import sys
 
-P=Path('/package')
+P=Path(os.environ.get('ZERORUN_TEST_PACKAGE','/package'))
 F=Path('/fixtures')
-O=Path('/results')
+O=Path(os.environ.get('ZERORUN_TEST_RESULTS','/results'))
+if 'ZERORUN_TEST_RESULTS' in os.environ:O.mkdir(parents=True,exist_ok=False)
 N=Path('/native')
 adapter=F/'native_adapter.py';adapter_sha=hashlib.sha256(adapter.read_bytes()).hexdigest()
 guard_sha=hashlib.sha256((N/'evalplus/eval/utils.py').read_bytes()).hexdigest()
