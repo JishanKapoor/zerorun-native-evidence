@@ -454,6 +454,9 @@ def recorder(profile, binding, emitter, producer, *, context=None):
 
     validate_profile(profile)
     b = validate_binding(profile, binding)
+    # A verified callback must not be retargeted by later caller-side edits.
+    profile = copy.deepcopy(profile)
+    binding_id = binding["sha256"]
     raw_context = {} if context is None else context
     require(
         type(raw_context) is dict, "Identity context must be an exact primitive mapping"
@@ -509,7 +512,7 @@ def recorder(profile, binding, emitter, producer, *, context=None):
             producer=producer,
             seq=sequence,
             source_sha256=source_id,
-            binding_sha256=binding["sha256"],
+            binding_sha256=binding_id,
         )
         return emitter.emit(event)
 

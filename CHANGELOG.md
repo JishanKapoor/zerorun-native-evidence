@@ -1,5 +1,7 @@
 # 0.7.0
 
+Further independent regression review repaired mutable caller declarations retargeting a live recorder and instance-overridden shared-wrapper methods bypassing exact-type checks. Recorders now snapshot verified declarations/identities, and synchronized primitive reads validate native semaphore plumbing without invoking overridden wrapper callbacks.
+
 Extend structural binding grammar to 1.1.0 with finite container/shared-memory projections, identity-only immutable context, nested functions, before-statement and single-evaluation return hooks. Preserve exact grammar-1.0.0 binding regeneration. Qualify actual exposed EvalPlus worker and parent paths and SWE pytest/parser/grading paths using independent unchanged-source traces and retained raw values.
 
 Repair custom ctypes indexing/metaclass execution, reserved-name capture, local-access shadowing, malformed transformed-source errors and context validation order. Preserve native wildcard constants only through an exact bounded source dependency. Refuse unsupported arbitrary objects and nonfinite values. Ship source-distribution qualification tools, original licensed fixtures and honest component/path support boundaries.

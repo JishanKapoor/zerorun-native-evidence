@@ -27,6 +27,8 @@ JSON snapshots are bounded to 4,096 nodes, depth eight, 32 dictionary entries, 6
 
 Identity fields alone may use `{"context":"run"}`. `recorder(..., context={...})` validates and snapshots the exact declared primitive context before execution. Context cannot supply native facts or shadow native locals.
 
+Recorder construction also snapshots the validated declaration and binding identity, so later caller edits cannot change a live callback's interpretation. Synchronized wrappers must retain their standard instance fields and built-in semaphore methods. The projector validates the exact native lock and backing object and reads through the native semaphore directly; altered wrapper methods are refused without invocation.
+
 ## Structural sites and evaluation order
 
 Grammar 1.1.0 supports dotted lexical nested-function selectors, `before`/`after` simple statements, `try_success`, `handler_entry`, `before_return` and `return_value`. A before-return site executes before evaluation of the return expression. A return-value site evaluates the original operand once, records that value, then returns the same object. Python `finally` may subsequently override that return; the event describes the operand at the declared site, not an assertion about the eventual function result. Untouched lambdas may remain in source. Async and generator scopes remain unsupported.

@@ -8,7 +8,10 @@ the original execution; they can still alter timing under the cooperative model.
 
 import ctypes
 import json
+from _multiprocessing import SemLock
 from multiprocessing.sharedctypes import Synchronized, SynchronizedArray
+from multiprocessing.synchronize import Lock, RLock
+from types import BuiltinMethodType
 
 from .api import InvalidEvidence
 from ._telemetry_protocol import PrimitiveError, primitives
@@ -39,6 +42,15 @@ def native_array_type(kind):
     ):
         return False
     namespace = type.__getattribute__(kind, "__dict__")
+    if not set(namespace) <= {
+        "_type_",
+        "_length_",
+        "__module__",
+        "__doc__",
+        "__dict__",
+        "__weakref__",
+    }:
+        return False
     element, length = namespace.get("_type_"), namespace.get("_length_")
     return (
         any(element is scalar for scalar in SCALARS)
@@ -142,9 +154,11 @@ def project(spec, local_state, context=None):
     for step in spec.get("path", []):
         if "member" in step:
             if type(value) is Synchronized:
-                if type(value.get_obj()) not in SCALARS:
+                raw, semaphore = synchronized_parts(value)
+                if type(raw) not in SCALARS:
                     raise PrimitiveError("Unsupported native synchronized scalar")
-                value = value.value
+                with semaphore:
+                    value = raw.value
             elif type(value) in SCALARS:
                 value = value.value
             else:
@@ -176,6 +190,36 @@ def project(spec, local_state, context=None):
     return value
 
 
+def synchronized_parts(value):
+    """Validate standard wrapper plumbing without dispatching instance methods."""
+    namespace = object.__getattribute__(value, "__dict__")
+    if (
+        type(namespace) is not dict
+        or len(namespace) != 4
+        or any(type(k) is not str for k in namespace)
+        or set(namespace) != {"_obj", "_lock", "acquire", "release"}
+    ):
+        raise PrimitiveError("Altered native synchronized wrapper")
+    lock = namespace["_lock"]
+    if type(lock) not in (Lock, RLock):
+        raise PrimitiveError("Unsupported native synchronized lock")
+    try:
+        semaphore = object.__getattribute__(lock, "_semlock")
+    except AttributeError:
+        raise PrimitiveError("Missing native semaphore") from None
+    if type(semaphore) is not SemLock:
+        raise PrimitiveError("Unsupported native semaphore")
+    for name in ("acquire", "release"):
+        method = namespace[name]
+        if (
+            type(method) is not BuiltinMethodType
+            or method.__self__ is not semaphore
+            or method.__name__ != name
+        ):
+            raise PrimitiveError("Altered native synchronized method")
+    return namespace["_obj"], semaphore
+
+
 def read_index(value, index):
     """A single read on a statically bounded set of exact native containers."""
     if type(index) not in (int, str):
@@ -188,8 +232,12 @@ def read_index(value, index):
     elif kind in (list, tuple) or kind is SynchronizedArray or native_array_type(kind):
         if type(index) is not int:
             raise PrimitiveError("Native sequence index must be integer")
-        if kind is SynchronizedArray and not native_array_type(type(value.get_obj())):
-            raise PrimitiveError("Unsupported native synchronized array")
+        if kind is SynchronizedArray:
+            raw, semaphore = synchronized_parts(value)
+            if not native_array_type(type(raw)):
+                raise PrimitiveError("Unsupported native synchronized array")
+            with semaphore:
+                return raw[index]
     else:
         raise PrimitiveError("Arbitrary native indexing is not projected")
     return value[index]
