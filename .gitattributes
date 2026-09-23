@@ -1,1 +1,5 @@
+# Binding identity includes original newline bytes; never normalize native fixtures.
 * -text
+validation/evalplus_internal/sources/** -text
+validation/swe_internal/source_fixtures/** -text
+validation/inspect_internal/sources/** -text

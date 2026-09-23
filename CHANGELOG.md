@@ -1,3 +1,9 @@
+# 0.7.0
+
+Extend structural binding grammar to 1.1.0 with finite container/shared-memory projections, identity-only immutable context, nested functions, before-statement and single-evaluation return hooks. Preserve exact grammar-1.0.0 binding regeneration. Qualify actual exposed EvalPlus worker and parent paths and SWE pytest/parser/grading paths using independent unchanged-source traces and retained raw values.
+
+Repair custom ctypes indexing/metaclass execution, reserved-name capture, local-access shadowing, malformed transformed-source errors and context validation order. Preserve native wildcard constants only through an exact bounded source dependency. Refuse unsupported arbitrary objects and nonfinite values. Ship source-distribution qualification tools, original licensed fixtures and honest component/path support boundaries.
+
 # 0.6.0
 
 Add a finite declarative C1–C3 engine, installed resource-only extension discovery, separately versioned components, mechanically regenerated structural bindings, native reference/site qualification and common standalone native exports. Preserve all five operations and historical capture semantics. Handle witnessed failure-prefix conjunctions without inventing unobserved acceptance. Refuse unqualified sites, unknown policies, duplicate identities, unsafe registrations and malformed primitive schemas. Qualify exposed native API controls for the pinned EvalPlus and SWE-bench sources.

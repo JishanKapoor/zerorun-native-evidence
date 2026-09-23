@@ -11,6 +11,7 @@ from functools import wraps
 
 from .api import InvalidEvidence, canonical, digest, fingerprint
 from ._vendor import pycontract_core as pc
+from .projection import validate_projection
 
 API = "zerorun.extensions/1"
 ENGINE_VERSION = "1.0.0"
@@ -160,7 +161,15 @@ def validate_profile(p):
             "Invalid source anchor",
         )
         require(
-            spec["position"] in ["after", "try_success", "handler_entry"],
+            spec["position"]
+            in [
+                "before",
+                "after",
+                "try_success",
+                "handler_entry",
+                "before_return",
+                "return_value",
+            ],
             "Unsupported binding position",
         )
         require(
@@ -173,23 +182,16 @@ def validate_profile(p):
             == set(p["identity"]) | set(p["facts"][spec["kind"]]),
             "Incomplete native field projection",
         )
-        for value in spec["projection"].values():
+        for field, value in spec["projection"].items():
+            validate_projection(value)
             require(
-                type(value) is dict and len(value) == 1, "Invalid primitive projection"
+                "return" not in value or spec["position"] == "return_value",
+                "Native return projection requires a return-value site",
             )
-            if "local" in value:
-                require(
-                    type(value["local"]) is str
-                    and value["local"].isidentifier()
-                    and not value["local"].startswith("__zr_"),
-                    "Invalid native local projection",
-                )
-            else:
-                require(
-                    set(value) == {"literal"}
-                    and type(value["literal"]) in TYPES.values(),
-                    "Projection permits only native locals or primitive literals",
-                )
+            require(
+                "context" not in value or field in p["identity"],
+                "External context may supply identity metadata only",
+            )
     require(
         type(p["rules"]) is list and 1 <= len(p["rules"]) <= 64,
         "Invalid relationship inventory",

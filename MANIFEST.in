@@ -15,3 +15,5 @@ include NATIVE_ACQUISITION.md
 include EXTENSIONS.md
 
 recursive-include validation *.json *.toml *.txt
+recursive-include validation *.md
+include NATIVE_INTERNALS.md

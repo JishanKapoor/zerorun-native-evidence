@@ -153,7 +153,7 @@ def capture(manifest):
                 "engine": "1.0.0",
                 "policy": {"id": p["id"], "version": p["version"], "sha256": digest(p)},
                 "binding": {
-                    "version": "1.0.0",
+                    "version": manifest["binding"]["grammar_version"],
                     "sha256": manifest["binding"]["sha256"],
                 },
                 "export": {"version": "1.0.0"},
@@ -215,7 +215,10 @@ def audit(bundle):
         == {
             "engine": "1.0.0",
             "policy": {"id": p["id"], "version": p["version"], "sha256": digest(p)},
-            "binding": {"version": "1.0.0", "sha256": b["binding"]["sha256"]},
+            "binding": {
+                "version": b["binding"]["grammar_version"],
+                "sha256": b["binding"]["sha256"],
+            },
             "export": {"version": "1.0.0"},
             "case": {"version": b["case"]["version"], "sha256": digest(b["case"])},
         },

@@ -1,0 +1,195 @@
+# SPDX-License-Identifier: MIT
+"""Finite read-only projections from known native primitive containers.
+
+No candidate expression, callable, arbitrary property or plugin conversion is
+executed here. Native shared scalar/array reads are qualified separately against
+the original execution; they can still alter timing under the cooperative model.
+"""
+
+import ctypes
+import json
+from multiprocessing.sharedctypes import Synchronized, SynchronizedArray
+
+from .api import InvalidEvidence
+from ._telemetry_protocol import PrimitiveError, primitives
+
+SCALARS = {
+    ctypes.c_bool,
+    ctypes.c_byte,
+    ctypes.c_ubyte,
+    ctypes.c_short,
+    ctypes.c_ushort,
+    ctypes.c_int,
+    ctypes.c_uint,
+    ctypes.c_long,
+    ctypes.c_ulong,
+    ctypes.c_longlong,
+    ctypes.c_ulonglong,
+    ctypes.c_float,
+    ctypes.c_double,
+}
+RETURN_LOCAL = "__zr_return"
+ARRAY_META = type(ctypes.c_int * 1)
+
+
+def native_array_type(kind):
+    """Only standard generated ctypes arrays, never user-overridden subclasses."""
+    if type(kind) is not ARRAY_META or type.__getattribute__(kind, "__bases__") != (
+        ctypes.Array,
+    ):
+        return False
+    namespace = type.__getattribute__(kind, "__dict__")
+    element, length = namespace.get("_type_"), namespace.get("_length_")
+    return (
+        any(element is scalar for scalar in SCALARS)
+        and type(length) is int
+        and kind is element * length
+    )
+
+
+def validate_projection(spec):
+    def require(ok, message):
+        if not ok:
+            raise InvalidEvidence(message)
+
+    def primitive(value):
+        try:
+            primitives(value)
+        except PrimitiveError as exc:
+            raise InvalidEvidence(
+                "Projection primitive exceeds declared bounds"
+            ) from exc
+
+    require(type(spec) is dict, "Invalid primitive projection")
+    if "literal" in spec:
+        require(
+            set(spec) == {"literal"}
+            and type(spec["literal"]) in (str, bool, int, float),
+            "Invalid primitive literal projection",
+        )
+        # Preserve version-1 declaration admission; finite wire bounds are
+        # enforced on the actual emitted value, as in binding grammar 1.0.0.
+        return
+    origins = set(spec) & {"local", "return", "context"}
+    require(
+        len(origins) == 1 and set(spec) <= origins | {"path", "default", "encoding"},
+        "Projection requires one native origin and finite path",
+    )
+    if "local" in spec or "context" in spec:
+        key = "local" if "local" in spec else "context"
+        require(
+            type(spec[key]) is str
+            and spec[key].isidentifier()
+            and not spec[key].startswith("__zr_"),
+            "Invalid native local/context projection",
+        )
+        if key == "context":
+            require(
+                set(spec) == {"context"},
+                "Identity context cannot compute derived facts",
+            )
+    else:
+        require(spec["return"] is True, "Invalid native return projection")
+    path = spec.get("path", [])
+    require(type(path) is list and len(path) <= 8, "Native projection path cap")
+    for step in path:
+        require(
+            type(step) is dict and 1 <= len(step) <= 2, "Invalid native projection step"
+        )
+        if "index" in step:
+            require(
+                set(step) == {"index"} and type(step["index"]) in (str, int),
+                "Index must be primitive string/integer",
+            )
+        elif "index_local" in step:
+            require(
+                set(step) <= {"index_local", "index_path"}
+                and type(step["index_local"]) is str
+                and step["index_local"].isidentifier()
+                and not step["index_local"].startswith("__zr_"),
+                "Invalid native index local",
+            )
+            require(
+                type(step.get("index_path", [])) is list
+                and len(step.get("index_path", [])) <= 4
+                and all(type(v) in (int, str) for v in step.get("index_path", [])),
+                "Native index projection must be a bounded literal path",
+            )
+        else:
+            require(
+                step == {"member": "value"},
+                "Only native scalar value member is supported",
+            )
+    if "default" in spec:
+        require(
+            type(spec["default"]) in (str, int, bool, float),
+            "Missing-index default must be primitive",
+        )
+        primitive(spec["default"])
+    require(
+        "encoding" not in spec or spec["encoding"] == "json",
+        "Unsupported native snapshot encoding",
+    )
+
+
+def project(spec, local_state, context=None):
+    """Read one declared field; absent indexing can use a declared raw sentinel."""
+    if "literal" in spec:
+        return spec["literal"]
+    if "context" in spec:
+        return context[spec["context"]]
+    value = local_state[spec.get("local", RETURN_LOCAL)]
+    for step in spec.get("path", []):
+        if "member" in step:
+            if type(value) is Synchronized:
+                if type(value.get_obj()) not in SCALARS:
+                    raise PrimitiveError("Unsupported native synchronized scalar")
+                value = value.value
+            elif type(value) in SCALARS:
+                value = value.value
+            else:
+                raise PrimitiveError("Arbitrary native properties are not projected")
+            continue
+        index = step["index"] if "index" in step else local_state[step["index_local"]]
+        for selector in step.get("index_path", []):
+            try:
+                index = read_index(index, selector)
+            except (KeyError, IndexError):
+                raise PrimitiveError("Missing native index identity") from None
+        try:
+            value = read_index(value, index)
+        except (IndexError, KeyError):
+            if "default" not in spec:
+                raise PrimitiveError("Missing native projected index") from None
+            value = spec["default"]
+            break
+    if spec.get("encoding") == "json":
+        primitives(value)
+        value = json.dumps(
+            value,
+            sort_keys=True,
+            separators=(",", ":"),
+            ensure_ascii=False,
+            allow_nan=False,
+        )
+    primitives(value)
+    return value
+
+
+def read_index(value, index):
+    """A single read on a statically bounded set of exact native containers."""
+    if type(index) not in (int, str):
+        raise PrimitiveError("Native index must be exact integer/string")
+    kind = type(value)
+    if kind is dict:
+        # Primitive key equality cannot invoke a candidate object's hash.
+        if any(type(k) not in (str, int) for k in value):
+            raise PrimitiveError("Native map has unsupported key types")
+    elif kind in (list, tuple) or kind is SynchronizedArray or native_array_type(kind):
+        if type(index) is not int:
+            raise PrimitiveError("Native sequence index must be integer")
+        if kind is SynchronizedArray and not native_array_type(type(value.get_obj())):
+            raise PrimitiveError("Unsupported native synchronized array")
+    else:
+        raise PrimitiveError("Arbitrary native indexing is not projected")
+    return value[index]
