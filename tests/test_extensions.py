@@ -137,6 +137,19 @@ def test_archive_does_not_retarget_after_plugin_removal(installed, monkeypatch):
         capture(manifest)
 
 
+@pytest.mark.parametrize(
+    "field,value",
+    [("id", "different-policy"), ("version", "2.0.0"), ("extra", "unrecognized")],
+)
+def test_archive_selection_must_match_embedded_policy(installed, field, value):
+    manifest, _, _ = installed
+    bundle = capture(manifest)
+    bundle["extension"][field] = value
+    changed = seal({k: v for k, v in bundle.items() if k != "sha256"})
+    with pytest.raises(InvalidEvidence, match="extension"):
+        audit(changed)
+
+
 def test_ambiguous_registration_refused(installed, monkeypatch):
     manifest, _, dist = installed
     other = copy.copy(dist)

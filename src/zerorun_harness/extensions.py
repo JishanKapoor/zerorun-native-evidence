@@ -192,8 +192,12 @@ def audit(bundle):
     # Archived interpretation is bound to its embedded declarations. Installed
     # package updates may not silently retarget previously captured observations.
     p = validate_profile(b["policy"])
+    exact(b["extension"], ["id", "version", "sha256"], "archived extension selection")
     require(
-        digest(p) == b["extension"]["sha256"], "Archived extension identity mismatch"
+        b["extension"]["id"] == p["id"]
+        and b["extension"]["version"] == p["version"]
+        and digest(p) == b["extension"]["sha256"],
+        "Archived extension identity mismatch",
     )
     validate_binding(p, b["binding"])
     q = validate_qualification(p, b["binding"], b["qualification"])
