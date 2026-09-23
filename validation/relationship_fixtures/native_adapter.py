@@ -4,7 +4,7 @@ def run(emitter, argument):
     import os
     from pathlib import Path
     from zerorun_harness.binding import recorder, validate_binding
-    root = Path('/fixtures/native') / argument['family']
+    root = Path(os.environ.get('ZERORUN_RELATIONSHIP_FIXTURES','/fixtures')) / 'native' / argument['family']
     profile = json.loads((root / 'profile.json').read_text())
     binding = json.loads((root / 'binding.json').read_text())
     validate_binding(profile, binding)

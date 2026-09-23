@@ -25,7 +25,7 @@ from zerorun_harness import (
 
 O = Path(os.environ.get("ZERORUN_TEST_RESULTS", "/results")) / "native-relationships"
 O.mkdir(parents=True, exist_ok=False)
-F = Path("/fixtures")
+F = Path(os.environ.get("ZERORUN_RELATIONSHIP_FIXTURES", "/fixtures"))
 adapter = F / "native_adapter.py"
 adapter_sha = hashlib.sha256(adapter.read_bytes()).hexdigest()
 rows = []
