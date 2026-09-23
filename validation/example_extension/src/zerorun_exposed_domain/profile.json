@@ -1,0 +1,286 @@
+{
+  "api": "zerorun.extensions/1",
+  "id": "exposed-native",
+  "version": "1.0.0",
+  "identity": {
+    "run": "str",
+    "candidate": "str",
+    "obligation": "int",
+    "phase": "str",
+    "attempt": "int"
+  },
+  "facts": {
+    "decision": {
+      "accepted": "bool",
+      "disposition": "str"
+    },
+    "commit": {
+      "stored": "bool"
+    },
+    "serialized": {
+      "flag": "int"
+    },
+    "aggregate": {
+      "accepted": "bool"
+    }
+  },
+  "sites": {
+    "accept": {
+      "kind": "decision",
+      "path": "native.py",
+      "function": "evaluate",
+      "anchor": "try:\n    assert value\nexcept AssertionError:\n    decision = False\nelse:\n    decision = True\n",
+      "position": "try_success",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "accepted": {
+          "literal": true
+        },
+        "disposition": {
+          "literal": "accepted"
+        }
+      },
+      "justification": "Exposed native fixture operations; no primary historical credit"
+    },
+    "reject": {
+      "kind": "decision",
+      "path": "native.py",
+      "function": "evaluate",
+      "anchor": "try:\n    assert value\nexcept AssertionError:\n    decision = False\nelse:\n    decision = True\n",
+      "position": "handler_entry",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "accepted": {
+          "literal": false
+        },
+        "disposition": {
+          "literal": "rejected"
+        }
+      },
+      "justification": "Exposed native fixture operations; no primary historical credit"
+    },
+    "commit": {
+      "kind": "commit",
+      "path": "native.py",
+      "function": "evaluate",
+      "anchor": "details[obligation] = stored",
+      "position": "after",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "stored": {
+          "local": "stored"
+        }
+      },
+      "justification": "Exposed native fixture operations; no primary historical credit"
+    },
+    "serialize": {
+      "kind": "serialized",
+      "path": "native.py",
+      "function": "evaluate",
+      "anchor": "serialized = int(stored)",
+      "position": "after",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "flag": {
+          "local": "serialized"
+        }
+      },
+      "justification": "Exposed native fixture operations; no primary historical credit"
+    },
+    "aggregate": {
+      "kind": "aggregate",
+      "path": "native.py",
+      "function": "evaluate",
+      "anchor": "aggregate = all(details.values())",
+      "position": "after",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "accepted": {
+          "local": "aggregate"
+        }
+      },
+      "justification": "Exposed native fixture operations; no primary historical credit"
+    }
+  },
+  "rules": [
+    {
+      "id": "commit-required",
+      "check": "C1",
+      "producer": "decision",
+      "consumer": "commit",
+      "keys": [
+        "run",
+        "candidate",
+        "obligation",
+        "phase",
+        "attempt"
+      ],
+      "when": {
+        "field": "disposition",
+        "in": [
+          "accepted",
+          "rejected"
+        ]
+      },
+      "source_field": null,
+      "target_field": null,
+      "operator": "exists",
+      "statuses": [],
+      "target_mapping": null,
+      "requires": [
+        "accept",
+        "reject",
+        "commit"
+      ],
+      "justification": "Native fixture disposition, store, typed serialization and conjunction"
+    },
+    {
+      "id": "decision-preserved",
+      "check": "C2",
+      "producer": "decision",
+      "consumer": "commit",
+      "keys": [
+        "run",
+        "candidate",
+        "obligation",
+        "phase",
+        "attempt"
+      ],
+      "when": null,
+      "source_field": "accepted",
+      "target_field": "stored",
+      "operator": "identity",
+      "statuses": [],
+      "target_mapping": null,
+      "requires": [
+        "accept",
+        "reject",
+        "commit"
+      ],
+      "justification": "Native fixture disposition, store, typed serialization and conjunction"
+    },
+    {
+      "id": "serialization-preserved",
+      "check": "C2",
+      "producer": "commit",
+      "consumer": "serialized",
+      "keys": [
+        "run",
+        "candidate",
+        "obligation",
+        "phase",
+        "attempt"
+      ],
+      "when": null,
+      "source_field": "stored",
+      "target_field": "flag",
+      "operator": "bool_to_int",
+      "statuses": [],
+      "target_mapping": null,
+      "requires": [
+        "commit",
+        "serialize"
+      ],
+      "justification": "Native fixture disposition, store, typed serialization and conjunction"
+    },
+    {
+      "id": "aggregate-derived",
+      "check": "C3",
+      "producer": "commit",
+      "consumer": "aggregate",
+      "keys": [
+        "run",
+        "candidate",
+        "phase",
+        "attempt"
+      ],
+      "when": null,
+      "source_field": "stored",
+      "target_field": "accepted",
+      "operator": "all",
+      "statuses": [],
+      "target_mapping": null,
+      "requires": [
+        "commit",
+        "aggregate"
+      ],
+      "justification": "Native fixture disposition, store, typed serialization and conjunction"
+    }
+  ],
+  "justification": "Development qualification fixture, not an independent extension"
+}

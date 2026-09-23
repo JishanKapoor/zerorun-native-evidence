@@ -1,0 +1,14 @@
+[
+  {
+    "family": "evalplus",
+    "native_source_sha256": "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf",
+    "profile_sha256": "aa9cd064d6e0a8644db4e87c91b4faddc98de0ff5c189262c4bd5c0b346191ac",
+    "binding_sha256": "6bf29bae0ae316fa496bfa06daa118e0b9bcd875df37e9a28e4b638c11305e5c"
+  },
+  {
+    "family": "swe",
+    "native_source_sha256": "f58def5253794854b9f20de1ac5533555af379fdf731763077c75fa1258b4961",
+    "profile_sha256": "77fc17fc5c7e3d4e5a26affe96a770ceeadf5c869d6d530097b8167c7264e915",
+    "binding_sha256": "36a8dc8ededb41f10e44644fb26173871e305f60056638b0fa49dd37b579407b"
+  }
+]

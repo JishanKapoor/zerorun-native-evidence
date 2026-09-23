@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "zerorun-exposed-domain"
+version = "1.0.0"
+description = "Framework-authored exposed declaration controls, not an independent extension study"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+[project.entry-points."zerorun.extensions.v1"]
+exposed-native = "zerorun_exposed_domain:profile.json"
+native-evalplus-aggregate = "zerorun_exposed_domain:evalplus.json"
+native-swe-aggregate = "zerorun_exposed_domain:swe.json"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+zerorun_exposed_domain = ["*.json"]

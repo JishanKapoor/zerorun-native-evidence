@@ -1,4 +1,6 @@
-# ZeroRun Harness 0.5.0
+# ZeroRun Harness 0.6.0
+
+Version 0.6.0 adds [installed declarative extensions and finite C1–C3 relationship checks](EXTENSIONS.md), mechanical source bindings, reference-backed site qualification, and standalone native assertions. Policy, binding, engine, export and case identities are separate. The existing five operations select extensions through the manifest; earlier saved captures remain readable with their original checks.
 
 See [API and operating reference](API_REFERENCE.md) for exact record fields, supported modes, return values and troubleshooting. `Licence.txt` and `LICENSE.txt` contain the same new-code license; upstream vendor terms remain separately retained.
 
@@ -13,7 +15,7 @@ This release is a narrower solo reproducibility utility, distinct from the earli
 Python 3.11 or later. Install the provided wheel, offline:
 
 ```sh
-python -m pip install --no-deps zerorun_harness-0.5.0-py3-none-any.whl
+python -m pip install --no-deps zerorun_harness-0.6.0-py3-none-any.whl
 zerorun --version
 ```
 

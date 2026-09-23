@@ -1,4 +1,6 @@
-# ZeroRun Harness 0.5.0 API and operating boundaries
+# ZeroRun Harness 0.6.0 API and operating boundaries
+
+The new `zerorun-extension-manifest/1` and `zerorun-extension-capture/1` schemas are documented in [EXTENSIONS.md](EXTENSIONS.md), including installed selection, typed relationships, source bindings, qualification records, failure behavior and all reproduction levels. The existing interface below is preserved for historical captures. The [bounded native acquisition API](TELEMETRY.md) remains separately qualified.
 
 ## Installation and execution
 

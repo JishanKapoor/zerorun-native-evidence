@@ -107,6 +107,9 @@ def validate_records(records):
 
 def capture(manifest):
     """Import existing native records into a content-identified bundle."""
+    if type(manifest) is dict and manifest.get("schema") == "zerorun-extension-manifest/1":
+        from .extensions import capture as extension_capture
+        return extension_capture(manifest)
     if type(manifest) is not dict or set(manifest) != set(["records"]):
         raise InvalidEvidence("Manifest requires only records")
     validate_records(manifest["records"])
@@ -222,6 +225,9 @@ def native_agreement(row):
 
 
 def audit(bundle):
+    if type(bundle) is dict and bundle.get("schema") == "zerorun-extension-capture/1":
+        from .extensions import audit as extension_audit
+        return extension_audit(bundle)
     """Check the finite grammar. Native reference agreement is reported separately."""
     validate_bundle(bundle)
     policy = profiles()
@@ -278,6 +284,9 @@ def audit(bundle):
 
 def compare(left, right):
     """Compare whole inventories by identity; preserve missing records and changed evidence."""
+    if any(type(b) is dict and b.get("schema") == "zerorun-extension-capture/1" for b in [left, right]):
+        from .extensions import compare as extension_compare
+        return extension_compare(left, right)
     a = audit(left)
     b = audit(right)
     aa = {r["id"]: r for r in a["records"]}
@@ -321,6 +330,9 @@ def compare(left, right):
 
 def export(bundle, *, mode="native-values", recipe=None):
     """Export primitive native fields with qualification, never convert a verdict into a score."""
+    if type(bundle) is dict and bundle.get("schema") == "zerorun-extension-capture/1":
+        from .extensions import export as extension_export
+        return extension_export(bundle, mode=mode, recipe=recipe)
     if mode != "native-values" or recipe is not None:
         from .handoffs import export_level
 
@@ -370,6 +382,9 @@ def export(bundle, *, mode="native-values", recipe=None):
 
 def report(bundle):
     """Deterministic readable report over retained facts; no native recalculation."""
+    if type(bundle) is dict and bundle.get("schema") == "zerorun-extension-capture/1":
+        from .extensions import report as extension_report
+        return extension_report(bundle)
     result = audit(bundle)
     lines = [
         "ZeroRun saved-evidence report",

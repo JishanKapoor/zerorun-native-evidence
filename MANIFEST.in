@@ -11,3 +11,7 @@ recursive-include ordinary *.py
 recursive-include validation *.py
 
 include NATIVE_ACQUISITION.md
+
+include EXTENSIONS.md
+
+recursive-include validation *.json *.toml *.txt

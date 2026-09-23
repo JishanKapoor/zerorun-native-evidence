@@ -1,3 +1,7 @@
+# 0.6.0
+
+Add a finite declarative C1–C3 engine, installed resource-only extension discovery, separately versioned components, mechanically regenerated structural bindings, native reference/site qualification and common standalone native exports. Preserve all five operations and historical capture semantics. Handle witnessed failure-prefix conjunctions without inventing unobserved acceptance. Refuse unqualified sites, unknown policies, duplicate identities, unsafe registrations and malformed primitive schemas. Qualify exposed native API controls for the pinned EvalPlus and SWE-bench sources.
+
 # 0.5.0
 
 Implement R11 A4 bounded acquisition telemetry: fresh supervisors, pre-guard fork descriptors, nonblocking framed writes, CRC and sequence/seal checks, bounded primitive storage, explicit native/transport health, preserved native exceptions and failure controls. Runtime qualification is Linux CPython 3.11.16, fork, optimize=0. Earlier observations and the replay API are unchanged.

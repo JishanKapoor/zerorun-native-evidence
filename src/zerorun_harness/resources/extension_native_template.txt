@@ -1,0 +1,159 @@
+# SPDX-License-Identifier: MIT
+"""Generated standalone native assertions: requires native dependencies, not ZeroRun.
+
+Run in an isolated environment: python regression.py --source ROOT --output NEW.json
+The source-pinned recipe must expose native facts, never hidden validity labels.
+"""
+import argparse
+import hashlib
+import importlib
+import json
+import os
+from pathlib import Path
+import sys
+import time
+
+PAYLOAD = json.loads(__PAYLOAD_JSON__)
+PAYLOAD_SHA256 = '__PAYLOAD_SHA__'
+
+
+def canonical(value):
+    return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False).encode('utf-8')
+
+
+def same(a, b):
+    return type(a) is type(b) and a == b
+
+
+def verify_native(profile, result):
+    if type(result) is not dict or set(result) != {'inventory', 'facts', 'native_complete'}:
+        raise ValueError('Native recipe must return raw inventory/facts/completion only')
+    types = {'str': str, 'int': int, 'float': float, 'bool': bool}
+    inventory, facts = result['inventory'], result['facts']
+    if type(inventory) is not list or not 1 <= len(inventory) <= 4096 or type(facts) is not list or len(facts) > 16384 or type(result['native_complete']) is not bool:
+        raise ValueError('Invalid native inventory/completion')
+    identities = set()
+    for ident in inventory:
+        if type(ident) is not dict or set(ident) != set(profile['identity']) or any(type(ident[k]) is not types[t] for k, t in profile['identity'].items()):
+            raise ValueError('Invalid native identity')
+        raw = canonical(ident)
+        if raw in identities:
+            raise ValueError('Duplicate native inventory')
+        identities.add(raw)
+    for fact in facts:
+        if type(fact) is not dict or set(fact) != {'kind', 'identity', 'values'} or type(fact['kind']) is not str or fact['kind'] not in profile['facts']:
+            raise ValueError('Invalid raw native fact')
+        if canonical(fact['identity']) not in identities:
+            raise ValueError('Raw native fact outside inventory')
+        fields = profile['facts'][fact['kind']]
+        if type(fact['values']) is not dict or set(fact['values']) != set(fields) or any(type(fact['values'][k]) is not types[t] for k, t in fields.items()):
+            raise ValueError('Invalid raw native field types')
+    rows = []
+    for rule in profile['rules']:
+        keys = rule['keys']
+        groups = sorted({tuple(i[k] for k in keys) for i in inventory})
+        for group in groups:
+            matching = [f for f in facts if tuple(f['identity'][k] for k in keys) == group]
+            source = [f for f in matching if f['kind'] == rule['producer'] and (rule['when'] is None or f['values'][rule['when']['field']] in rule['when']['in'])]
+            target = [f for f in matching if f['kind'] == rule['consumer']]
+            state = 'PASS'
+            if len(target) > 1 or (rule['check'] != 'C3' and len(source) > 1) or len({canonical(f['identity']) for f in source}) != len(source):
+                state = 'UNASSESSABLE'
+            elif not source:
+                state = 'PASS' if rule['when'] is not None and result['native_complete'] else 'UNASSESSABLE'
+            elif not target:
+                state = 'FAIL' if rule['check'] == 'C1' and result['native_complete'] else 'UNASSESSABLE'
+            elif rule['check'] == 'C2':
+                a, b = source[0]['values'][rule['source_field']], target[0]['values'][rule['target_field']]
+                if rule['operator'] == 'int01_to_bool' and a not in (0, 1):
+                    state = 'UNASSESSABLE'
+                else:
+                    if rule['operator'] == 'int01_to_bool': a = (a == 1)
+                    if rule['operator'] == 'bool_to_int': a = 1 if a else 0
+                    state = 'PASS' if same(a, b) else 'FAIL'
+            elif rule['check'] == 'C3':
+                needed = {canonical(i) for i in inventory if tuple(i[k] for k in keys) == group}
+                value = True
+                for fact in source:
+                    item = fact['values'][rule['source_field']]
+                    value = value and (item if rule['operator'] == 'all' else item in rule['statuses'])
+                if {canonical(f['identity']) for f in source} != needed and value:
+                    state = 'UNASSESSABLE'
+                else:
+                    observed = target[0]['values'][rule['target_field']]
+                    mapping = rule['target_mapping']
+                    if mapping is not None and observed not in mapping['true'] + mapping['false']:
+                        state = 'UNASSESSABLE'
+                    else:
+                        if mapping is not None: observed = observed in mapping['true']
+                        state = 'PASS' if observed is value else 'FAIL'
+            if state == 'PASS' and not result['native_complete']:
+                state = 'UNASSESSABLE'
+            rows.append(dict(relationship=rule['id'], identity=dict(zip(keys, group)), result=state))
+    return rows
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source', required=True)
+    parser.add_argument('--output', required=True)
+    args = parser.parse_args()
+    # Reserve an exclusive output before any native action.
+    with Path(args.output).open('x', encoding='utf-8') as output:
+        start = time.monotonic()
+        receipt = dict(schema='zerorun-standalone-result/1', payload_sha256=PAYLOAD_SHA256,
+                       classification_dependency=False, result='UNASSESSABLE', native_calls=0)
+        code = 2
+        try:
+            if hashlib.sha256(canonical(PAYLOAD)).hexdigest() != PAYLOAD_SHA256:
+                raise ValueError('Embedded payload identity mismatch')
+            root = Path(args.source).resolve()
+            recipe = PAYLOAD['recipe']
+            for name, expected in recipe['source_files'].items():
+                path = (root / name).resolve()
+                if not path.is_relative_to(root) or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    raise ValueError('Native source identity mismatch: ' + name)
+            # Compile pinned Python bytes directly, ignoring stale/malicious pyc.
+            import importlib.abc
+            import importlib.util
+            class SourceLoader(importlib.abc.MetaPathFinder, importlib.abc.Loader):
+                def find_spec(self, fullname, path=None, target=None):
+                    name = fullname.replace('.', '/')
+                    rel = name + '/__init__.py' if name + '/__init__.py' in recipe['source_files'] else name + '.py'
+                    if rel not in recipe['source_files']: return None
+                    return importlib.util.spec_from_loader(fullname, self, origin=str(root / rel), is_package=rel.endswith('/__init__.py'))
+                def create_module(self, spec): return None
+                def exec_module(self, module):
+                    path = Path(module.__spec__.origin)
+                    rel = path.relative_to(root).as_posix()
+                    source = path.read_bytes()
+                    if hashlib.sha256(source).hexdigest() != recipe['source_files'][rel]: raise ValueError('Native source changed during load')
+                    module.__file__ = str(path)
+                    if module.__spec__.submodule_search_locations is not None: module.__path__ = [str(path.parent)]
+                    exec(compile(source, str(path), 'exec'), module.__dict__)
+            sys.meta_path.insert(0, SourceLoader())
+            # Do not place arbitrary unpinned source siblings on sys.path.
+            module = importlib.import_module(recipe['module'])
+            if Path(module.__file__).resolve() != root / (recipe['module'].replace('.', '/') + '.py'):
+                raise ValueError('Native module origin mismatch')
+            receipt['native_calls'] = 1
+            native = getattr(module, recipe['function'])(*recipe['args'], **recipe['kwargs'])
+            canonical(native)
+            assertions = verify_native(PAYLOAD['policy'], native)
+            state = 'FAIL' if any(r['result'] == 'FAIL' for r in assertions) else 'UNASSESSABLE' if any(r['result'] == 'UNASSESSABLE' for r in assertions) else 'PASS'
+            receipt.update(result=state, native=native, assertions=assertions)
+            code = {'PASS': 0, 'FAIL': 1, 'UNASSESSABLE': 2}[state]
+        except BaseException as exc:
+            receipt['exception'] = type(exc).__name__
+            if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                code = 130 if isinstance(exc, KeyboardInterrupt) else 2
+        finally:
+            receipt['elapsed_seconds'] = time.monotonic() - start
+            receipt['python'] = sys.version
+            receipt['uid'] = os.getuid() if hasattr(os, 'getuid') else None
+            json.dump(receipt, output, indent=2, allow_nan=False)
+        return code
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

@@ -50,9 +50,15 @@ def main(argv=None):
     )
     sub = parser.add_subparsers(dest="command", required=True)
     for command in ["capture", "audit", "compare", "export", "report"]:
-        p = sub.add_parser(command)
-        p.add_argument("input")
-        p.add_argument("--output", required=True)
+        p = sub.add_parser(command, help={
+            'capture':'Import a versioned saved-evidence or installed-extension manifest',
+            'audit':'Check declared qualified native relationships in a sealed capture',
+            'compare':'Compare two sealed captures while retaining missing identities',
+            'export':'Export native values, event replay, integration replay or native regression',
+            'report':'Render a sealed capture as a readable qualification report',
+        }[command])
+        p.add_argument("input", help="Versioned JSON manifest for capture; sealed evidence bundle for other operations")
+        p.add_argument("--output", required=True, help="New output path; existing files are refused (exit 2)")
         if command == "compare":
             p.add_argument("other")
         if command == "export":

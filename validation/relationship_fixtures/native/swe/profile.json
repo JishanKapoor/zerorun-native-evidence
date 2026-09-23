@@ -1,0 +1,117 @@
+{
+  "api": "zerorun.extensions/1",
+  "id": "native-swe-aggregate",
+  "version": "1.0.0",
+  "identity": {
+    "run": "str",
+    "candidate": "str",
+    "obligation": "str",
+    "phase": "str",
+    "attempt": "int"
+  },
+  "facts": {
+    "detail": {
+      "raw": "str"
+    },
+    "grade": {
+      "raw": "str"
+    }
+  },
+  "sites": {
+    "detail": {
+      "kind": "detail",
+      "path": "native_api.py",
+      "function": "run",
+      "anchor": "raw = outcome",
+      "position": "after",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "raw": {
+          "local": "raw"
+        }
+      },
+      "justification": "Primitive native API return extraction; internal source paths are not inferred"
+    },
+    "grade": {
+      "kind": "grade",
+      "path": "native_api.py",
+      "function": "run",
+      "anchor": "raw_grade = grade",
+      "position": "after",
+      "multiplicity": 1,
+      "projection": {
+        "run": {
+          "local": "run"
+        },
+        "candidate": {
+          "local": "candidate"
+        },
+        "obligation": {
+          "local": "obligation"
+        },
+        "phase": {
+          "local": "phase"
+        },
+        "attempt": {
+          "local": "attempt"
+        },
+        "raw": {
+          "local": "raw_grade"
+        }
+      },
+      "justification": "Primitive native API return extraction; internal source paths are not inferred"
+    }
+  },
+  "rules": [
+    {
+      "id": "native-aggregate",
+      "check": "C3",
+      "producer": "detail",
+      "consumer": "grade",
+      "keys": [
+        "run",
+        "candidate",
+        "phase",
+        "attempt"
+      ],
+      "when": null,
+      "source_field": "raw",
+      "target_field": "raw",
+      "operator": "all_in",
+      "statuses": [
+        "success"
+      ],
+      "target_mapping": {
+        "true": [
+          "RESOLVED_FULL"
+        ],
+        "false": [
+          "RESOLVED_NO",
+          "RESOLVED_PARTIAL"
+        ],
+        "incomplete": []
+      },
+      "requires": [
+        "detail",
+        "grade"
+      ],
+      "justification": "Full native acceptance/resolution requires complete all-success committed inventory"
+    }
+  ],
+  "justification": "Exposed native API aggregate qualification; no primary transfer, demand or independent extension credit"
+}
