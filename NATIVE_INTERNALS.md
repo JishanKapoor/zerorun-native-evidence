@@ -1,6 +1,8 @@
 # Native internal observation, binding grammar 1.1.0
 
-Version 0.7.0 extends the common source binder and bounded primitive projections. The engine and export semantics remain version 1.0.0. Saved grammar 1.0.0 bindings regenerate with their original grammar; the default for newly generated bindings is 1.1.0. An exact binding digest continues to distinguish source and observation policy.
+This page records the 0.7.0 / grammar-1.1 qualification scope. For the current 0.8.0 interfaces and native paths, read [Native paths and identity](NATIVE_PATHS.md).
+
+Version 0.7.0 extended the common source binder and bounded primitive projections. Its engine and export semantics remain version 1.0.0. Saved grammar 1.0.0 bindings regenerate with their original grammar; the default for newly generated bindings in 0.7.0 was 1.1.0. An exact binding digest continues to distinguish source and observation policy.
 
 ## What is observed
 

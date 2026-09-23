@@ -22,7 +22,7 @@ def check(path):
                     'src/zerorun_harness/_vendor/NOTICE.txt'}
         assert metadata['License-Expression'] == 'MIT AND Apache-2.0', 'Missing precise SPDX expression'
         assert set(metadata.get_all('License-File', [])) == expected, 'Incomplete license inventory'
-        assert metadata['Name'] == 'zerorun-harness' and metadata['Version'] == '0.7.0'
+        assert metadata['Name'] == 'zerorun-harness' and metadata['Version'] == '0.8.0'
         for name in expected:
             assert prefix + 'licenses/' + name in names, 'Missing declared license: ' + name
         assert z.read(prefix + 'licenses/LICENSE.txt') == z.read(prefix + 'licenses/Licence.txt')

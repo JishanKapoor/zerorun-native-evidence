@@ -1,4 +1,8 @@
-# ZeroRun Harness 0.7.0
+# ZeroRun Harness 0.8.0 development candidate
+
+Version 0.8.0 develops single-invocation worker/parent capture, source-qualified native report writing and reading, complete batch receipts, per-producer health, and guarded finite relationships. Opt-in binding grammar 1.3.0 adds async observation sites, exact registered stored fields, separate acquisition ordinals and dynamic invocation identity. Opt-in 1.4.0 adds explicit class-method sites and source-declared inherited/initializer fields. The default grammar remains 1.2.0. New source snapshots and native qualification receipts are retained separately; this candidate is not a published study freeze.
+
+See [Native paths and identity](NATIVE_PATHS.md) for the current grammar, acquisition contracts, version compatibility and executable source-distribution recipes.
 
 Version 0.7.0 adds [bounded internal native observations](NATIVE_INTERNALS.md): shared-memory values, nested functions, finite container paths and single-evaluation return sites. The source distribution includes actual EvalPlus worker/parent and SWE parser/grading qualification campaigns, separate unchanged-source reference runs and explicit unsupported boundaries.
 
@@ -6,7 +10,7 @@ Version 0.6.0 adds [installed declarative extensions and finite C1–C3 relation
 
 See [API and operating reference](API_REFERENCE.md) for exact record fields, supported modes, return values and troubleshooting. `Licence.txt` and `LICENSE.txt` contain the same new-code license; upstream vendor terms remain separately retained.
 
-ZeroRun imports native evaluator observations into content-identified records and replays two bounded relationship checks. It preserves native values, independent reference outcomes, uncertainty and the entire supplied record population. Its five replay operations execute no candidate code. The separate [bounded telemetry API](TELEMETRY.md) executes a source-pinned native adapter in the qualified isolated environment. The new native-regression export generates a separate script that calls pinned native components when explicitly executed; EvalPlus handoffs therefore require isolated candidate execution. See [export levels and qualification](EXPORTS.md).
+ZeroRun imports native evaluator observations into content-identified records. It replays the original two family checks and separately declared finite C1–C3 relationships. It preserves native values, independent reference outcomes, uncertainty and the entire supplied record population. Its five replay operations execute no candidate code. The separate [bounded telemetry API](TELEMETRY.md) executes a source-pinned native adapter in the qualified isolated environment. The new native-regression export generates a separate script that calls pinned native components when explicitly executed; EvalPlus handoffs therefore require isolated candidate execution. See [export levels and qualification](EXPORTS.md).
 
 Version 0.5.0 adds bounded Linux telemetry with explicit loss, completion and runtime qualification. It retains event replay, integration replay and standalone native component regression exports. It retains the previous checks of all supplied SWE admission, report and resolution fields, records the scope of native agreement, and makes changed candidate/input identities explicit in comparisons. Audit, comparison and native export use version-2 output schemas; version-1 input captures remain readable. Earlier native observations and audit versions remain preserved in the research archive.
 
@@ -17,7 +21,7 @@ This release is a narrower solo reproducibility utility, distinct from the earli
 Python 3.11 or later. Install the provided wheel, offline:
 
 ```sh
-python -m pip install --no-deps zerorun_harness-0.7.0-py3-none-any.whl
+python -m pip install --no-deps zerorun_harness-0.8.0-py3-none-any.whl
 zerorun --version
 ```
 

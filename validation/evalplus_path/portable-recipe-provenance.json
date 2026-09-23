@@ -1,0 +1,54 @@
+{
+  "schema": "s8-evalplus-portable-recipe-provenance/1",
+  "sources": [
+    {
+      "file": "large_campaign.py",
+      "prior_source": "study_s8\\evalplus\\large_campaign.py",
+      "prior_sha256": "b0c0b7d772fc63c6190e3280664a90fa0c18b0770ba68de52c44340d0bbd048c",
+      "packaged_sha256": "eb9923f393cb58905a59ee311dc27ea9e0fb5ad271a7e4a31ea8e1e8b05bce30",
+      "byte_identical": false,
+      "adaptation": "Pass the retained independent native reference into the reporting domain census; native invocation, observer facts, and engine classifications are unchanged"
+    },
+    {
+      "file": "export_campaign.py",
+      "prior_source": "study_s8\\evalplus\\export_campaign.py",
+      "prior_sha256": "d1f94ce98bf1d96f22930d268796edf9263a99d2e139c72811eedb5dff1884c2",
+      "packaged_sha256": "d1f94ce98bf1d96f22930d268796edf9263a99d2e139c72811eedb5dff1884c2",
+      "byte_identical": true,
+      "adaptation": "None"
+    },
+    {
+      "file": "audit_path.py",
+      "prior_source": "study_s8\\evalplus\\audit_path.py",
+      "prior_sha256": "8887a07d67f90ac1516637a99f66d56fff97cba08d3077ad86db56b50233473b",
+      "packaged_sha256": "8887a07d67f90ac1516637a99f66d56fff97cba08d3077ad86db56b50233473b",
+      "byte_identical": true,
+      "adaptation": "None"
+    },
+    {
+      "file": "audit_followups.py",
+      "prior_source": "study_s8\\evalplus\\audit_followups.py",
+      "prior_sha256": "41d7f9ac8604e2e20fc805a19071f908363c30747eee47fc151ec642c383f6a0",
+      "packaged_sha256": "046f24773d212d425b065186f0c4655d459fd0dc0952cd7d3b25a97d42955cd0",
+      "byte_identical": false,
+      "adaptation": "Remove author workspace assumptions; explicit path arguments and package/helper origins; optional external count inventory"
+    },
+    {
+      "file": "prepare_large.py",
+      "prior_source": "study_s8\\evalplus\\prepare_large.py",
+      "prior_sha256": "0d5983f4864a15df8826f2550e2a53942bc848f1bf830dbbc647887fa1cf052f",
+      "packaged_sha256": "936a58608993749c5af451b7a3678a3a2f267558332dfa3a9c39f40475129993",
+      "byte_identical": false,
+      "adaptation": "Remove author workspace assumptions; explicit path arguments and package/helper origins; optional external count inventory"
+    },
+    {
+      "file": "prepare_exports.py",
+      "prior_source": "study_s8\\evalplus\\prepare_exports.py",
+      "prior_sha256": "27a592f25e3a77f1ef118a45e798a4922ace6f4b097b19c75345481f023a6be7",
+      "packaged_sha256": "1e861833ca93c05baefffb4068aeb8be9c5251e0c309151f94b72795043673b3",
+      "byte_identical": false,
+      "adaptation": "Remove author workspace assumptions; explicit path arguments and package/helper origins; optional external count inventory"
+    }
+  ],
+  "native_calls": 0
+}

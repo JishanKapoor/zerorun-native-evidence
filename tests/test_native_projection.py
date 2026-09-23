@@ -316,7 +316,7 @@ def test_old_binding_grammar_regenerates_without_retargeting():
     assert (
         old["sha256"] != new["sha256"]
         and old["grammar_version"] == "1.0.0"
-        and new["grammar_version"] == "1.1.0"
+        and new["grammar_version"] == "1.2.0"
     )
 
 

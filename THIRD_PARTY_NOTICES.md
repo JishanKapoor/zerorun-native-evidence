@@ -11,3 +11,13 @@ The 0.7.0 source-only Inspect feasibility fixtures preserve three exact files fr
 The separate local study bundle retains original third-party licenses, dataset/asset provenance and explicit publication exclusions. Do not apply this distribution's MIT license to those external artifacts. See the study's provenance notices and official upstream retrieval URLs for access to the benchmark material.
 
 The 0.7.0 source distribution additionally includes exact EvalPlus native files and literal configuration at revisions `c05b20b24ab6783878d9ffa1ae5496e83da0e65b` and `6eb1e199c2e370518e7bf3e8eee6322c2b23c89c`, under `validation/evalplus_internal/sources/`. Embedded OpenAI MIT notices are preserved; the upstream Apache-2.0 root license is `UPSTREAM_LICENSE.txt`. Exact SWE-bench grading and pytest parser sources at `a5ecda6640d13f89848a3dceaa08585431d258db` and `489a34eb8c99f123e6af5f3ea8f3a8e8db85710b` and their full MIT licenses are retained under `validation/swe_internal/source_fixtures/`. Native snippets remain upstream authorship. Only the observation and qualification code is newly authored.
+
+The 0.8.0 source distribution retains additional original SWE writer/reporting
+files from those same revisions under `validation/swe_reporting` and
+`validation/swe_joined`, with upstream MIT licenses. The new
+`validation/inspect_path/sources` directory retains original files from the
+same Inspect revision and its MIT license; its native qualification is recorded
+separately from the earlier 0.7.0 feasibility attempt. Pytest phase controls use
+the original installed pytest 8.4.2 package and verify its source inventory;
+authored fixture programs and acquisition helpers do not transfer authorship
+of pytest's native implementation.

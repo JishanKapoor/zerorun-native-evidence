@@ -1,0 +1,286 @@
+# SPDX-License-Identifier: MIT
+"""Standalone native assertions v2: raw native populations and completion.
+
+Run: python regression.py --source ROOT --output NEW.json
+The pinned reference returns raw facts and explicit native acquisition premises.
+No framework verdict or inferred completion is accepted as a native observation.
+"""
+import argparse
+import hashlib
+import importlib
+import json
+import os
+from pathlib import Path
+import sys
+import time
+
+PAYLOAD = json.loads(__PAYLOAD_JSON__)
+PAYLOAD_SHA256 = '__PAYLOAD_SHA__'
+
+
+def canonical(value):
+    active = set()
+
+    def check(node, depth):
+        if depth > 64:
+            raise ValueError('Native JSON nesting exceeds bound')
+        kind = type(node)
+        if node is None or any(kind is scalar for scalar in (str, int, float, bool)):
+            return
+        if kind is not dict and kind is not list:
+            raise ValueError('Native data must use exact JSON types')
+        if id(node) in active:
+            raise ValueError('Cyclic native data')
+        active.add(id(node))
+        if kind is dict:
+            if any(type(key) is not str for key in node):
+                raise ValueError('Native object keys must be strings')
+            children = node.values()
+        else:
+            children = node
+        for child in children:
+            check(child, depth + 1)
+        active.remove(id(node))
+
+    check(value, 0)
+    return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False).encode('utf-8')
+
+
+def fields(value, names, label):
+    if type(value) is not dict or set(value) != set(names):
+        raise ValueError('Invalid ' + label + ' fields')
+
+
+def verify_native(profile, result, expected_inventory):
+    """Independent finite assertions over source-pinned native reference output."""
+    canonical(result)
+    fields(result, {'inventory', 'facts', 'native_complete', 'native_batches'}, 'native v2 result')
+    inventory, facts, batches = result['inventory'], result['facts'], result['native_batches']
+    completion = result['native_complete']
+    types = {'str': str, 'int': int, 'float': float, 'bool': bool}
+    if (type(inventory) is not list or not 1 <= len(inventory) <= 4096
+            or type(facts) is not list or len(facts) > 16384
+            or type(batches) is not list or len(batches) > 4096):
+        raise ValueError('Native inventory exceeds finite bounds')
+    fields(completion, [rule['id'] for rule in profile['rules']], 'per-rule native completion')
+    if any(type(value) is not bool for value in completion.values()):
+        raise ValueError('Native completion must be an explicit boolean per rule')
+
+    def identity(ident, names):
+        fields(ident, names, 'native identity')
+        if any(type(ident[key]) is not types[profile['identity'][key]] for key in names):
+            raise ValueError('Invalid native identity types')
+
+    identities = set()
+    for ident in inventory:
+        identity(ident, profile['identity'])
+        encoded = canonical(ident)
+        if encoded in identities:
+            raise ValueError('Duplicate native inventory')
+        identities.add(encoded)
+    if canonical(inventory) != canonical(expected_inventory):
+        raise ValueError('Native inventory differs from the frozen case')
+    for fact in facts:
+        fields(fact, {'kind', 'identity', 'values'}, 'raw native fact')
+        if type(fact['kind']) is not str or fact['kind'] not in profile['facts']:
+            raise ValueError('Unknown native fact kind')
+        identity(fact['identity'], profile['identity'])
+        if canonical(fact['identity']) not in identities:
+            raise ValueError('Raw native fact outside frozen inventory')
+        declared = profile['facts'][fact['kind']]
+        fields(fact['values'], declared, 'native values')
+        if any(type(fact['values'][key]) is not types[kind] for key, kind in declared.items()):
+            raise ValueError('Invalid raw native field types')
+
+    used_indices = set()
+    for batch in batches:
+        if type(batch) is not dict:
+            raise ValueError('Native batch must be an exact object')
+        site = batch.get('site')
+        if type(site) is not str or site not in profile['sites'] or 'batch' not in profile['sites'][site]:
+            raise ValueError('Undeclared native batch site')
+        spec = profile['sites'][site]
+        acquisition = spec['batch'].get('ordinal') == 'acquisition'
+        fields(batch, {'site', 'identity', 'size', 'fact_indices', 'complete'} |
+               ({'ordinals'} if acquisition else set()), 'native batch')
+        ordinal = [key for key in profile['identity'] if spec['projection'][key] == {'ordinal': True}]
+        group_keys = [key for key in profile['identity'] if not (set(spec['projection'][key]) & {'ordinal', 'item'})]
+        identity(batch['identity'], group_keys)
+        if not any(all(ident[key] == batch['identity'][key] for key in group_keys) for ident in inventory):
+            raise ValueError('Native batch group outside frozen inventory')
+        if (type(batch['size']) is not int or not 0 <= batch['size'] <= spec['batch']['max_items']
+                or type(batch['complete']) is not bool or type(batch['fact_indices']) is not list
+                or len(batch['fact_indices']) > spec['batch']['max_items']):
+            raise ValueError('Invalid native batch bounds/completion')
+        if acquisition and (type(batch['ordinals']) is not list
+                            or len(batch['ordinals']) != len(batch['fact_indices'])):
+            raise ValueError('Native acquisition ordinals must match acquired facts')
+        ordinals = []
+        for position, index in enumerate(batch['fact_indices']):
+            if type(index) is not int or not 0 <= index < len(facts) or index in used_indices:
+                raise ValueError('Invalid or duplicate native batch fact index')
+            used_indices.add(index)
+            fact = facts[index]
+            if fact['kind'] != spec['kind'] or any(fact['identity'][key] != batch['identity'][key] for key in group_keys):
+                raise ValueError('Native batch member has wrong kind/group')
+            number = batch['ordinals'][position] if acquisition else fact['identity'][ordinal[0]]
+            if (type(number) is not int or not 0 <= number < batch['size']
+                    or (not acquisition and any(type(fact['identity'][key]) is not int
+                        or fact['identity'][key] != number for key in ordinal))):
+                raise ValueError('Invalid native batch ordinal')
+            ordinals.append(number)
+        if len(ordinals) != len(set(ordinals)):
+            raise ValueError('Duplicate native batch ordinal')
+        if batch['complete'] and ordinals != list(range(batch['size'])):
+            raise ValueError('Claimed complete batch omits native members')
+
+    rows = []
+    for rule in profile['rules']:
+        keys = rule['keys']
+        def group_of(ident):
+            return tuple(ident[key] for key in keys)
+        for group in sorted({group_of(ident) for ident in inventory}):
+            matching = [(index, fact) for index, fact in enumerate(facts) if group_of(fact['identity']) == group]
+            producers = [(index, fact) for index, fact in matching if fact['kind'] == rule['producer']
+                         and (rule['when'] is None or fact['values'][rule['when']['field']] in rule['when']['in'])]
+            consumers = [fact for _, fact in matching if fact['kind'] == rule['consumer']]
+            source = [fact for _, fact in producers]
+            complete = completion[rule['id']]
+            raw_batches = [batch for batch in batches
+                           if profile['sites'][batch['site']]['kind'] == rule['producer']
+                           and set(batch['identity']) == set(keys) and group_of(batch['identity']) == group]
+            closed = ('inventory_policy' in rule and len(raw_batches) == 1
+                      and raw_batches[0]['complete'] and complete
+                      and set(raw_batches[0]['fact_indices']) == {index for index, _ in producers})
+            guards = [fact for _, fact in matching if fact['kind'] == rule.get('guard', {}).get('kind')]
+            state, reason = 'PASS', 'native_relationship_satisfied'
+            if 'guard' in rule and len(guards) != 1:
+                state, reason = 'UNASSESSABLE', 'missing_or_ambiguous_native_guard'
+            elif 'guard' in rule and guards[0]['values'][rule['guard']['field']] not in rule['guard']['in']:
+                reason = 'native_rule_guard_not_applicable'
+            elif (len(consumers) > 1 or (rule['check'] != 'C3' and len(source) > 1)
+                  or len({canonical(fact['identity']) for fact in source}) != len(source)):
+                state, reason = 'UNASSESSABLE', 'ambiguous_native_identity'
+            elif not source and not closed:
+                state = 'PASS' if rule['when'] is not None and complete else 'UNASSESSABLE'
+                reason = 'no_applicable_native_disposition' if state == 'PASS' else 'missing_native_producer'
+            elif not consumers:
+                state = 'FAIL' if rule['check'] == 'C1' and complete else 'UNASSESSABLE'
+                reason = 'missing_native_consumer'
+            elif rule['check'] == 'C2':
+                observed = consumers[0]['values'][rule['target_field']]
+                native = source[0]['values'][rule['source_field']]
+                if rule['operator'] == 'int01_to_bool' and native not in (0, 1):
+                    state, reason = 'UNASSESSABLE', 'unsupported_native_conversion'
+                else:
+                    if rule['operator'] == 'int01_to_bool':
+                        native = native == 1
+                    elif rule['operator'] == 'bool_to_int':
+                        native = 1 if native else 0
+                    state = 'PASS' if type(native) is type(observed) and native == observed else 'FAIL'
+            elif rule['check'] == 'C3':
+                needed = {canonical(ident) for ident in inventory if group_of(ident) == group}
+                present = {canonical(fact['identity']) for fact in source}
+                conjunction = True
+                for fact in source:
+                    native = fact['values'][rule['source_field']]
+                    conjunction = conjunction and (native if rule['operator'] == 'all' else native in rule['statuses'])
+                if conjunction and present != needed and not closed:
+                    state, reason = 'UNASSESSABLE', 'missing_native_population'
+                else:
+                    if closed:
+                        conjunction = conjunction and present == needed
+                    observed = consumers[0]['values'][rule['target_field']]
+                    mapping = rule['target_mapping']
+                    if mapping is not None and observed not in mapping['true'] + mapping['false']:
+                        state, reason = 'UNASSESSABLE', 'incomplete_or_unknown_native_disposition'
+                    else:
+                        if mapping is not None:
+                            observed = observed in mapping['true']
+                        state = 'PASS' if observed is conjunction else 'FAIL'
+            if state == 'PASS' and not complete:
+                state, reason = 'UNASSESSABLE', 'incomplete_native_rule_premise'
+            if state == 'FAIL' and reason == 'native_relationship_satisfied':
+                reason = 'witnessed_native_contradiction'
+            rows.append(dict(relationship=rule['id'], identity=dict(zip(keys, group)), result=state, reason=reason))
+    return rows
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--source', required=True)
+    parser.add_argument('--output', required=True)
+    args = parser.parse_args()
+    with Path(args.output).open('x', encoding='utf-8') as output:
+        start = time.monotonic()
+        receipt = dict(schema='zerorun-standalone-result/2', payload_sha256=PAYLOAD_SHA256,
+                       classification_dependency=False, result='UNASSESSABLE', native_calls=0,
+                       native_call_unit='recipe_invocation_attempt')
+        code = 2
+        try:
+            if hashlib.sha256(canonical(PAYLOAD)).hexdigest() != PAYLOAD_SHA256:
+                raise ValueError('Embedded payload identity mismatch')
+            root = Path(args.source).resolve()
+            recipe = PAYLOAD['recipe']
+            for name, expected in recipe['source_files'].items():
+                path = (root / name).resolve()
+                if not path.is_relative_to(root) or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                    raise ValueError('Native source identity mismatch: ' + name)
+            import importlib.abc
+            import importlib.util
+
+            class SourceLoader(importlib.abc.MetaPathFinder, importlib.abc.Loader):
+                def find_spec(self, fullname, path=None, target=None):
+                    name = fullname.replace('.', '/')
+                    rel = name + '/__init__.py' if name + '/__init__.py' in recipe['source_files'] else name + '.py'
+                    if rel not in recipe['source_files']:
+                        return None
+                    return importlib.util.spec_from_loader(fullname, self, origin=str(root / rel), is_package=rel.endswith('/__init__.py'))
+
+                def create_module(self, spec):
+                    return None
+
+                def exec_module(self, module):
+                    path = Path(module.__spec__.origin)
+                    rel = path.relative_to(root).as_posix()
+                    source = path.read_bytes()
+                    if hashlib.sha256(source).hexdigest() != recipe['source_files'][rel]:
+                        raise ValueError('Native source changed during load')
+                    module.__file__ = str(path)
+                    if module.__spec__.submodule_search_locations is not None:
+                        module.__path__ = [str(path.parent)]
+                    exec(compile(source, str(path), 'exec'), module.__dict__)
+
+            sys.meta_path.insert(0, SourceLoader())
+            module = importlib.import_module(recipe['module'])
+            if Path(module.__file__).resolve() != root / (recipe['module'].replace('.', '/') + '.py'):
+                raise ValueError('Native module origin mismatch')
+            native_function = getattr(module, recipe['function'])
+            if not callable(native_function):
+                raise ValueError('Native entry point is not callable')
+            receipt['native_calls'] = 1
+            native = native_function(*recipe['args'], **recipe['kwargs'])
+            assertions = verify_native(PAYLOAD['policy'], native, PAYLOAD['expected_inventory'])
+            state = ('FAIL' if any(row['result'] == 'FAIL' for row in assertions) else
+                     'UNASSESSABLE' if any(row['result'] == 'UNASSESSABLE' for row in assertions) else 'PASS')
+            receipt.update(result=state, native=native, assertions=assertions)
+            code = {'PASS': 0, 'FAIL': 1, 'UNASSESSABLE': 2}[state]
+        except BaseException as exc:
+            receipt['exception'] = type.__getattribute__(type(exc), '__name__')
+            if isinstance(exc, (KeyboardInterrupt, SystemExit)):
+                code = 130 if isinstance(exc, KeyboardInterrupt) else 2
+        finally:
+            receipt['classification_dependency'] = any(name == 'zerorun_harness' or name.startswith('zerorun_harness.') for name in sys.modules)
+            if receipt['classification_dependency']:
+                receipt['result'] = 'UNASSESSABLE'
+                receipt['exception'] = 'FrameworkImportedByNativeRecipe'
+                code = 2
+            receipt['elapsed_seconds'] = time.monotonic() - start
+            receipt['python'] = sys.version
+            receipt['uid'] = os.getuid() if hasattr(os, 'getuid') else None
+            json.dump(receipt, output, indent=2, allow_nan=False)
+        return code
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

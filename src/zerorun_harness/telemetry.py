@@ -48,7 +48,7 @@ def capture_native(
             status="UNSUPPORTED",
             reason="qualified acquisition runtime is Linux CPython 3.11.16, fork, optimize=0",
         )
-    if type(wall_seconds) not in (int, float) or not 0 < wall_seconds <= 60:
+    if (type(wall_seconds) is not int and type(wall_seconds) is not float) or not 0 < wall_seconds <= 60:
         raise InvalidEvidence(
             "Native wall budget must be positive and at most 60 seconds"
         )

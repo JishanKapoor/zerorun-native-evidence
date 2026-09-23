@@ -29,10 +29,16 @@ def native_script(bundle, recipe):
         ],
         "extension native recipe",
     )
-    require(
-        recipe["schema"] == "zerorun-extension-native-recipe/1",
-        "Unsupported native recipe",
-    )
+    require(recipe["schema"] in {
+        "zerorun-extension-native-recipe/1", "zerorun-extension-native-recipe/2"
+    }, "Unsupported native recipe")
+    needs_v2 = any(set(rule) & {"guard", "inventory_policy"}
+                   for rule in bundle["policy"]["rules"]) or any(
+                       set(site) & {"batch", "producer_role"}
+                       for site in bundle["policy"]["sites"].values())
+    version_two = recipe["schema"] == "zerorun-extension-native-recipe/2"
+    require(not needs_v2 or version_two,
+            "Native guards, batches and scoped completion require recipe version 2")
     require(
         type(recipe["source_files"]) is dict
         and 1 <= len(recipe["source_files"]) <= 4096,
@@ -91,10 +97,18 @@ def native_script(bundle, recipe):
         binding_sha256=bundle["binding"]["sha256"],
         qualification_sha256=bundle["qualification"]["sha256"],
     )
+    if version_two:
+        payload.update(
+            schema="zerorun-standalone-relationships/2",
+            export_version="2.0.0",
+            expected_inventory=copy.deepcopy(bundle["case"]["inventory"]),
+            native_result_schema="inventory/facts/native_complete/native_batches-v2",
+        )
     # No classifier/status/report is copied into the native assertion program.
     template = (
         files("zerorun_harness")
-        .joinpath("resources/extension_native_template.txt")
+        .joinpath("resources/extension_native_template_v2.txt" if version_two
+                  else "resources/extension_native_template.txt")
         .read_text(encoding="utf-8")
     )
     return template.replace(

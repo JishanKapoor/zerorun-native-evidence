@@ -35,7 +35,7 @@ def test_bundled_native_sources_are_exact_upstream_bytes(version, grading_sha):
 def test_exact_original_native_sources_bind_and_regenerate(version):
     p = profile(version)
     b = generate_binding(p, sources(version))
-    assert b["grammar_version"] == "1.1.0"
+    assert b["grammar_version"] == "1.2.0"
     validate_binding(p, b)
     assert set(reference_sites(version)) == set(p["sites"])
     assert set(b["original_sources"]) == {GRADING, PARSER}

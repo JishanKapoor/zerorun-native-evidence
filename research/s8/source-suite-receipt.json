@@ -1,0 +1,21 @@
+{
+  "source": "C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s8\\work\\source-suite-r8\\release_s8",
+  "started_utc": "2026-09-23T06:18:51.027094+00:00",
+  "elapsed_seconds": 176.82790889999887,
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s2\\work\\test-env\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "-c",
+    "import sys; sys.path.insert(0,sys.argv.pop(1)); import pytest; raise SystemExit(pytest.main(sys.argv[1:]))",
+    "C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s8\\work\\source-suite-r8\\release_s8\\src",
+    "C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s8\\work\\source-suite-r8\\release_s8\\tests",
+    "-q",
+    "--junitxml=C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s8\\evidence\\source-suite-r8\\results.xml"
+  ],
+  "files": 245,
+  "child_source_path": "C:\\Users\\floxy\\OneDrive\\Documents\\ChatGPT\\Research\\study_s8\\work\\source-suite-r8\\release_s8\\src",
+  "source_unchanged": true,
+  "source_manifest_sha256": "15d196ae3fee018b4caf87144efbf5647eda9093fbe6940f4965ce997f95583b"
+}

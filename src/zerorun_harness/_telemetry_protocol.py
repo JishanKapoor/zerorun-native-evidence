@@ -53,7 +53,7 @@ def primitives(value):
             if len(v) > 1024 or any(0xD800 <= ord(c) <= 0xDFFF for c in v):
                 raise PrimitiveError("string cap/encoding")
             return
-        if kind not in (dict, list):
+        if kind is not dict and kind is not list:
             raise PrimitiveError("not an exact primitive container")
         if id(v) in active:
             raise PrimitiveError("cyclic value")

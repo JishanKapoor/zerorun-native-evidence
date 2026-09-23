@@ -84,7 +84,7 @@ def unseal(value, schema):
 def validate_profile(p):
     canonical(p)
     exact(
-        p,
+        {k:v for k,v in p.items() if k != "record_types"},
         [
             "api",
             "id",
@@ -97,6 +97,20 @@ def validate_profile(p):
         ],
         "extension profile",
     )
+    if "record_types" in p:
+        require(type(p["record_types"]) is dict and 1 <= len(p["record_types"]) <= 16,
+                "Invalid native record inventory")
+        for ident,record in p["record_types"].items():
+            exact(record,["module","name","path","fields"],"native record declaration")
+            require(text(ident) and type(record["module"]) is str
+                    and all(part.isidentifier() for part in record["module"].split('.'))
+                    and type(record["name"]) is str and record["name"].isidentifier()
+                    and record["path"] == record["module"].replace('.','/')+'.py'
+                    and type(record["fields"]) is list and 1<=len(record["fields"])<=16
+                    and all(type(f) is str and f.isidentifier() and not f.startswith('_')
+                            for f in record["fields"])
+                    and len(set(record["fields"]))==len(record["fields"]),
+                    "Invalid finite native record source/fields")
     require(
         p["api"] == API
         and text(p["id"])
@@ -137,7 +151,7 @@ def validate_profile(p):
     )
     for site, spec in p["sites"].items():
         exact(
-            spec,
+            {k: v for k, v in spec.items() if k not in {"within", "producer_role", "batch"}},
             [
                 "kind",
                 "path",
@@ -150,6 +164,29 @@ def validate_profile(p):
             ],
             "site",
         )
+        if "producer_role" in spec:
+            require(spec["producer_role"] in ("parent", "worker"),
+                    "Unsupported native producer role")
+        if "batch" in spec:
+            batch=spec["batch"]
+            exact({k:v for k,v in batch.items() if k != "ordinal"},["local","max_items"],"native batch")
+            require("ordinal" not in batch or batch["ordinal"] == "acquisition",
+                    "Invalid native batch ordinal route")
+            require(type(batch["local"]) is str and batch["local"].isidentifier()
+                    and not batch["local"].startswith("__zr_")
+                    and type(batch["max_items"]) is int and 1 <= batch["max_items"] <= 4096,
+                    "Invalid native batch collection/bound")
+        if "within" in spec:
+            require(type(spec["within"]) is list and 1 <= len(spec["within"]) <= 8,
+                    "Invalid native ancestor inventory")
+            for ancestor in spec["within"]:
+                exact(ancestor, ["header", "branch"], "native ancestor")
+                require(type(ancestor["header"]) is str
+                        and 0 < len(ancestor["header"]) <= 16384
+                        and ancestor["branch"] in
+                        ["body", "orelse", "finalbody"] +
+                        ["handler:" + str(n) for n in range(16)],
+                        "Invalid native ancestor header/branch")
         require(
             text(site)
             and spec["kind"] in p["facts"]
@@ -184,6 +221,15 @@ def validate_profile(p):
         )
         for field, value in spec["projection"].items():
             validate_projection(value)
+            require('activation' not in value or (field in p['identity'] and p['identity'][field]=='int'),
+                    'Activation belongs only to declared integer identity')
+            for step in value.get("path",[]):
+                if "stored" in step:
+                    require(step["record"] in p.get("record_types",{})
+                            and step["stored"] in p["record_types"][step["record"]]["fields"],
+                            "Stored field lacks a native type declaration")
+            require(not (set(value) & {"item","ordinal"}) or "batch" in spec,
+                    "Native item/ordinal requires a declared batch")
             require(
                 "return" not in value or spec["position"] == "return_value",
                 "Native return projection requires a return-value site",
@@ -192,6 +238,24 @@ def validate_profile(p):
                 "context" not in value or field in p["identity"],
                 "External context may supply identity metadata only",
             )
+        if "batch" in spec:
+            require(spec["batch"].get("ordinal") == "acquisition" or any(spec["projection"][k] == {"ordinal":True}
+                        and p["identity"][k] == "int" for k in p["identity"]),
+                    "Native batch requires an exact integer ordinal identity")
+            require(spec["batch"].get("ordinal") != "acquisition"
+                    or all("ordinal" not in value for value in spec["projection"].values()),
+                    "Acquisition ordinal cannot also become a scientific projection")
+            require(all("item" not in spec["projection"][k]
+                        or (set(spec["projection"][k]) == {"item","path"}
+                            and spec["projection"][k]["path"]
+                            and "stored" in spec["projection"][k]["path"][0])
+                        for k in p["identity"]),
+                    "Native batch item identity requires declared stored native fields")
+    require(
+        not any("producer_role" in s for s in p["sites"].values())
+        or all("producer_role" in s for s in p["sites"].values()),
+        "Native producer roles must cover every site",
+    )
     require(
         type(p["rules"]) is list and 1 <= len(p["rules"]) <= 64,
         "Invalid relationship inventory",
@@ -199,7 +263,7 @@ def validate_profile(p):
     ids = set()
     for r in p["rules"]:
         exact(
-            r,
+            {k:v for k,v in r.items() if k not in {"inventory_policy","guard"}},
             [
                 "id",
                 "check",
@@ -217,6 +281,27 @@ def validate_profile(p):
             ],
             "relationship",
         )
+        if "guard" in r:
+            guard=r["guard"]
+            exact(guard,["kind","field","in"],"native rule guard")
+            require(guard["kind"] in p["facts"]
+                    and guard["field"] in p["facts"][guard["kind"]]
+                    and type(guard["in"]) is list and 1 <= len(guard["in"]) <= 16
+                    and all(typed(v,p["facts"][guard["kind"]][guard["field"]]) for v in guard["in"]),
+                    "Invalid native status-membership guard")
+            require(any(p["sites"][s]["kind"] == guard["kind"] for s in r["requires"]),
+                    "Native guard requires its site qualification")
+        if "inventory_policy" in r:
+            require(r["inventory_policy"] == "complete_batch_membership"
+                    and r["check"] == "C3",
+                    "Unsupported native inventory policy")
+            sources=[s for s in p["sites"].values() if s["kind"] == r["producer"]]
+            require(sources and all("batch" in s for s in sources),
+                    "Complete inventory policy requires native batch producers")
+            require(all(set(r["keys"]) == {k for k in p["identity"]
+                                            if not (set(s["projection"][k]) & {"ordinal","item"})}
+                        for s in sources),
+                    "Complete batch policy keys must match native batch group identity")
         require(
             text(r["id"]) and r["id"] not in ids and text(r["justification"]),
             "Invalid or duplicate relationship",
@@ -384,7 +469,7 @@ def validate_observations(p, case, events):
     inventory = {digest(i) for i in case["inventory"]}
     for e in events:
         exact(
-            e,
+            {k:v for k,v in e.items() if k != "acquisition"},
             [
                 "id",
                 "kind",
@@ -406,6 +491,15 @@ def validate_observations(p, case, events):
             and p["sites"][e["site"]]["kind"] == e["kind"],
             "Unknown or mismatched native site",
         )
+        if p['sites'][e['site']].get('batch',{}).get('ordinal') == 'acquisition':
+            require('acquisition' in e, 'Native batch acquisition identity missing')
+            exact(e['acquisition'], ['batch','ordinal'], 'native acquisition identity')
+            require(type(e['acquisition']['batch']) is int and e['acquisition']['batch'] > 0
+                    and type(e['acquisition']['ordinal']) is int
+                    and 0 <= e['acquisition']['ordinal'] < p['sites'][e['site']]['batch']['max_items'],
+                    'Invalid native batch acquisition identity')
+        else:
+            require('acquisition' not in e, 'Undeclared acquisition identity')
         exact(e["identity"], p["identity"], "event identity")
         require(
             all(typed(e["identity"][k], typ) for k, typ in p["identity"].items()),
@@ -440,6 +534,7 @@ def validate_observations(p, case, events):
 
 
 def validate_health(p, h, binding_sha):
+    roles = {s["producer_role"] for s in p["sites"].values() if "producer_role" in s}
     exact(
         h,
         [
@@ -448,7 +543,8 @@ def validate_health(p, h, binding_sha):
             "transport",
             "native_complete",
             "qualification_sha256",
-        ],
+        ] + (["producers"] if roles else []) +
+        (["batch_journal"] if any("inventory_policy" in r for r in p["rules"]) else []),
         "health",
     )
     require(
@@ -468,6 +564,13 @@ def validate_health(p, h, binding_sha):
         ),
         "Invalid transport health",
     )
+    if roles:
+        exact(h["producers"], roles, "native producer role mapping")
+        require(all(v is None or (type(v) is int and v > 0
+                                 and str(v) in h["transport"])
+                    for v in h["producers"].values()), "Invalid native role/PID mapping")
+        pids = [v for v in h["producers"].values() if v is not None]
+        require(len(pids) == len(set(pids)), "Native producer roles cannot share a PID")
     exact(h["native_complete"], [r["id"] for r in p["rules"]], "native completion")
     require(
         all(type(v) is bool or v is None for v in h["native_complete"].values()),
@@ -500,6 +603,25 @@ def evaluate(profile, case, events, health, binding_sha):
         {str(e["producer"]) for e in events} <= set(health["transport"]),
         "Missing native producer transport evidence",
     )
+    if "producers" in health:
+        require(all(health["producers"][p["sites"][e["site"]]["producer_role"]]
+                    == e["producer"] for e in events),
+                "Observation producer does not match its declared native role")
+    batch_receipts=[]
+    if "batch_journal" in health:
+        from .batches import reconcile_batches
+        reconciled=reconcile_batches(p,binding_sha,health["batch_journal"],
+                                      source_sha=case["source_sha256"])
+        by_id={e["id"]:e for e in events}
+        require(all(by_id.get(e["id"]) == e for e in reconciled["events"]),
+                "Retained native batch journal disagrees with semantic observations")
+        batch_receipts=reconciled["batches"]
+        require(all(str(v["producer"]) in health["transport"] for v in batch_receipts),
+                "Native batch control lacks producer transport evidence")
+        if "producers" in health:
+            require(all(health["producers"][p["sites"][v["site"]]["producer_role"]]
+                        == v["producer"] for v in batch_receipts),
+                    "Native batch control producer mismatches its declared role")
 
     class NativeIndex(pc.Monitor):
         def __init__(self):
@@ -524,10 +646,20 @@ def evaluate(profile, case, events, health, binding_sha):
         for e in targets:
             target_groups.setdefault(key(e["identity"], r["keys"]), []).append(e)
         groups = sorted({key(i, r["keys"]) for i in case["inventory"]})
-        coverage = all(health["sites"][s] is True for s in r["requires"])
+        required_sites=r["requires"]
+        if "producers" in health or "guard" in r:
+            # Kind aliases cannot omit a native producer from an absence claim.
+            required_sites=sorted(set(required_sites) | {s for s,spec in p["sites"].items()
+                                                        if spec["kind"] in (r["producer"],r["consumer"],r.get("guard",{}).get("kind"))})
+        coverage = all(health["sites"][s] is True for s in required_sites)
         for group in groups:
             ss, tt = source_groups.get(group, []), target_groups.get(group, [])
             evidence = [e["id"] for e in ss + tt]
+            guards=[]
+            if "guard" in r:
+                guards=[e for e in monitor.by_kind[r["guard"]["kind"]]
+                        if key(e["identity"],r["keys"]) == group]
+                evidence += [e["id"] for e in guards]
             status, reasons = "CONFORMS", []
             duplicate = (
                 len(tt) > 1
@@ -537,15 +669,33 @@ def evaluate(profile, case, events, health, binding_sha):
             transport = bool(health["transport"]) and all(
                 v is True for v in health["transport"].values()
             )
+            if "producers" in health:
+                required_roles = {p["sites"][s]["producer_role"] for s in required_sites}
+                transport = all(health["producers"][role] is not None
+                                and health["transport"][str(health["producers"][role])] is True
+                                for role in required_roles)
             complete = health["native_complete"][r["id"]] is True
-            if duplicate:
+            closed_batch=False
+            if "inventory_policy" in r:
+                applicable=[v for v in batch_receipts
+                            if p["sites"][v["site"]]["kind"] == r["producer"]
+                            and key(v["identity"],r["keys"]) == group]
+                closed_batch=(len(applicable)==1 and applicable[0]["complete"]
+                              and set(applicable[0]["event_ids"]) == {e["id"] for e in ss}
+                              and complete and transport)
+            if "guard" in r and len(guards) != 1:
+                status,reasons="INCONCLUSIVE",["missing_or_ambiguous_native_guard"]
+            elif not coverage:
+                status, reasons = "INCONCLUSIVE", ["unqualified_semantic_sites"]
+            elif ("guard" in r and guards[0]["values"][r["guard"]["field"]]
+                  not in r["guard"]["in"]):
+                status,reasons="CONFORMS",["native_rule_guard_not_applicable"]
+            elif duplicate:
                 status, reasons = (
                     "INCONCLUSIVE",
                     ["ambiguous_or_duplicate_native_identity"],
                 )
-            elif not coverage:
-                status, reasons = "INCONCLUSIVE", ["unqualified_semantic_sites"]
-            elif not ss:
+            elif not ss and not closed_batch:
                 # A declared skip creates no acceptance/commitment obligation, but
                 # absence of a trigger is meaningful only under all premises.
                 status = (
@@ -611,9 +761,11 @@ def evaluate(profile, case, events, health, binding_sha):
                 # A witnessed false operand determines conjunction even when a
                 # native failure-prefix policy leaves later obligations unseen.
                 # Missing all-true operands still cannot establish acceptance.
-                if {digest(e["identity"]) for e in ss} != inventory and value:
+                if {digest(e["identity"]) for e in ss} != inventory and value and not closed_batch:
                     status, reasons = "INCONCLUSIVE", ["aggregate_native_inventory_gap"]
                 else:
+                    if closed_batch:
+                        value=value and {digest(e["identity"]) for e in ss} == inventory
                     observed = tt[0]["values"][r["target_field"]]
                     mapping = r["target_mapping"]
                     if mapping is not None:
@@ -657,14 +809,15 @@ def evaluate(profile, case, events, health, binding_sha):
                     status=status,
                     reasons=reasons,
                     evidence_ids=evidence,
-                    required_sites=r["requires"],
+                    required_sites=required_sites,
                     independently_orderable=False,
                 )
             )
     return seal(
         dict(
             schema="zerorun-relationships/1",
-            engine_version=ENGINE_VERSION,
+            engine_version="1.1.0" if ("producers" in health or "batch_journal" in health
+                                      or any("guard" in r for r in p["rules"])) else ENGINE_VERSION,
             policy_sha256=digest(p),
             binding_sha256=binding_sha,
             case_sha256=digest(case),

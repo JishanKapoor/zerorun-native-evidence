@@ -1,6 +1,47 @@
 # Reproducing the reported evidence
 
-The public `research/observations/` captures contain all 676 new saved application observations: 328 HumanEval task/bank records per exposed version and ten archived SWE records per component version. They contain native boolean/status records and hashes, not candidate source or benchmark input banks. Use the installed `audit`, `export`, `compare` and `report` operations directly on these files. The original acquisition scripts are supplied under `research/`; they execute only when a user explicitly runs them in the required isolated environment. The release CLI itself has no candidate-execution operation.
+## Current native qualification recipes
+
+Version 0.8.0 retains the earlier scientific cohort and adds source-qualified
+native development campaigns. Their populations, versions and call units are
+separate. See [the native contract](NATIVE_PATHS.md) for the supported grammars,
+identity fields and health premises.
+
+| Source-distribution directory | Reproduction scope |
+| --- | --- |
+| [evalplus_path](validation/evalplus_path/README.md) | One original parent/worker bank invocation; original-reference comparison, large banks, transport controls and native assertion exports |
+| [swe_reporting](validation/swe_reporting/README.md) | Original saved-log report writer, existing-report cache and closed-file aggregate consumer |
+| [swe_joined](validation/swe_joined/README.md) | Same-execution parser, test partitions, grading, report serialization and aggregate |
+| `validation/inspect_path` | Original Inspect scorer storage and final raw/reduced metric consumers, with `score_display=False`; authored controls use no model generation |
+| [pytest_native](validation/pytest_native/README.md) and `validation/swe_pytest` | Original pytest phase reports and actual terminal storage, followed by the original SWE saved-log chain using a separately recorded marker wrapper |
+
+The EvalPlus README supplies a fresh-checkout Docker recipe. The SWE and Inspect
+preparation scripts take the retained study-workspace layout and produce a new
+sealed fixture directory; they are not self-contained benchmark downloaders.
+Each campaign needs its declared original sources, complete dependency inventory,
+image identity, frozen cases and source bindings. Running only `pytest tests`
+does not execute these native campaigns. Native runs use Linux CPython 3.11,
+the exact image and dependencies identified in that campaign, and separate
+original/observed processes. The Inspect and SWE images have different
+dependency sets; do not combine them with the EvalPlus image.
+
+Prepare fixtures before executing a campaign, keep original and observed outputs,
+and preserve failed attempts under their existing identities. Compare full native
+values and populations before interpreting observer verdicts. A deliberately
+failing authored test can have an expected native nonzero exit; the separate
+qualification must still prove outcome preservation and correct handling of the
+declared defect or incomplete evidence. An unexpected qualification failure
+requires diagnosis and a new repair snapshot.
+
+The source-snapshot, wheel and source-distribution installation routes have
+separate receipts. Installed qualification verifies module origins and exact
+package bytes before native calls. Replays, mutation controls, native API entries,
+bank invocations, source sites and scientific samples are different units; no
+sum of these units is reported as an independent replication count.
+
+## Retained scientific cohort
+
+The public `research/observations/` captures contain the 676 previously acquired saved application observations: 328 HumanEval task/bank records per exposed version and ten archived SWE records per component version. They contain native boolean/status records and hashes, not candidate source or benchmark input banks. Use the installed `audit`, `export`, `compare` and `report` operations directly on these files. The original acquisition scripts are supplied under `research/`; they execute only when a user explicitly runs them in the required isolated environment. The release CLI itself has no candidate-execution operation.
 
 The application-summary and whole-population check preserve both the native outcomes and corrected interpretation. The `REPAIR_R1.md` disclosure explains the observation-coverage and native-preservation correction after the initial runs. This is exposed, source-informed solo development; the corrected replay is not a blinded validation or an independently authored study.
 

@@ -1,0 +1,8 @@
+{
+  "source_label": "source-suite-r8",
+  "files": 245,
+  "source_manifest_sha256": "15d196ae3fee018b4caf87144efbf5647eda9093fbe6940f4965ce997f95583b",
+  "source_suite_passed": true,
+  "removed_obsolete_members": [],
+  "scope": "Exact tested development source; final installed native results retain separate receipts"
+}

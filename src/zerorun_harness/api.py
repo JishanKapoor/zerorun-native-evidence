@@ -26,9 +26,9 @@ def canonical(value):
         if depth > 64:
             raise InvalidEvidence("JSON nesting exceeds 64 levels")
         kind = type(node)
-        if node is None or kind in (str, int, float, bool):
+        if node is None or any(kind is primitive for primitive in (str, int, float, bool)):
             return
-        if kind not in (dict, list):
+        if kind is not dict and kind is not list:
             raise InvalidEvidence("Only exact JSON types are accepted")
         ident = id(node)
         if ident in active:
